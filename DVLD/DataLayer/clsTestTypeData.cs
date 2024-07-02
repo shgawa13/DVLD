@@ -17,7 +17,7 @@ namespace DataLayer
          int TestTypeID = 0;
          
          SqlConnection connection = new SqlConnection(clsDataAccessSettings.ConnectingString);
-         string Query = @"Insert Into TestType(TypeTestTitle,TestTypeDescription,Fees)
+         string Query = @"Insert Into TestTypes(TypeTestTitle,TestTypeDescription,Fees)
                         Values(@TypeTestTitle,@TestTypeDescription,@Fees);
                         Select SCOPE_IDENTITY();";
          SqlCommand command = new SqlCommand(Query, connection);
@@ -55,7 +55,7 @@ namespace DataLayer
          bool IsFound=false;
 
          SqlConnection connection = new SqlConnection(clsDataAccessSettings.ConnectingString);
-         string Query = @"Select * From TestType where TestTypeID=@TestTypeID;";
+         string Query = @"Select * From TestTypes where TestTypeID=@TestTypeID;";
          SqlCommand command = new SqlCommand(Query, connection);
 
          command.Parameters.AddWithValue("@TestTypeID", TestTypeID);
@@ -91,17 +91,17 @@ namespace DataLayer
          DataTable dt = new DataTable();
 
          SqlConnection connection = new SqlConnection(clsDataAccessSettings.ConnectingString);
-         string Query = @"Select * From TestType;";
+         string Query = @"Select * From TestTypes;";
          SqlCommand command = new SqlCommand(Query, connection);
 
          try
          {
             connection.Open();
-            SqlDataReader reder = command.ExecuteReader();
+            SqlDataReader reader = command.ExecuteReader();
 
-            if (reder.HasRows)
+            if (reader.HasRows)
             {
-               dt.Load(reder);
+               dt.Load(reader);
             }
 
          }
@@ -126,7 +126,7 @@ namespace DataLayer
 
 
          SqlConnection connection = new SqlConnection(clsDataAccessSettings.ConnectingString);
-         string Query = @"Update TestType
+         string Query = @"Update TestTypes
                         set TestTypeTitle=@TestTypeTitle,
                         TestTypeDescription=@TestTypeDescription,
                         TestTypeFees=@TestTypeFees

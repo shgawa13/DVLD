@@ -151,13 +151,24 @@ namespace DVLDTest
          }
          else
          {
-            Console.WriteLine("Something went worng");
+            Console.WriteLine("Something went wrong");
          }
 
       }
 
+      public static void GetTypeTestByID(clsTestType.enTypeTest ID)
+      {
+         clsTestType TestType = clsTestType.Find(ID);
+
+         if (TestType != null)
+            Console.WriteLine($"{TestType.ID}\n {TestType.TestTypeTitle},\n {TestType.TestTypeDescription} \n" +
+               $"{TestType.TestTypeFees}");
+         else
+            Console.WriteLine("Someting went wrong");
+      }
+
       static void Main(string[] args)
-         {
+      {
             Console.WriteLine("test");
          // GetPersonInfo(1);
          // ChangePassword(15, "0500");
@@ -168,11 +179,12 @@ namespace DVLDTest
          // UpdateApplication(6, "New International License", Convert.ToSingle( 50.00));
          // GetAllApplicationTypes();
          // GetApplicationTypeByID(6);
-           GetAllTyepTest();
-         Console.WriteLine("test end");
+            GetTypeTestByID(clsTestType.enTypeTest.VisionTest);
+            Console.WriteLine("test end");
             Console.ReadKey();
-         }
       }
+
    }
+}
 
 

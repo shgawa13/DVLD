@@ -11,9 +11,6 @@ namespace DVLDTest
    internal class Program
    {
 
-
-
-
       public static void GetPersonInfo(int ID)
       {
          clsUsers User = clsUsers.FindByUserID(ID);
@@ -130,7 +127,20 @@ namespace DVLDTest
 
       }
 
-         static void Main(string[] args)
+      public static void UpdateApplication(int ID, string ApplicationTitle,double fees)
+      {
+         if (clsApplicationTypes.UpdateApplication(ID, ApplicationTitle, fees))
+         {
+
+            Console.WriteLine($"Application has been Updated Successfully");
+         }
+         else
+         {
+            Console.WriteLine("Application was not updated");
+         }
+      }
+
+      static void Main(string[] args)
          {
             Console.WriteLine("test");
          // GetPersonInfo(1);
@@ -139,8 +149,9 @@ namespace DVLDTest
          //  CheckIfPersonIsUser(1024);
          // GetUserByUserNameAndPassword("user4", "1234");
          // FindPersonByNationalNo("N77");
+         UpdateApplication(6, "New International License", Convert.ToSingle( 50.00));
          GetAllApplicationTypes();
-         GetApplicationTypeByID(1);
+         GetApplicationTypeByID(6);
          Console.WriteLine("test end");
             Console.ReadKey();
          }

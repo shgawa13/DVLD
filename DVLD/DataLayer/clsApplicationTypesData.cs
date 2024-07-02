@@ -11,7 +11,7 @@ namespace DataLayer
    {
 
       public static bool GetApplicationTypeByID(int ApplicationTypeID,ref string ApplicationTypeTitle
-         ,ref decimal ApplicationFees)
+         ,ref float ApplicationFees)
       {
          bool IsFound = false;
          SqlConnection connection = new SqlConnection(clsDataAccessSettings.ConnectingString);
@@ -29,7 +29,7 @@ namespace DataLayer
             {
                IsFound = true;
                ApplicationTypeTitle = (string)reader["ApplicationTypeTitle"];
-               ApplicationFees = (decimal)reader["ApplicationFees"];
+               ApplicationFees = Convert.ToSingle( reader["ApplicationFees"]);
 
             }
             reader.Close();
@@ -78,8 +78,8 @@ namespace DataLayer
          return dt;
       }
 
-      public static bool UpdateApplicationType(int ApplicationTypeID, string ApplicationTypeTitle,
-         decimal ApplicationFees)
+       public static bool UpdateApplicationType(int ApplicationTypeID, string ApplicationTypeTitle,
+         double ApplicationFees)
       {
          int rowsEffected = 0;
          SqlConnection connection = new SqlConnection(clsDataAccessSettings.ConnectingString);

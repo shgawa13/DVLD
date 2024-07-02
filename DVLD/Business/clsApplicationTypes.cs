@@ -12,7 +12,7 @@ namespace Business
    {
       public int ApplicationTypeID { set; get; }
       public string ApplicationTypeTitle { set; get; }
-      public decimal ApplicationFees { set; get; }   
+      public float ApplicationFees { set; get; }   
 
 
       public clsApplicationTypes()
@@ -22,7 +22,7 @@ namespace Business
          this.ApplicationFees = 0;
       }
 
-      private clsApplicationTypes(int ApplicationTypeID, string ApplicationTypeTitle, decimal ApplicationFees)
+      private clsApplicationTypes(int ApplicationTypeID, string ApplicationTypeTitle, float ApplicationFees)
       {
          this.ApplicationTypeID = ApplicationTypeID;
          this.ApplicationTypeTitle = ApplicationTypeTitle;
@@ -33,7 +33,7 @@ namespace Business
       public static clsApplicationTypes GetApplicationTypeByID(int ApplicationTypeID)
       {
          string ApplicationTypeTitle = "";
-         decimal ApplicationFees =0;
+         float ApplicationFees =0;
 
          bool IsFound = clsApplicationTypesData.GetApplicationTypeByID(ApplicationTypeID,
             ref ApplicationTypeTitle, ref ApplicationFees);
@@ -49,9 +49,9 @@ namespace Business
          return clsApplicationTypesData.GetAllApplicationTypes();
       }
 
-      public static bool UpdateApplication(int ApplicationID, string ApplicationTypeTitle, decimal AppliactionFees)
+      public static bool UpdateApplication(int ApplicationID, string ApplicationTypeTitle, double AppliactionFees)
       {
-         return clsApplicationTypes.UpdateApplication(ApplicationID,ApplicationTypeTitle, AppliactionFees);
+         return clsApplicationTypesData.UpdateApplicationType(ApplicationID,ApplicationTypeTitle, AppliactionFees);
       }
    }
 }

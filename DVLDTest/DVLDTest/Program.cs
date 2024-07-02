@@ -37,8 +37,6 @@ namespace DVLDTest
             Console.WriteLine("Something went worng");
       }
 
-      
-
       public static void GetAllUsers()
       {
          DataTable dtUsers = clsUsers.GetAllUsers();
@@ -140,18 +138,37 @@ namespace DVLDTest
          }
       }
 
+      public static void GetAllTyepTest()
+      {
+         DataTable test = clsTestType.GetAllTypeTest();
+
+         if(test != null)
+         {
+            foreach(DataRow row in test.Rows)
+            {
+               Console.WriteLine($"{row["TestTypeID"]}, {row["TestTypeTitle"]}");
+            }
+         }
+         else
+         {
+            Console.WriteLine("Something went worng");
+         }
+
+      }
+
       static void Main(string[] args)
          {
             Console.WriteLine("test");
          // GetPersonInfo(1);
          // ChangePassword(15, "0500");
          // GetAllUsers();
-         //  CheckIfPersonIsUser(1024);
+         // CheckIfPersonIsUser(1024);
          // GetUserByUserNameAndPassword("user4", "1234");
          // FindPersonByNationalNo("N77");
-         UpdateApplication(6, "New International License", Convert.ToSingle( 50.00));
-         GetAllApplicationTypes();
-         GetApplicationTypeByID(6);
+         // UpdateApplication(6, "New International License", Convert.ToSingle( 50.00));
+         // GetAllApplicationTypes();
+         // GetApplicationTypeByID(6);
+           GetAllTyepTest();
          Console.WriteLine("test end");
             Console.ReadKey();
          }

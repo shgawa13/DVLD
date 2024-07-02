@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Data.Common;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
@@ -11,6 +12,43 @@ namespace DataLayer
    public class clsTestTypeData
    {
       
+      public static int AddNewTypeTest(string TypeTestTitle, string TestTypeDescription, float Fees)
+      {
+         int TestTypeID = 0;
+         
+         SqlConnection connection = new SqlConnection(clsDataAccessSettings.ConnectingString);
+         string Query = @"Insert Into TestType(TypeTestTitle,TestTypeDescription,Fees)
+                        Values(@TypeTestTitle,@TestTypeDescription,@Fees);
+                        Select SCOPE_IDENTITY();";
+         SqlCommand command = new SqlCommand(Query, connection);
+
+         command.Parameters.AddWithValue("@TypeTestTitle", TypeTestTitle);
+         command.Parameters.AddWithValue("@TestTypeDescription", TestTypeDescription);
+         command.Parameters.AddWithValue("@Fees", Fees);
+
+         try
+         {
+            connection.Open();
+            object result = command.ExecuteScalar();
+            
+            if(result !=null && int.TryParse((string)result, out int ID))
+            {
+               TestTypeID = ID;
+            }
+         
+         }
+         catch(Exception ex)
+         {
+            return 0;
+         }
+         finally
+         {
+            connection.Close();
+         }
+
+         return TestTypeID;
+      }
+
       public static bool GetTestTypeByID(int TestTypeID,ref string TestTypeTitle,
          ref string TestTypeDescription, ref float TestTypeFees)
       {
@@ -48,9 +86,9 @@ namespace DataLayer
          return IsFound;
       }
 
-      public static DataTable GetAllTestType()
+      public static DataTable GetAllTypeTes()
       {
-         DataTable dtTestType = new DataTable();
+         DataTable dt = new DataTable();
 
          SqlConnection connection = new SqlConnection(clsDataAccessSettings.ConnectingString);
          string Query = @"Select * From TestType;";
@@ -59,11 +97,11 @@ namespace DataLayer
          try
          {
             connection.Open();
-            SqlDataReader reader = command.ExecuteReader();
+            SqlDataReader reder = command.ExecuteReader();
 
-            if (reader.HasRows)
+            if (reder.HasRows)
             {
-               dtTestType.Load(reader);
+               dt.Load(reder);
             }
 
          }
@@ -77,7 +115,7 @@ namespace DataLayer
 
          }
 
-         return dtTestType;
+         return dt;
       }
 
 
@@ -99,7 +137,7 @@ namespace DataLayer
          command.Parameters.AddWithValue("@TestTypeDescription", TestTypeDescription);
          command.Parameters.AddWithValue("@TestTypeFees", TestTypeFees);
          command.Parameters.AddWithValue("@TestTypeID", TestTypeID);
-
+         
          try
          {
             connection.Open();

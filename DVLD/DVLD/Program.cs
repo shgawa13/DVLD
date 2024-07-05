@@ -4,8 +4,10 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace DVLD
+namespace DVLD.Applications
 {
+
+
     internal static class Program
     {
         /// <summary>
@@ -19,4 +21,7 @@ namespace DVLD
             Application.Run(new frmLogin());
         }
     }
+
+
 }
+

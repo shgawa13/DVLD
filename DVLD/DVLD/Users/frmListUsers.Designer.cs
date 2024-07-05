@@ -155,48 +155,48 @@
             this.tolsSendEamil,
             this.tolsPhoneCall});
          this.ctxMangeUsers.Name = "ctxMangeUsers";
-         this.ctxMangeUsers.Size = new System.Drawing.Size(181, 180);
+         this.ctxMangeUsers.Size = new System.Drawing.Size(169, 158);
          this.ctxMangeUsers.Text = "Mange Users";
          // 
          // tolsShowDetails
          // 
          this.tolsShowDetails.Name = "tolsShowDetails";
-         this.tolsShowDetails.Size = new System.Drawing.Size(180, 22);
+         this.tolsShowDetails.Size = new System.Drawing.Size(168, 22);
          this.tolsShowDetails.Text = "Show Details";
          this.tolsShowDetails.Click += new System.EventHandler(this.tolsShowDetails_Click);
          // 
          // tolsAddNewUser
          // 
          this.tolsAddNewUser.Name = "tolsAddNewUser";
-         this.tolsAddNewUser.Size = new System.Drawing.Size(180, 22);
+         this.tolsAddNewUser.Size = new System.Drawing.Size(168, 22);
          this.tolsAddNewUser.Text = "Add New User";
          this.tolsAddNewUser.Click += new System.EventHandler(this.tolsAddNewUser_Click);
          // 
          // tolsEdit
          // 
          this.tolsEdit.Name = "tolsEdit";
-         this.tolsEdit.Size = new System.Drawing.Size(180, 22);
+         this.tolsEdit.Size = new System.Drawing.Size(168, 22);
          this.tolsEdit.Text = "Edit";
          this.tolsEdit.Click += new System.EventHandler(this.tolsEdit_Click);
          // 
          // tolsDelete
          // 
          this.tolsDelete.Name = "tolsDelete";
-         this.tolsDelete.Size = new System.Drawing.Size(180, 22);
+         this.tolsDelete.Size = new System.Drawing.Size(168, 22);
          this.tolsDelete.Text = "Delete";
          this.tolsDelete.Click += new System.EventHandler(this.tolsDelete_Click);
          // 
          // tolsChangePassword
          // 
          this.tolsChangePassword.Name = "tolsChangePassword";
-         this.tolsChangePassword.Size = new System.Drawing.Size(180, 22);
+         this.tolsChangePassword.Size = new System.Drawing.Size(168, 22);
          this.tolsChangePassword.Text = "Change Password";
          this.tolsChangePassword.Click += new System.EventHandler(this.tolsChangePassword_Click);
          // 
          // tolsSendEamil
          // 
          this.tolsSendEamil.Name = "tolsSendEamil";
-         this.tolsSendEamil.Size = new System.Drawing.Size(180, 22);
+         this.tolsSendEamil.Size = new System.Drawing.Size(168, 22);
          this.tolsSendEamil.Text = "Send eamil";
          // 
          // tolsPhoneCall

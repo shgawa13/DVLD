@@ -1,4 +1,6 @@
-﻿using DVLD.Users;
+﻿using DVLD.Applications;
+using DVLD.Tests;
+using DVLD.Users;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -35,6 +37,16 @@ namespace DVLD.People
          frmListUsers.ShowDialog();
       }
 
-      
+      private void mangeApplicationTypesToolStripMenuItem_Click(object sender, EventArgs e)
+      {
+         Form frm = new frmMangeApplicationTypes();
+         frm.ShowDialog();
+      }
+
+      private void mangeTestTypesToolStripMenuItem_Click(object sender, EventArgs e)
+      {
+         Form frm = new frmMangeTestType();
+         frm.ShowDialog();
+      }
    }
 }

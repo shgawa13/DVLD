@@ -46,13 +46,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Global Classes\clsUtilities.cs" />
-    <Compile Include="Global Classes\clsValidatoin.cs" />
-    <Compile Include="Login\Login.cs">
+    <Compile Include="Applications\frmEditApplicationType.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Login\Login.Designer.cs">
-      <DependentUpon>Login.cs</DependentUpon>
+    <Compile Include="Applications\frmEditApplicationType.Designer.cs">
+      <DependentUpon>frmEditApplicationType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Applications\frmMangeApplicationTypes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Applications\frmMangeApplicationTypes.Designer.cs">
+      <DependentUpon>frmMangeApplicationTypes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Global Classes\clsUtilities.cs" />
+    <Compile Include="Global Classes\clsValidatoin.cs" />
+    <Compile Include="Login\frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login\frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
     </Compile>
     <Compile Include="frmMain.cs">
       <SubType>Form</SubType>
@@ -92,6 +104,18 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tests\Test Types\frmEditTestType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tests\Test Types\frmEditTestType.Designer.cs">
+      <DependentUpon>frmEditTestType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tests\Test Types\frmMangeTestType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tests\Test Types\frmMangeTestType.Designer.cs">
+      <DependentUpon>frmMangeTestType.cs</DependentUpon>
+    </Compile>
     <Compile Include="Users\Controls\ctrlChangePassword.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -128,8 +152,14 @@
     <Compile Include="Users\frmUserInfo.Designer.cs">
       <DependentUpon>frmUserInfo.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Login\Login.resx">
-      <DependentUpon>Login.cs</DependentUpon>
+    <EmbeddedResource Include="Applications\frmEditApplicationType.resx">
+      <DependentUpon>frmEditApplicationType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Applications\frmMangeApplicationTypes.resx">
+      <DependentUpon>frmMangeApplicationTypes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login\frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
@@ -159,6 +189,12 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Tests\Test Types\frmEditTestType.resx">
+      <DependentUpon>frmEditTestType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tests\Test Types\frmMangeTestType.resx">
+      <DependentUpon>frmMangeTestType.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Users\Controls\ctrlChangePassword.resx">
       <DependentUpon>ctrlChangePassword.cs</DependentUpon>
     </EmbeddedResource>
@@ -197,10 +233,8 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Application\" />
     <Folder Include="Drivers\" />
     <Folder Include="Licenses\" />
-    <Folder Include="Tests\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\preview-bg.png" />
@@ -212,6 +246,8 @@
     <None Include="Resources\stand_out_1oag-bg.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\Test Type 64.png" />
+    <None Include="Resources\TestType 512.png" />
     <None Include="Resources\password.png" />
     <None Include="Resources\undraw_Authentication_re_svpt-removebg-preview.png" />
     <None Include="Resources\Search1.png" />
@@ -223,6 +259,8 @@
     <None Include="Resources\Add-U.png" />
     <None Include="Resources\addUserLogo.png" />
     <None Include="Resources\Delete 32.png" />
+    <None Include="Resources\Application Types 64.png" />
+    <None Include="Resources\Application Types 512.png" />
     <Content Include="Resources\Female_avatar.png" />
     <None Include="Resources\plus-icon.png" />
     <None Include="Resources\people.png" />

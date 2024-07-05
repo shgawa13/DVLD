@@ -29,17 +29,22 @@
       private void InitializeComponent()
       {
          this.panel1 = new System.Windows.Forms.Panel();
-         this.pictureBox1 = new System.Windows.Forms.PictureBox();
          this.btnCloseLogin = new System.Windows.Forms.Button();
          this.menuStrip1 = new System.Windows.Forms.MenuStrip();
          this.tolStripApplication = new System.Windows.Forms.ToolStripMenuItem();
+         this.drivingLicensesServicesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+         this.mangeApplicationsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+         this.detianLicensesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+         this.mangeApplicationTypesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+         this.mangeTestTypesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
          this.tolStripPeople = new System.Windows.Forms.ToolStripMenuItem();
          this.tolStripDrivers = new System.Windows.Forms.ToolStripMenuItem();
          this.tolStripUsers = new System.Windows.Forms.ToolStripMenuItem();
          this.tolStripAccountSettings = new System.Windows.Forms.ToolStripMenuItem();
+         this.pictureBox1 = new System.Windows.Forms.PictureBox();
          this.panel1.SuspendLayout();
-         ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
          this.menuStrip1.SuspendLayout();
+         ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
          this.SuspendLayout();
          // 
          // panel1
@@ -55,17 +60,6 @@
          this.panel1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
          this.panel1.Size = new System.Drawing.Size(1255, 516);
          this.panel1.TabIndex = 0;
-         // 
-         // pictureBox1
-         // 
-         this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(14)))), ((int)(((byte)(36)))));
-         this.pictureBox1.Image = global::DVLD.Properties.Resources.gzexperts_logo;
-         this.pictureBox1.Location = new System.Drawing.Point(12, 12);
-         this.pictureBox1.Name = "pictureBox1";
-         this.pictureBox1.Size = new System.Drawing.Size(125, 97);
-         this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-         this.pictureBox1.TabIndex = 13;
-         this.pictureBox1.TabStop = false;
          // 
          // btnCloseLogin
          // 
@@ -102,6 +96,12 @@
          // 
          // tolStripApplication
          // 
+         this.tolStripApplication.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.drivingLicensesServicesToolStripMenuItem,
+            this.mangeApplicationsToolStripMenuItem,
+            this.detianLicensesToolStripMenuItem,
+            this.mangeApplicationTypesToolStripMenuItem,
+            this.mangeTestTypesToolStripMenuItem});
          this.tolStripApplication.Font = new System.Drawing.Font("Verdana", 10F, System.Drawing.FontStyle.Bold);
          this.tolStripApplication.ForeColor = System.Drawing.Color.WhiteSmoke;
          this.tolStripApplication.Margin = new System.Windows.Forms.Padding(0, 30, 0, 30);
@@ -109,6 +109,55 @@
          this.tolStripApplication.Padding = new System.Windows.Forms.Padding(0);
          this.tolStripApplication.Size = new System.Drawing.Size(140, 21);
          this.tolStripApplication.Text = "Application";
+         // 
+         // drivingLicensesServicesToolStripMenuItem
+         // 
+         this.drivingLicensesServicesToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(14)))), ((int)(((byte)(36)))));
+         this.drivingLicensesServicesToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
+         this.drivingLicensesServicesToolStripMenuItem.ForeColor = System.Drawing.Color.Gainsboro;
+         this.drivingLicensesServicesToolStripMenuItem.Name = "drivingLicensesServicesToolStripMenuItem";
+         this.drivingLicensesServicesToolStripMenuItem.Size = new System.Drawing.Size(232, 22);
+         this.drivingLicensesServicesToolStripMenuItem.Text = "Driving Licenses Services";
+         // 
+         // mangeApplicationsToolStripMenuItem
+         // 
+         this.mangeApplicationsToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(14)))), ((int)(((byte)(36)))));
+         this.mangeApplicationsToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
+         this.mangeApplicationsToolStripMenuItem.ForeColor = System.Drawing.Color.Gainsboro;
+         this.mangeApplicationsToolStripMenuItem.Name = "mangeApplicationsToolStripMenuItem";
+         this.mangeApplicationsToolStripMenuItem.Size = new System.Drawing.Size(232, 22);
+         this.mangeApplicationsToolStripMenuItem.Text = "Mange Applications";
+         // 
+         // detianLicensesToolStripMenuItem
+         // 
+         this.detianLicensesToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(14)))), ((int)(((byte)(36)))));
+         this.detianLicensesToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
+         this.detianLicensesToolStripMenuItem.ForeColor = System.Drawing.Color.Gainsboro;
+         this.detianLicensesToolStripMenuItem.Name = "detianLicensesToolStripMenuItem";
+         this.detianLicensesToolStripMenuItem.Size = new System.Drawing.Size(232, 22);
+         this.detianLicensesToolStripMenuItem.Text = "Detian Licenses";
+         // 
+         // mangeApplicationTypesToolStripMenuItem
+         // 
+         this.mangeApplicationTypesToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(14)))), ((int)(((byte)(36)))));
+         this.mangeApplicationTypesToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+         this.mangeApplicationTypesToolStripMenuItem.ForeColor = System.Drawing.Color.Gainsboro;
+         this.mangeApplicationTypesToolStripMenuItem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+         this.mangeApplicationTypesToolStripMenuItem.Name = "mangeApplicationTypesToolStripMenuItem";
+         this.mangeApplicationTypesToolStripMenuItem.Size = new System.Drawing.Size(232, 22);
+         this.mangeApplicationTypesToolStripMenuItem.Text = "Mange Application Types";
+         this.mangeApplicationTypesToolStripMenuItem.TextDirection = System.Windows.Forms.ToolStripTextDirection.Horizontal;
+         this.mangeApplicationTypesToolStripMenuItem.Click += new System.EventHandler(this.mangeApplicationTypesToolStripMenuItem_Click);
+         // 
+         // mangeTestTypesToolStripMenuItem
+         // 
+         this.mangeTestTypesToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(14)))), ((int)(((byte)(36)))));
+         this.mangeTestTypesToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
+         this.mangeTestTypesToolStripMenuItem.ForeColor = System.Drawing.Color.Gainsboro;
+         this.mangeTestTypesToolStripMenuItem.Name = "mangeTestTypesToolStripMenuItem";
+         this.mangeTestTypesToolStripMenuItem.Size = new System.Drawing.Size(232, 22);
+         this.mangeTestTypesToolStripMenuItem.Text = "Mange Test Types";
+         this.mangeTestTypesToolStripMenuItem.Click += new System.EventHandler(this.mangeTestTypesToolStripMenuItem_Click);
          // 
          // tolStripPeople
          // 
@@ -148,6 +197,17 @@
          this.tolStripAccountSettings.Size = new System.Drawing.Size(140, 21);
          this.tolStripAccountSettings.Text = "Account Settings";
          // 
+         // pictureBox1
+         // 
+         this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(14)))), ((int)(((byte)(36)))));
+         this.pictureBox1.Image = global::DVLD.Properties.Resources.gzexperts_logo;
+         this.pictureBox1.Location = new System.Drawing.Point(12, 12);
+         this.pictureBox1.Name = "pictureBox1";
+         this.pictureBox1.Size = new System.Drawing.Size(125, 97);
+         this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+         this.pictureBox1.TabIndex = 13;
+         this.pictureBox1.TabStop = false;
+         // 
          // frmMain
          // 
          this.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
@@ -161,9 +221,9 @@
          this.Text = "Dashboard";
          this.panel1.ResumeLayout(false);
          this.panel1.PerformLayout();
-         ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
          this.menuStrip1.ResumeLayout(false);
          this.menuStrip1.PerformLayout();
+         ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
          this.ResumeLayout(false);
 
       }
@@ -179,5 +239,10 @@
       private System.Windows.Forms.Button btnCloseLogin;
       private System.Windows.Forms.PictureBox pictureBox1;
       private System.Windows.Forms.ToolStripMenuItem tolStripAccountSettings;
+      private System.Windows.Forms.ToolStripMenuItem drivingLicensesServicesToolStripMenuItem;
+      private System.Windows.Forms.ToolStripMenuItem mangeApplicationsToolStripMenuItem;
+      private System.Windows.Forms.ToolStripMenuItem mangeApplicationTypesToolStripMenuItem;
+      private System.Windows.Forms.ToolStripMenuItem mangeTestTypesToolStripMenuItem;
+      private System.Windows.Forms.ToolStripMenuItem detianLicensesToolStripMenuItem;
    }
 }

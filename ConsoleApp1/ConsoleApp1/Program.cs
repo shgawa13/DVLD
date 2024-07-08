@@ -10,11 +10,11 @@ namespace ConsoleApp1
 {
    internal class Program
    {
-      public static void FindUser(int ID)
+      public static void FindUser(string UserName, string Password)
       {
          // counrty = 
 
-         clsUsers user = clsUsers.Find(ID);
+         clsUsers user = clsUsers.FindByUserNameAndPassword(UserName,Password);
 
          if (user != null)
          {
@@ -34,7 +34,7 @@ namespace ConsoleApp1
       static void Main(string[] args)
       {
          Console.WriteLine("start");
-         FindUser(1);
+         FindUser("shgawa","112233");
          Console.WriteLine("End");
 
         

@@ -1,4 +1,5 @@
 ﻿using DVLD.Applications;
+using DVLD.Global_Classes;
 using DVLD.Tests;
 using DVLD.Users;
 using System;
@@ -15,14 +16,20 @@ namespace DVLD.People
 {
    public partial class frmMain : Form
    {
-      public frmMain()
+      frmLogin _frmLogin;
+
+      public frmMain(frmLogin frm)
       {
          InitializeComponent();
+         _frmLogin = frm;
       }
+
+  
 
       private void btnCloseLogin_Click(object sender, EventArgs e)
       {
          this.Close();
+         _frmLogin.Show();
       }
 
       private void tolStripPeople_Click(object sender, EventArgs e)
@@ -46,6 +53,18 @@ namespace DVLD.People
       private void mangeTestTypesToolStripMenuItem_Click(object sender, EventArgs e)
       {
          Form frm = new frmMangeTestType();
+         frm.ShowDialog();
+      }
+
+      private void signOutToolStripMenuItem1_Click(object sender, EventArgs e)
+      {
+         this.Close();
+         _frmLogin.Show();
+      }
+
+      private void changePasswordToolStripMenuItem_Click(object sender, EventArgs e)
+      {
+         Form frm = new frmChangePassword(clsGlobal.CurrnetUser.UserID);
          frm.ShowDialog();
       }
    }

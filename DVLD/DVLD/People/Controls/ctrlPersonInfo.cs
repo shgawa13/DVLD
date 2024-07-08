@@ -15,8 +15,14 @@ namespace DVLD.People.Controls
 {
    public partial class ctrlPersonInfo : UserControl
    {
-      private  int _PersonID;
+
+      public ctrlPersonInfo()
+      {
+         InitializeComponent();
+      }
+
       private clsPerson _Person;
+      private  int _PersonID;
 
       public int PersonID
       {
@@ -26,12 +32,6 @@ namespace DVLD.People.Controls
       public clsPerson SelectedPerson
       {
          get { return _Person; }
-      }
-
-
-      public ctrlPersonInfo()
-      {
-         InitializeComponent();
       }
 
       public void LoadPersonData(int PersonID)

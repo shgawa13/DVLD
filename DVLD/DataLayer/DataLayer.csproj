@@ -37,9 +37,11 @@
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Management" />
     <Reference Include="System.Numerics" />
     <Reference Include="System.Transactions" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -51,6 +53,7 @@
     <Compile Include="clsApplicationTypesData.cs" />
     <Compile Include="clsCountryData.cs" />
     <Compile Include="clsDataAccessSettings.cs" />
+    <Compile Include="clsLicenseClassData.cs" />
     <Compile Include="clsPersonData.cs" />
     <Compile Include="clsTestTypeData.cs" />
     <Compile Include="clsUsersData.cs" />

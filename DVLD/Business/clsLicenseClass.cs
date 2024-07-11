@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using DataLayer;
 namespace Business
 {
-   internal class clsLicenseClass
+   public class clsLicenseClass
    {
       public enum enMode { AddNew = 0, Update = 1 }
       public enMode Mode = enMode.AddNew;
@@ -57,7 +57,7 @@ namespace Business
             this.MinimumAllowedAge, this.DefaultValidityLength, this.ClassFees);
       }
 
-      public clsLicenseClass FindLicenseClassByID(int LicenseClassID)
+      public static  clsLicenseClass FindLicenseClassByID(int LicenseClassID)
       {
          string ClassName = "", ClassDescription = "";
          byte MinimumAllowedAge = 0, DefaultValidityLength = 0;
@@ -74,7 +74,7 @@ namespace Business
 
       }
 
-      public clsLicenseClass FindLicenseClassByID(string ClassName)
+      public static  clsLicenseClass FindLicenseClassByName(string ClassName)
       {
          int LicenseClassID = 0;
          string ClassDescription = "";
@@ -93,12 +93,12 @@ namespace Business
 
       }
 
-      public DataTable GetAllLicenseClasses()
+      public static  DataTable GetAllLicenseClasses()
       {
          return clsLicenseClassData.GetAllLicenseClasses();
       }
 
-      public bool Save()
+      public  bool Save()
       {
          switch (Mode)
          {

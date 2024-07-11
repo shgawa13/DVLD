@@ -2,6 +2,7 @@
 using BusinessLayer;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -30,11 +31,55 @@ namespace ConsoleApp1
 
       }
       
+      public static void GetAllLicenseClasses()
+      {
+         DataTable AllLicenses = clsLicenseClass.GetAllLicenseClasses();
+
+         if(AllLicenses != null)
+         {
+            foreach(DataRow row in AllLicenses.Rows)
+            {
+
+               Console.WriteLine($"{row["LicenseClassID"]} {row["ClassName"]}");
+            }
+         }
+         else
+         {
+               Console.WriteLine($"Something went Wrong");
+            
+         }
+      }
+
+      public static void GetLicenseClassByID(int ID)
+      {
+         clsLicenseClass License = clsLicenseClass.FindLicenseClassByID(ID);
+
+         if (License != null)
+         {
+
+            Console.WriteLine($"{License.LicenseClassID} {License.ClassName}");
+
+         }
+      }
+
+      public static void GetLicenseClassByName(string ClassName)
+      {
+         clsLicenseClass License = clsLicenseClass.FindLicenseClassByName(ClassName);
+         if (License != null)
+         {
+
+            Console.WriteLine($"{License.LicenseClassID} {License.ClassName}");
+
+         }
+      }
 
       static void Main(string[] args)
       {
          Console.WriteLine("start");
-         FindUser("shgawa","112233");
+         // FindUser("shgawa","112233");
+         // GetAllLicenseClasses(); 
+         // GetLicenseClassByID(1);
+       //  GetLicenseClassByName("Class 1 - Small Motorcycle");
          Console.WriteLine("End");
 
         

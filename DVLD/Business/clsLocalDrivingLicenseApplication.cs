@@ -1,5 +1,6 @@
 ﻿using BusinessLayer;
 using System;
+using System.Data;
 using System.Collections.Generic;
 using System.Linq;
 using System.Security.Permissions;
@@ -42,6 +43,42 @@ namespace Business
          this.LicenseClassID = LicenseClassID;
       }
 
+      private bool _AddNewLocalDrivingLicenesApplication()
+      {
+         int ID = -1;
+         ID = LocalDrivingLicenseApplicaionData.AddNewLocalDrivingLicenseApplication(this.ApplicationID, this.LicenseClassID);
+
+         return (ID != -1);
+
+      }
+
+      private bool _UpdateLocalDrivingLicenseApplication()
+      {
+         return LocalDrivingLicenseApplicaionData.UpdateLocalDrivingLicenseApplication(this.LocalDrivingLicenseApplicationID,
+            this.ApplicationID, this.LicenseClassID);
+      }
+
+      public DataTable GetAllApplications()
+      {
+         return LocalDrivingLicenseApplicaionData.GetAllLocalDrivingLicenseApplications();
+      }
+
+      public clsLocalDrivingLicenseApplication GetApplicationinfoByID(int ApplicationID)
+      {
+         int LocalDrivingLicenseApplicationID = -1, LicenseClassID = -1;
+
+         bool IsFound = LocalDrivingLicenseApplicaionData.GetLocalDrivingLicenseApplicationInfoByApplicationID
+            (ApplicationID,ref LocalDrivingLicenseApplicationID, ref LicenseClassID);
+       
+
+         //if (IsFound)
+         //{
+         //   clsApplication Application = clsApplication.FindBaseApplication(ApplicationID);
+         //}
+         
+
+         return null;
+      }
      
    }
 }

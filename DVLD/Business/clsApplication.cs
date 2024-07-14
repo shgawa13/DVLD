@@ -99,7 +99,7 @@ namespace Business
             this.ApplicationTypeID, (byte)this.ApplicationStatus, this.LastStatusDate, this.PaidFees, this.CreatedByUserID);
       }
 
-      public clsApplication FindApplication(int ApplicationID) 
+      public static clsApplication FindBaseApplication(int ApplicationID) 
       {
          bool IsFound = false;
 

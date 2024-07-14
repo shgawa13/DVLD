@@ -58,7 +58,7 @@
     <Compile Include="clsPersonData.cs" />
     <Compile Include="clsTestTypeData.cs" />
     <Compile Include="clsUsersData.cs" />
-    <Compile Include="LocalDrivingLicenseApplicaionData.cs" />
+    <Compile Include="clsLocalDrivingLicenseApplicaionData.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -8,7 +8,7 @@ using System.Data.SqlClient;
 using System.Configuration;
 namespace DataLayer
 {
-   public class LocalDrivingLicenseApplicaionData
+   public class clsLocalDrivingLicenseApplicaionData
    {
 
       public static int AddNewLocalDrivingLicenseApplication(int ApplicationID,int LicenseClassID)

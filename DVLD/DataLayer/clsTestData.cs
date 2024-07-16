@@ -8,7 +8,7 @@ using System.Data.SqlClient;
 
 namespace DataLayer
 {
-   public class clsTest
+   public class clsTestData
    {
       public static bool GetTestInfoByID(int TestID,ref int TestAppointment, ref bool TestResult,
                ref string Notes,ref int CreatedByUserID)

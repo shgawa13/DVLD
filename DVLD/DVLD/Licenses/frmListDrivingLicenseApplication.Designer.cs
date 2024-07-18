@@ -32,13 +32,13 @@
          this.txtFilterValue = new System.Windows.Forms.TextBox();
          this.cbFilterBy = new System.Windows.Forms.ComboBox();
          this.label2 = new System.Windows.Forms.Label();
-         this.bntAddNewApplication = new System.Windows.Forms.Button();
-         this.pictureBox1 = new System.Windows.Forms.PictureBox();
          this.lblTitle = new System.Windows.Forms.Label();
          this.dgvDrivingLincesApplications = new System.Windows.Forms.DataGridView();
+         this.bntAddNewApplication = new System.Windows.Forms.Button();
+         this.pictureBox1 = new System.Windows.Forms.PictureBox();
          this.panel1.SuspendLayout();
-         ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
          ((System.ComponentModel.ISupportInitialize)(this.dgvDrivingLincesApplications)).BeginInit();
+         ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
          this.SuspendLayout();
          // 
          // panel1
@@ -92,31 +92,6 @@
          this.label2.TabIndex = 51;
          this.label2.Text = "Find by";
          // 
-         // bntAddNewApplication
-         // 
-         this.bntAddNewApplication.BackColor = System.Drawing.Color.Transparent;
-         this.bntAddNewApplication.FlatAppearance.BorderColor = System.Drawing.Color.Gainsboro;
-         this.bntAddNewApplication.FlatAppearance.BorderSize = 0;
-         this.bntAddNewApplication.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-         this.bntAddNewApplication.Font = new System.Drawing.Font("Franklin Gothic Medium", 12F, System.Drawing.FontStyle.Bold);
-         this.bntAddNewApplication.ForeColor = System.Drawing.Color.Black;
-         this.bntAddNewApplication.Image = global::DVLD.Properties.Resources.New_Application_64;
-         this.bntAddNewApplication.Location = new System.Drawing.Point(852, 133);
-         this.bntAddNewApplication.Name = "bntAddNewApplication";
-         this.bntAddNewApplication.Size = new System.Drawing.Size(86, 69);
-         this.bntAddNewApplication.TabIndex = 50;
-         this.bntAddNewApplication.UseVisualStyleBackColor = false;
-         // 
-         // pictureBox1
-         // 
-         this.pictureBox1.Image = global::DVLD.Properties.Resources.Application_Types_5121;
-         this.pictureBox1.Location = new System.Drawing.Point(366, 6);
-         this.pictureBox1.Name = "pictureBox1";
-         this.pictureBox1.Size = new System.Drawing.Size(227, 115);
-         this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-         this.pictureBox1.TabIndex = 49;
-         this.pictureBox1.TabStop = false;
-         // 
          // lblTitle
          // 
          this.lblTitle.AutoSize = true;
@@ -142,6 +117,31 @@
          this.dgvDrivingLincesApplications.Size = new System.Drawing.Size(950, 247);
          this.dgvDrivingLincesApplications.TabIndex = 1;
          // 
+         // bntAddNewApplication
+         // 
+         this.bntAddNewApplication.BackColor = System.Drawing.Color.Transparent;
+         this.bntAddNewApplication.FlatAppearance.BorderColor = System.Drawing.Color.Gainsboro;
+         this.bntAddNewApplication.FlatAppearance.BorderSize = 0;
+         this.bntAddNewApplication.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+         this.bntAddNewApplication.Font = new System.Drawing.Font("Franklin Gothic Medium", 12F, System.Drawing.FontStyle.Bold);
+         this.bntAddNewApplication.ForeColor = System.Drawing.Color.Black;
+         this.bntAddNewApplication.Image = global::DVLD.Properties.Resources.New_Application_64;
+         this.bntAddNewApplication.Location = new System.Drawing.Point(852, 133);
+         this.bntAddNewApplication.Name = "bntAddNewApplication";
+         this.bntAddNewApplication.Size = new System.Drawing.Size(86, 69);
+         this.bntAddNewApplication.TabIndex = 50;
+         this.bntAddNewApplication.UseVisualStyleBackColor = false;
+         // 
+         // pictureBox1
+         // 
+         this.pictureBox1.Image = global::DVLD.Properties.Resources.Application_Types_5121;
+         this.pictureBox1.Location = new System.Drawing.Point(366, 6);
+         this.pictureBox1.Name = "pictureBox1";
+         this.pictureBox1.Size = new System.Drawing.Size(227, 115);
+         this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+         this.pictureBox1.TabIndex = 49;
+         this.pictureBox1.TabStop = false;
+         // 
          // frmListDrivingLicenseApplication
          // 
          this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -153,10 +153,11 @@
          this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
          this.Name = "frmListDrivingLicenseApplication";
          this.Text = "frmListDrivingLicenseApplication";
+         this.Load += new System.EventHandler(this.frmListDrivingLicenseApplication_Load);
          this.panel1.ResumeLayout(false);
          this.panel1.PerformLayout();
-         ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
          ((System.ComponentModel.ISupportInitialize)(this.dgvDrivingLincesApplications)).EndInit();
+         ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
          this.ResumeLayout(false);
 
       }

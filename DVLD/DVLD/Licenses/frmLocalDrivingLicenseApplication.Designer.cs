@@ -28,12 +28,11 @@
       /// </summary>
       private void InitializeComponent()
       {
-         this.tabControl1 = new System.Windows.Forms.TabControl();
+         this.tabCtrlApp = new System.Windows.Forms.TabControl();
          this.tabpPersonInfo = new System.Windows.Forms.TabPage();
-         this.ctrlPersonInfoWithFilter1 = new DVLD.People.Controls.ctrlPersonInfoWithFilter();
          this.btnNext = new System.Windows.Forms.Button();
          this.tabpApplicationInfo = new System.Windows.Forms.TabPage();
-         this.comboBox1 = new System.Windows.Forms.ComboBox();
+         this.cmbLicenseClasses = new System.Windows.Forms.ComboBox();
          this.lblCreatedByUser = new System.Windows.Forms.Label();
          this.labl = new System.Windows.Forms.Label();
          this.label6 = new System.Windows.Forms.Label();
@@ -48,22 +47,23 @@
          this.lblTitle = new System.Windows.Forms.Label();
          this.btnSave = new System.Windows.Forms.Button();
          this.btnCloseLogin = new System.Windows.Forms.Button();
-         this.tabControl1.SuspendLayout();
+         this.ctrlPersonInfoWithFilter1 = new DVLD.People.Controls.ctrlPersonInfoWithFilter();
+         this.tabCtrlApp.SuspendLayout();
          this.tabpPersonInfo.SuspendLayout();
          this.tabpApplicationInfo.SuspendLayout();
          this.panel1.SuspendLayout();
          ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
          this.SuspendLayout();
          // 
-         // tabControl1
+         // tabCtrlApp
          // 
-         this.tabControl1.Controls.Add(this.tabpPersonInfo);
-         this.tabControl1.Controls.Add(this.tabpApplicationInfo);
-         this.tabControl1.Location = new System.Drawing.Point(3, 52);
-         this.tabControl1.Name = "tabControl1";
-         this.tabControl1.SelectedIndex = 0;
-         this.tabControl1.Size = new System.Drawing.Size(958, 525);
-         this.tabControl1.TabIndex = 0;
+         this.tabCtrlApp.Controls.Add(this.tabpPersonInfo);
+         this.tabCtrlApp.Controls.Add(this.tabpApplicationInfo);
+         this.tabCtrlApp.Location = new System.Drawing.Point(3, 52);
+         this.tabCtrlApp.Name = "tabCtrlApp";
+         this.tabCtrlApp.SelectedIndex = 0;
+         this.tabCtrlApp.Size = new System.Drawing.Size(958, 525);
+         this.tabCtrlApp.TabIndex = 0;
          // 
          // tabpPersonInfo
          // 
@@ -76,17 +76,6 @@
          this.tabpPersonInfo.Size = new System.Drawing.Size(950, 499);
          this.tabpPersonInfo.TabIndex = 0;
          this.tabpPersonInfo.Text = "Person Info";
-         // 
-         // ctrlPersonInfoWithFilter1
-         // 
-         this.ctrlPersonInfoWithFilter1.BackColor = System.Drawing.Color.Gainsboro;
-         this.ctrlPersonInfoWithFilter1.Dock = System.Windows.Forms.DockStyle.Top;
-         this.ctrlPersonInfoWithFilter1.FilterEnable = true;
-         this.ctrlPersonInfoWithFilter1.Location = new System.Drawing.Point(3, 3);
-         this.ctrlPersonInfoWithFilter1.Name = "ctrlPersonInfoWithFilter1";
-         this.ctrlPersonInfoWithFilter1.ShowAddPerson = true;
-         this.ctrlPersonInfoWithFilter1.Size = new System.Drawing.Size(944, 453);
-         this.ctrlPersonInfoWithFilter1.TabIndex = 7;
          // 
          // btnNext
          // 
@@ -106,7 +95,7 @@
          // tabpApplicationInfo
          // 
          this.tabpApplicationInfo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
-         this.tabpApplicationInfo.Controls.Add(this.comboBox1);
+         this.tabpApplicationInfo.Controls.Add(this.cmbLicenseClasses);
          this.tabpApplicationInfo.Controls.Add(this.lblCreatedByUser);
          this.tabpApplicationInfo.Controls.Add(this.labl);
          this.tabpApplicationInfo.Controls.Add(this.label6);
@@ -124,13 +113,13 @@
          this.tabpApplicationInfo.TabIndex = 1;
          this.tabpApplicationInfo.Text = "Application Info";
          // 
-         // comboBox1
+         // cmbLicenseClasses
          // 
-         this.comboBox1.FormattingEnabled = true;
-         this.comboBox1.Location = new System.Drawing.Point(183, 255);
-         this.comboBox1.Name = "comboBox1";
-         this.comboBox1.Size = new System.Drawing.Size(177, 21);
-         this.comboBox1.TabIndex = 40;
+         this.cmbLicenseClasses.FormattingEnabled = true;
+         this.cmbLicenseClasses.Location = new System.Drawing.Point(183, 255);
+         this.cmbLicenseClasses.Name = "cmbLicenseClasses";
+         this.cmbLicenseClasses.Size = new System.Drawing.Size(177, 21);
+         this.cmbLicenseClasses.TabIndex = 40;
          // 
          // lblCreatedByUser
          // 
@@ -299,6 +288,17 @@
          this.btnCloseLogin.Text = "Close";
          this.btnCloseLogin.UseVisualStyleBackColor = false;
          // 
+         // ctrlPersonInfoWithFilter1
+         // 
+         this.ctrlPersonInfoWithFilter1.BackColor = System.Drawing.Color.Gainsboro;
+         this.ctrlPersonInfoWithFilter1.Dock = System.Windows.Forms.DockStyle.Top;
+         this.ctrlPersonInfoWithFilter1.FilterEnable = true;
+         this.ctrlPersonInfoWithFilter1.Location = new System.Drawing.Point(3, 3);
+         this.ctrlPersonInfoWithFilter1.Name = "ctrlPersonInfoWithFilter1";
+         this.ctrlPersonInfoWithFilter1.ShowAddPerson = true;
+         this.ctrlPersonInfoWithFilter1.Size = new System.Drawing.Size(944, 453);
+         this.ctrlPersonInfoWithFilter1.TabIndex = 7;
+         // 
          // frmLocalDrivingLicenseApplication
          // 
          this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -308,12 +308,12 @@
          this.Controls.Add(this.btnSave);
          this.Controls.Add(this.btnCloseLogin);
          this.Controls.Add(this.lblTitle);
-         this.Controls.Add(this.tabControl1);
+         this.Controls.Add(this.tabCtrlApp);
          this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
          this.Name = "frmLocalDrivingLicenseApplication";
          this.Text = "Local Driving License Application";
          this.Load += new System.EventHandler(this.frmLocalDrivingLicenseApplication_Load);
-         this.tabControl1.ResumeLayout(false);
+         this.tabCtrlApp.ResumeLayout(false);
          this.tabpPersonInfo.ResumeLayout(false);
          this.tabpApplicationInfo.ResumeLayout(false);
          this.tabpApplicationInfo.PerformLayout();
@@ -326,7 +326,7 @@
 
       #endregion
 
-      private System.Windows.Forms.TabControl tabControl1;
+      private System.Windows.Forms.TabControl tabCtrlApp;
       private System.Windows.Forms.TabPage tabpPersonInfo;
       private System.Windows.Forms.TabPage tabpApplicationInfo;
       private System.Windows.Forms.Label lblTitle;
@@ -345,6 +345,6 @@
       private System.Windows.Forms.Label lblUserID;
       private System.Windows.Forms.Label label1;
       private System.Windows.Forms.Label label3;
-      private System.Windows.Forms.ComboBox comboBox1;
+      private System.Windows.Forms.ComboBox cmbLicenseClasses;
    }
 }

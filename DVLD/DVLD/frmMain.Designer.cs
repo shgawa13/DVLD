@@ -43,6 +43,8 @@
          this.releaseDetainedDrivingLicenseToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
          this.retakeTestToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
          this.mangeApplicationsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+         this.localDrivingLicneseApplicationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+         this.internationalDrivingLicenseApplicationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
          this.detianLicensesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
          this.mangeApplicationTypesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
          this.mangeTestTypesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -58,8 +60,6 @@
          this.toolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
          this.toolStripMenuItem5 = new System.Windows.Forms.ToolStripMenuItem();
          this.toolStripMenuItem6 = new System.Windows.Forms.ToolStripMenuItem();
-         this.localDrivingLicneseApplicationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-         this.internationalDrivingLicenseApplicationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
          this.pictureBox1 = new System.Windows.Forms.PictureBox();
          this.panel1.SuspendLayout();
          this.menuStrip1.SuspendLayout();
@@ -131,7 +131,7 @@
          this.tolStripApplication.Margin = new System.Windows.Forms.Padding(0, 30, 0, 30);
          this.tolStripApplication.Name = "tolStripApplication";
          this.tolStripApplication.Padding = new System.Windows.Forms.Padding(0);
-         this.tolStripApplication.Size = new System.Drawing.Size(140, 22);
+         this.tolStripApplication.Size = new System.Drawing.Size(140, 21);
          this.tolStripApplication.Text = "Application";
          // 
          // drivingLicensesServicesToolStripMenuItem
@@ -238,6 +238,22 @@
          this.mangeApplicationsToolStripMenuItem.RightToLeft = System.Windows.Forms.RightToLeft.No;
          this.mangeApplicationsToolStripMenuItem.Size = new System.Drawing.Size(232, 22);
          this.mangeApplicationsToolStripMenuItem.Text = "Mange Applications";
+         // 
+         // localDrivingLicneseApplicationToolStripMenuItem
+         // 
+         this.localDrivingLicneseApplicationToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(14)))), ((int)(((byte)(36)))));
+         this.localDrivingLicneseApplicationToolStripMenuItem.ForeColor = System.Drawing.Color.Gainsboro;
+         this.localDrivingLicneseApplicationToolStripMenuItem.Name = "localDrivingLicneseApplicationToolStripMenuItem";
+         this.localDrivingLicneseApplicationToolStripMenuItem.Size = new System.Drawing.Size(330, 22);
+         this.localDrivingLicneseApplicationToolStripMenuItem.Text = "Local Driving Licnese Application";
+         // 
+         // internationalDrivingLicenseApplicationToolStripMenuItem
+         // 
+         this.internationalDrivingLicenseApplicationToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(14)))), ((int)(((byte)(36)))));
+         this.internationalDrivingLicenseApplicationToolStripMenuItem.ForeColor = System.Drawing.Color.Gainsboro;
+         this.internationalDrivingLicenseApplicationToolStripMenuItem.Name = "internationalDrivingLicenseApplicationToolStripMenuItem";
+         this.internationalDrivingLicenseApplicationToolStripMenuItem.Size = new System.Drawing.Size(330, 22);
+         this.internationalDrivingLicenseApplicationToolStripMenuItem.Text = "International Driving License Application";
          // 
          // detianLicensesToolStripMenuItem
          // 
@@ -371,22 +387,6 @@
          // 
          this.toolStripMenuItem6.Name = "toolStripMenuItem6";
          this.toolStripMenuItem6.Size = new System.Drawing.Size(140, 4);
-         // 
-         // localDrivingLicneseApplicationToolStripMenuItem
-         // 
-         this.localDrivingLicneseApplicationToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(14)))), ((int)(((byte)(36)))));
-         this.localDrivingLicneseApplicationToolStripMenuItem.ForeColor = System.Drawing.Color.Gainsboro;
-         this.localDrivingLicneseApplicationToolStripMenuItem.Name = "localDrivingLicneseApplicationToolStripMenuItem";
-         this.localDrivingLicneseApplicationToolStripMenuItem.Size = new System.Drawing.Size(330, 22);
-         this.localDrivingLicneseApplicationToolStripMenuItem.Text = "Local Driving Licnese Application";
-         // 
-         // internationalDrivingLicenseApplicationToolStripMenuItem
-         // 
-         this.internationalDrivingLicenseApplicationToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(14)))), ((int)(((byte)(36)))));
-         this.internationalDrivingLicenseApplicationToolStripMenuItem.ForeColor = System.Drawing.Color.Gainsboro;
-         this.internationalDrivingLicenseApplicationToolStripMenuItem.Name = "internationalDrivingLicenseApplicationToolStripMenuItem";
-         this.internationalDrivingLicenseApplicationToolStripMenuItem.Size = new System.Drawing.Size(330, 22);
-         this.internationalDrivingLicenseApplicationToolStripMenuItem.Text = "International Driving License Application";
          // 
          // pictureBox1
          // 

@@ -26,10 +26,19 @@ namespace DVLD.People
 
   
 
+      //protected override void OnClosed(EventArgs e)
+      //{
+      //   clsGlobal.CurrnetUser = null;
+      //   _frmLogin.Show();
+      //   this.Close();
+      //   base.OnClosed(e);
+      //}
       private void btnCloseLogin_Click(object sender, EventArgs e)
       {
-         this.Close();
+         clsGlobal.CurrnetUser = null;
          _frmLogin.Show();
+         this.Close();
+         base.OnClosed(e);
       }
 
       private void tolStripPeople_Click(object sender, EventArgs e)

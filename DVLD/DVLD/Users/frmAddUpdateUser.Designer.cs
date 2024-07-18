@@ -262,6 +262,7 @@
          // btnCloseLogin
          // 
          this.btnCloseLogin.BackColor = System.Drawing.Color.DimGray;
+         this.btnCloseLogin.DialogResult = System.Windows.Forms.DialogResult.Cancel;
          this.btnCloseLogin.FlatAppearance.BorderColor = System.Drawing.Color.WhiteSmoke;
          this.btnCloseLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
          this.btnCloseLogin.Font = new System.Drawing.Font("Franklin Gothic Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));

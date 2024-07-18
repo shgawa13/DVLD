@@ -82,6 +82,7 @@
          this.btnAddNewPerson.TabIndex = 28;
          this.btnAddNewPerson.Text = "Add New \r\nPerson";
          this.btnAddNewPerson.UseVisualStyleBackColor = false;
+         this.btnAddNewPerson.Click += new System.EventHandler(this.btnAddNewPerson_Click_1);
          // 
          // btnSearch
          // 

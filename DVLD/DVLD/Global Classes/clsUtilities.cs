@@ -15,7 +15,7 @@ namespace DVLD
       // create New GuidID
       public static string GenrateGUID()
       {
-         Guid GuidID = new Guid();
+         Guid GuidID = Guid.NewGuid();
          return GuidID.ToString();
       }
 
@@ -57,7 +57,7 @@ namespace DVLD
       public static bool CopyImageToProjectImages(ref string sourceFile)
       {
 
-         string DestinationFolder = @"C:\DVLD-Project\";
+         string DestinationFolder = @"C:\DVLD-People-Image\";
 
          if (!CreateFileIfNotExist(DestinationFolder))
          {

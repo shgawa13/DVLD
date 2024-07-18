@@ -52,10 +52,16 @@
     <Compile Include="Applications\frmEditApplicationType.Designer.cs">
       <DependentUpon>frmEditApplicationType.cs</DependentUpon>
     </Compile>
-    <Compile Include="Applications\frmLocalDrivingLicenseApplication.cs">
+    <Compile Include="Licenses\frmListDrivingLicenseApplication.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Applications\frmLocalDrivingLicenseApplication.Designer.cs">
+    <Compile Include="Licenses\frmListDrivingLicenseApplication.Designer.cs">
+      <DependentUpon>frmListDrivingLicenseApplication.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Licenses\frmLocalDrivingLicenseApplication.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Licenses\frmLocalDrivingLicenseApplication.Designer.cs">
       <DependentUpon>frmLocalDrivingLicenseApplication.cs</DependentUpon>
     </Compile>
     <Compile Include="Applications\frmMangeApplicationTypes.cs">
@@ -162,7 +168,10 @@
     <EmbeddedResource Include="Applications\frmEditApplicationType.resx">
       <DependentUpon>frmEditApplicationType.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Applications\frmLocalDrivingLicenseApplication.resx">
+    <EmbeddedResource Include="Licenses\frmListDrivingLicenseApplication.resx">
+      <DependentUpon>frmListDrivingLicenseApplication.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Licenses\frmLocalDrivingLicenseApplication.resx">
       <DependentUpon>frmLocalDrivingLicenseApplication.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Applications\frmMangeApplicationTypes.resx">
@@ -244,7 +253,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Drivers\" />
-    <Folder Include="Licenses\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\preview-bg.png" />
@@ -256,6 +264,9 @@
     <None Include="Resources\stand_out_1oag-bg.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\map.png" />
+    <None Include="Resources\map-modified.png" />
+    <None Include="Resources\New Application 64.png" />
     <None Include="Resources\select.png" />
     <None Include="Resources\Test Type 64.png" />
     <None Include="Resources\TestType 512.png" />
@@ -272,6 +283,7 @@
     <None Include="Resources\Delete 32.png" />
     <None Include="Resources\Application Types 64.png" />
     <None Include="Resources\Application Types 512.png" />
+    <None Include="Resources\Application Types 5121.png" />
     <Content Include="Resources\Female_avatar.png" />
     <None Include="Resources\plus-icon.png" />
     <None Include="Resources\people.png" />

@@ -103,14 +103,13 @@ namespace DVLD.People.Controls
          InitializeComponent();
       }
 
-      
 
-      private void btnAddNewPerson_Click(object sender, EventArgs e)
+
+      private void btnAddNewPerson_Click_1(object sender, EventArgs e)
       {
          frmAddUpdatePerson frm = new frmAddUpdatePerson();
          frm.DataBack += Frm_DataBack1;
          frm.ShowDialog();
-         
       }
 
       private void Frm_DataBack1(object sender, int PersonID)
@@ -120,7 +119,7 @@ namespace DVLD.People.Controls
 
 
      
-      private void btnSearch_Click_1(object sender, EventArgs e)
+      public void btnSearch_Click_1(object sender, EventArgs e)
       {
          FindNow();
          

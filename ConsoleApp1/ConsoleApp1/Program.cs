@@ -1,12 +1,11 @@
-﻿using Business;
-using BusinessLayer;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using BusinessLayer;
+using Business;
 namespace ConsoleApp1
 {
    internal class Program
@@ -73,13 +72,25 @@ namespace ConsoleApp1
          }
       }
 
+      public static void GetConuntyInfoByID(int ID)
+      {
+         clsCounrty country = clsCounrty.Find(ID);
+
+         if (country != null)
+            Console.WriteLine($"{country.ID} {country.CountryName}");
+         else
+            Console.WriteLine("something went worng");
+       
+      }
+
       static void Main(string[] args)
       {
          Console.WriteLine("start");
+         GetConuntyInfoByID(11);
          // FindUser("shgawa","112233");
          // GetAllLicenseClasses(); 
          // GetLicenseClassByID(1);
-       //  GetLicenseClassByName("Class 1 - Small Motorcycle");
+         //  GetLicenseClassByName("Class 1 - Small Motorcycle");
          Console.WriteLine("End");
 
         

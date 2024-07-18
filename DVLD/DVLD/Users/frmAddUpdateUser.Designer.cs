@@ -45,10 +45,10 @@
          this.txtbConfirmPassword = new System.Windows.Forms.TextBox();
          this.txtbPassword = new System.Windows.Forms.TextBox();
          this.txtbUserName = new System.Windows.Forms.TextBox();
-         this.btnSave = new System.Windows.Forms.Button();
-         this.btnCloseLogin = new System.Windows.Forms.Button();
          this.lblTitle = new System.Windows.Forms.Label();
          this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+         this.btnCloseLogin = new System.Windows.Forms.Button();
+         this.btnSave = new System.Windows.Forms.Button();
          this.tcUserInfo.SuspendLayout();
          this.tbpPersonInfo.SuspendLayout();
          this.tbpLoginInfo.SuspendLayout();
@@ -243,20 +243,21 @@
          this.txtbUserName.TabIndex = 0;
          this.txtbUserName.Validating += new System.ComponentModel.CancelEventHandler(this.txtbUserName_Validating);
          // 
-         // btnSave
+         // lblTitle
          // 
-         this.btnSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(154)))), ((int)(((byte)(231)))));
-         this.btnSave.FlatAppearance.BorderColor = System.Drawing.Color.WhiteSmoke;
-         this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-         this.btnSave.Font = new System.Drawing.Font("Franklin Gothic Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-         this.btnSave.ForeColor = System.Drawing.Color.White;
-         this.btnSave.Location = new System.Drawing.Point(761, 588);
-         this.btnSave.Name = "btnSave";
-         this.btnSave.Size = new System.Drawing.Size(94, 30);
-         this.btnSave.TabIndex = 16;
-         this.btnSave.Text = "Save";
-         this.btnSave.UseVisualStyleBackColor = false;
-         this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+         this.lblTitle.AutoSize = true;
+         this.lblTitle.BackColor = System.Drawing.Color.Transparent;
+         this.lblTitle.Font = new System.Drawing.Font("Franklin Gothic Medium", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+         this.lblTitle.ForeColor = System.Drawing.Color.Gainsboro;
+         this.lblTitle.Location = new System.Drawing.Point(391, 13);
+         this.lblTitle.Name = "lblTitle";
+         this.lblTitle.Size = new System.Drawing.Size(169, 30);
+         this.lblTitle.TabIndex = 47;
+         this.lblTitle.Text = "Add New User";
+         // 
+         // errorProvider1
+         // 
+         this.errorProvider1.ContainerControl = this;
          // 
          // btnCloseLogin
          // 
@@ -273,21 +274,20 @@
          this.btnCloseLogin.UseVisualStyleBackColor = false;
          this.btnCloseLogin.Click += new System.EventHandler(this.btnCloseLogin_Click);
          // 
-         // lblTitle
+         // btnSave
          // 
-         this.lblTitle.AutoSize = true;
-         this.lblTitle.BackColor = System.Drawing.Color.Transparent;
-         this.lblTitle.Font = new System.Drawing.Font("Franklin Gothic Medium", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-         this.lblTitle.ForeColor = System.Drawing.Color.Gainsboro;
-         this.lblTitle.Location = new System.Drawing.Point(391, 13);
-         this.lblTitle.Name = "lblTitle";
-         this.lblTitle.Size = new System.Drawing.Size(169, 30);
-         this.lblTitle.TabIndex = 47;
-         this.lblTitle.Text = "Add New User";
-         // 
-         // errorProvider1
-         // 
-         this.errorProvider1.ContainerControl = this;
+         this.btnSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(154)))), ((int)(((byte)(231)))));
+         this.btnSave.FlatAppearance.BorderColor = System.Drawing.Color.WhiteSmoke;
+         this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+         this.btnSave.Font = new System.Drawing.Font("Franklin Gothic Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+         this.btnSave.ForeColor = System.Drawing.Color.White;
+         this.btnSave.Location = new System.Drawing.Point(761, 588);
+         this.btnSave.Name = "btnSave";
+         this.btnSave.Size = new System.Drawing.Size(94, 30);
+         this.btnSave.TabIndex = 16;
+         this.btnSave.Text = "Save";
+         this.btnSave.UseVisualStyleBackColor = false;
+         this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
          // 
          // frmAddUpdateUser
          // 
@@ -328,8 +328,6 @@
       private System.Windows.Forms.Label label1;
       private System.Windows.Forms.Label label7;
       private System.Windows.Forms.CheckBox checkbIsActive;
-      private System.Windows.Forms.Button btnSave;
-      private System.Windows.Forms.Button btnCloseLogin;
       private System.Windows.Forms.Label lblTitle;
       private People.Controls.ctrlPersonInfoWithFilter ctrlPersonInfoWithFilter1;
       private System.Windows.Forms.Button btnNext;
@@ -337,5 +335,7 @@
       private System.Windows.Forms.PictureBox pictureBox1;
       private System.Windows.Forms.ErrorProvider errorProvider1;
       private System.Windows.Forms.TabPage tbpLoginInfo;
+      private System.Windows.Forms.Button btnSave;
+      private System.Windows.Forms.Button btnCloseLogin;
    }
 }

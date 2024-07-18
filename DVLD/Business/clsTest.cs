@@ -20,6 +20,8 @@ namespace Business
       public string Notes { set; get; }
       public int CreatedByUserID { set; get; }
 
+     
+
       public clsTest()
       {
          this.TestID = -1;
@@ -27,7 +29,7 @@ namespace Business
          this.TestResult = false;
          this.Notes = "";
          this.CreatedByUserID = -1;
-
+         
          Mode = enMode.AddNew;
       }
 

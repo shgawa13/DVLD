@@ -12,7 +12,7 @@ namespace DataLayer
          bool IsFound = false;
 
          SqlConnection connection = new SqlConnection(clsDataAccessSettings.ConnectingString);
-         string Query = "Select * from Countries where CountryID=@ID; ";
+         string Query = "Select * from Countries where CountryID=@ID;";
          SqlCommand command = new SqlCommand(Query, connection);
          command.Parameters.AddWithValue("@ID", ID);
          try

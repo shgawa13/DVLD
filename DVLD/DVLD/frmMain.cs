@@ -67,5 +67,13 @@ namespace DVLD.People
          Form frm = new frmChangePassword(clsGlobal.CurrnetUser.UserID);
          frm.ShowDialog();
       }
+
+      private void localLicenseToolStripMenuItem_Click(object sender, EventArgs e)
+      {
+         Form frm = new frmLocalDrivingLicenseApplication();
+         frm.ShowDialog();
+      }
+
+      
    }
 }

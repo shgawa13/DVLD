@@ -30,6 +30,7 @@
       {
          this.tabCtrlApp = new System.Windows.Forms.TabControl();
          this.tabpPersonInfo = new System.Windows.Forms.TabPage();
+         this.ctrlPersonInfoWithFilter1 = new DVLD.People.Controls.ctrlPersonInfoWithFilter();
          this.btnNext = new System.Windows.Forms.Button();
          this.tabpApplicationInfo = new System.Windows.Forms.TabPage();
          this.cmbLicenseClasses = new System.Windows.Forms.ComboBox();
@@ -47,7 +48,6 @@
          this.lblTitle = new System.Windows.Forms.Label();
          this.btnSave = new System.Windows.Forms.Button();
          this.btnCloseLogin = new System.Windows.Forms.Button();
-         this.ctrlPersonInfoWithFilter1 = new DVLD.People.Controls.ctrlPersonInfoWithFilter();
          this.tabCtrlApp.SuspendLayout();
          this.tabpPersonInfo.SuspendLayout();
          this.tabpApplicationInfo.SuspendLayout();
@@ -76,6 +76,17 @@
          this.tabpPersonInfo.Size = new System.Drawing.Size(950, 499);
          this.tabpPersonInfo.TabIndex = 0;
          this.tabpPersonInfo.Text = "Person Info";
+         // 
+         // ctrlPersonInfoWithFilter1
+         // 
+         this.ctrlPersonInfoWithFilter1.BackColor = System.Drawing.Color.Gainsboro;
+         this.ctrlPersonInfoWithFilter1.Dock = System.Windows.Forms.DockStyle.Top;
+         this.ctrlPersonInfoWithFilter1.FilterEnable = true;
+         this.ctrlPersonInfoWithFilter1.Location = new System.Drawing.Point(3, 3);
+         this.ctrlPersonInfoWithFilter1.Name = "ctrlPersonInfoWithFilter1";
+         this.ctrlPersonInfoWithFilter1.ShowAddPerson = true;
+         this.ctrlPersonInfoWithFilter1.Size = new System.Drawing.Size(944, 453);
+         this.ctrlPersonInfoWithFilter1.TabIndex = 7;
          // 
          // btnNext
          // 
@@ -118,7 +129,7 @@
          this.cmbLicenseClasses.FormattingEnabled = true;
          this.cmbLicenseClasses.Location = new System.Drawing.Point(183, 255);
          this.cmbLicenseClasses.Name = "cmbLicenseClasses";
-         this.cmbLicenseClasses.Size = new System.Drawing.Size(177, 21);
+         this.cmbLicenseClasses.Size = new System.Drawing.Size(210, 21);
          this.cmbLicenseClasses.TabIndex = 40;
          // 
          // lblCreatedByUser
@@ -273,10 +284,12 @@
          this.btnSave.TabIndex = 49;
          this.btnSave.Text = "Save";
          this.btnSave.UseVisualStyleBackColor = false;
+         this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
          // 
          // btnCloseLogin
          // 
          this.btnCloseLogin.BackColor = System.Drawing.Color.DimGray;
+         this.btnCloseLogin.DialogResult = System.Windows.Forms.DialogResult.Cancel;
          this.btnCloseLogin.FlatAppearance.BorderColor = System.Drawing.Color.WhiteSmoke;
          this.btnCloseLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
          this.btnCloseLogin.Font = new System.Drawing.Font("Franklin Gothic Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -287,17 +300,6 @@
          this.btnCloseLogin.TabIndex = 50;
          this.btnCloseLogin.Text = "Close";
          this.btnCloseLogin.UseVisualStyleBackColor = false;
-         // 
-         // ctrlPersonInfoWithFilter1
-         // 
-         this.ctrlPersonInfoWithFilter1.BackColor = System.Drawing.Color.Gainsboro;
-         this.ctrlPersonInfoWithFilter1.Dock = System.Windows.Forms.DockStyle.Top;
-         this.ctrlPersonInfoWithFilter1.FilterEnable = true;
-         this.ctrlPersonInfoWithFilter1.Location = new System.Drawing.Point(3, 3);
-         this.ctrlPersonInfoWithFilter1.Name = "ctrlPersonInfoWithFilter1";
-         this.ctrlPersonInfoWithFilter1.ShowAddPerson = true;
-         this.ctrlPersonInfoWithFilter1.Size = new System.Drawing.Size(944, 453);
-         this.ctrlPersonInfoWithFilter1.TabIndex = 7;
          // 
          // frmLocalDrivingLicenseApplication
          // 

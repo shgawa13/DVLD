@@ -433,7 +433,7 @@
          this.lblTitle.AutoSize = true;
          this.lblTitle.Font = new System.Drawing.Font("Franklin Gothic Medium", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
          this.lblTitle.ForeColor = System.Drawing.Color.WhiteSmoke;
-         this.lblTitle.Location = new System.Drawing.Point(475, 9);
+         this.lblTitle.Location = new System.Drawing.Point(475, 11);
          this.lblTitle.Name = "lblTitle";
          this.lblTitle.Size = new System.Drawing.Size(50, 24);
          this.lblTitle.TabIndex = 16;
@@ -444,7 +444,7 @@
          this.label1.AutoSize = true;
          this.label1.Font = new System.Drawing.Font("Franklin Gothic Medium", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
          this.label1.ForeColor = System.Drawing.Color.WhiteSmoke;
-         this.label1.Location = new System.Drawing.Point(23, 9);
+         this.label1.Location = new System.Drawing.Point(23, 11);
          this.label1.Name = "label1";
          this.label1.Size = new System.Drawing.Size(103, 24);
          this.label1.TabIndex = 17;
@@ -455,7 +455,7 @@
          this.lblPersonID.AutoSize = true;
          this.lblPersonID.Font = new System.Drawing.Font("Franklin Gothic Medium", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
          this.lblPersonID.ForeColor = System.Drawing.Color.WhiteSmoke;
-         this.lblPersonID.Location = new System.Drawing.Point(121, 9);
+         this.lblPersonID.Location = new System.Drawing.Point(121, 11);
          this.lblPersonID.Name = "lblPersonID";
          this.lblPersonID.Size = new System.Drawing.Size(43, 24);
          this.lblPersonID.TabIndex = 18;

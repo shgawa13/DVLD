@@ -29,6 +29,7 @@
       private void InitializeComponent()
       {
          this.panel1 = new System.Windows.Forms.Panel();
+         this.pictureBox1 = new System.Windows.Forms.PictureBox();
          this.btnCloseLogin = new System.Windows.Forms.Button();
          this.menuStrip1 = new System.Windows.Forms.MenuStrip();
          this.tolStripApplication = new System.Windows.Forms.ToolStripMenuItem();
@@ -60,10 +61,9 @@
          this.toolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
          this.toolStripMenuItem5 = new System.Windows.Forms.ToolStripMenuItem();
          this.toolStripMenuItem6 = new System.Windows.Forms.ToolStripMenuItem();
-         this.pictureBox1 = new System.Windows.Forms.PictureBox();
          this.panel1.SuspendLayout();
-         this.menuStrip1.SuspendLayout();
          ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+         this.menuStrip1.SuspendLayout();
          this.SuspendLayout();
          // 
          // panel1
@@ -79,6 +79,17 @@
          this.panel1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
          this.panel1.Size = new System.Drawing.Size(1255, 516);
          this.panel1.TabIndex = 0;
+         // 
+         // pictureBox1
+         // 
+         this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(14)))), ((int)(((byte)(36)))));
+         this.pictureBox1.Image = global::DVLD.Properties.Resources.gzexperts_logo;
+         this.pictureBox1.Location = new System.Drawing.Point(12, 12);
+         this.pictureBox1.Name = "pictureBox1";
+         this.pictureBox1.Size = new System.Drawing.Size(125, 97);
+         this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+         this.pictureBox1.TabIndex = 13;
+         this.pictureBox1.TabStop = false;
          // 
          // btnCloseLogin
          // 
@@ -128,11 +139,13 @@
             this.mangeTestTypesToolStripMenuItem});
          this.tolStripApplication.Font = new System.Drawing.Font("Verdana", 10F, System.Drawing.FontStyle.Bold);
          this.tolStripApplication.ForeColor = System.Drawing.Color.WhiteSmoke;
+         this.tolStripApplication.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
          this.tolStripApplication.Margin = new System.Windows.Forms.Padding(0, 30, 0, 30);
          this.tolStripApplication.Name = "tolStripApplication";
          this.tolStripApplication.Padding = new System.Windows.Forms.Padding(0);
          this.tolStripApplication.Size = new System.Drawing.Size(140, 21);
          this.tolStripApplication.Text = "Application";
+         this.tolStripApplication.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
          // 
          // drivingLicensesServicesToolStripMenuItem
          // 
@@ -312,6 +325,7 @@
          // 
          this.tolStripUsers.Font = new System.Drawing.Font("Verdana", 10F, System.Drawing.FontStyle.Bold);
          this.tolStripUsers.ForeColor = System.Drawing.Color.WhiteSmoke;
+         this.tolStripUsers.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
          this.tolStripUsers.Margin = new System.Windows.Forms.Padding(0, 30, 0, 30);
          this.tolStripUsers.Name = "tolStripUsers";
          this.tolStripUsers.Size = new System.Drawing.Size(140, 21);
@@ -388,17 +402,6 @@
          this.toolStripMenuItem6.Name = "toolStripMenuItem6";
          this.toolStripMenuItem6.Size = new System.Drawing.Size(140, 4);
          // 
-         // pictureBox1
-         // 
-         this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(14)))), ((int)(((byte)(36)))));
-         this.pictureBox1.Image = global::DVLD.Properties.Resources.gzexperts_logo;
-         this.pictureBox1.Location = new System.Drawing.Point(12, 12);
-         this.pictureBox1.Name = "pictureBox1";
-         this.pictureBox1.Size = new System.Drawing.Size(125, 97);
-         this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-         this.pictureBox1.TabIndex = 13;
-         this.pictureBox1.TabStop = false;
-         // 
          // frmMain
          // 
          this.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
@@ -412,9 +415,9 @@
          this.Text = "Dashboard";
          this.panel1.ResumeLayout(false);
          this.panel1.PerformLayout();
+         ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
          this.menuStrip1.ResumeLayout(false);
          this.menuStrip1.PerformLayout();
-         ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
          this.ResumeLayout(false);
 
       }

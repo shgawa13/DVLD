@@ -352,15 +352,7 @@ namespace DVLD.People
          }
       }
 
-      private void txtbFirstName_Validating(object sender, CancelEventArgs e)
-      {
-
-      }
-
-      private void txtbSecondName_Validating(object sender, CancelEventArgs e)
-      {
-
-      }
+      
 
    }
 }

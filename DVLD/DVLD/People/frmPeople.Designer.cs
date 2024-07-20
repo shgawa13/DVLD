@@ -182,7 +182,6 @@
          this.dgvPeople.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
          this.dgvPeople.Size = new System.Drawing.Size(1128, 288);
          this.dgvPeople.TabIndex = 15;
-         this.dgvPeople.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvPeople_CellContentClick);
          // 
          // cmstMangePeople
          // 

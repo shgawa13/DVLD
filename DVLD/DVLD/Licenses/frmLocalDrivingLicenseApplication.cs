@@ -17,11 +17,23 @@ namespace DVLD.Applications
    public partial class frmLocalDrivingLicenseApplication : Form
    {
       public enum enMode { AddNew =0, Update =1}
+
       private enMode _Mode = enMode.AddNew;
-      clsLocalDrivingLicenseApplication _App { set; get; }
+      private int _LocalDrivingLicenseApplicationID = -1;
+      private int _SelectedPersonID = -1;
+      clsLocalDrivingLicenseApplication _LocalApp { set; get; }
+
       public frmLocalDrivingLicenseApplication()
       {
          InitializeComponent();
+         _Mode = enMode.AddNew;
+      }
+
+      public frmLocalDrivingLicenseApplication(int LocalDrivingLicenseApplicationID)
+      {
+         InitializeComponent();
+         _Mode = enMode.Update;
+         _LocalDrivingLicenseApplicationID = LocalDrivingLicenseApplicationID;
       }
 
       private void frmLocalDrivingLicenseApplication_Load(object sender, EventArgs e)
@@ -67,7 +79,7 @@ namespace DVLD.Applications
 
       private void btnSave_Click(object sender, EventArgs e)
       {
-         _App.ApplicationDate = DateTime.Now;
+         _LocalApp.ApplicationDate = DateTime.Now;
         // _App.
 
       }

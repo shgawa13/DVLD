@@ -1,6 +1,6 @@
 ﻿namespace DVLD.Applications
 {
-   partial class frmLocalDrivingLicenseApplication
+   partial class frmAddUpdateLocalDrivingLicenseApplication
    {
       /// <summary>
       /// Required designer variable.
@@ -36,12 +36,12 @@
          this.cmbLicenseClasses = new System.Windows.Forms.ComboBox();
          this.lblCreatedByUser = new System.Windows.Forms.Label();
          this.labl = new System.Windows.Forms.Label();
-         this.label6 = new System.Windows.Forms.Label();
+         this.lblFees = new System.Windows.Forms.Label();
          this.label7 = new System.Windows.Forms.Label();
          this.label5 = new System.Windows.Forms.Label();
-         this.labApplicationDate = new System.Windows.Forms.Label();
+         this.lblApplicationDate = new System.Windows.Forms.Label();
          this.label3 = new System.Windows.Forms.Label();
-         this.lblUserID = new System.Windows.Forms.Label();
+         this.lablLocalDrivingLicenseApplicationID = new System.Windows.Forms.Label();
          this.label1 = new System.Windows.Forms.Label();
          this.panel1 = new System.Windows.Forms.Panel();
          this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -109,12 +109,12 @@
          this.tabpApplicationInfo.Controls.Add(this.cmbLicenseClasses);
          this.tabpApplicationInfo.Controls.Add(this.lblCreatedByUser);
          this.tabpApplicationInfo.Controls.Add(this.labl);
-         this.tabpApplicationInfo.Controls.Add(this.label6);
+         this.tabpApplicationInfo.Controls.Add(this.lblFees);
          this.tabpApplicationInfo.Controls.Add(this.label7);
          this.tabpApplicationInfo.Controls.Add(this.label5);
-         this.tabpApplicationInfo.Controls.Add(this.labApplicationDate);
+         this.tabpApplicationInfo.Controls.Add(this.lblApplicationDate);
          this.tabpApplicationInfo.Controls.Add(this.label3);
-         this.tabpApplicationInfo.Controls.Add(this.lblUserID);
+         this.tabpApplicationInfo.Controls.Add(this.lablLocalDrivingLicenseApplicationID);
          this.tabpApplicationInfo.Controls.Add(this.label1);
          this.tabpApplicationInfo.Controls.Add(this.panel1);
          this.tabpApplicationInfo.Location = new System.Drawing.Point(4, 22);
@@ -156,17 +156,17 @@
          this.labl.TabIndex = 38;
          this.labl.Text = "CreatedByUser:";
          // 
-         // label6
+         // lblFees
          // 
-         this.label6.AutoSize = true;
-         this.label6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
-         this.label6.Font = new System.Drawing.Font("Franklin Gothic Medium", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-         this.label6.ForeColor = System.Drawing.Color.WhiteSmoke;
-         this.label6.Location = new System.Drawing.Point(192, 304);
-         this.label6.Name = "label6";
-         this.label6.Size = new System.Drawing.Size(34, 24);
-         this.label6.TabIndex = 37;
-         this.label6.Text = "15";
+         this.lblFees.AutoSize = true;
+         this.lblFees.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
+         this.lblFees.Font = new System.Drawing.Font("Franklin Gothic Medium", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+         this.lblFees.ForeColor = System.Drawing.Color.WhiteSmoke;
+         this.lblFees.Location = new System.Drawing.Point(192, 304);
+         this.lblFees.Name = "lblFees";
+         this.lblFees.Size = new System.Drawing.Size(34, 24);
+         this.lblFees.TabIndex = 37;
+         this.lblFees.Text = "15";
          // 
          // label7
          // 
@@ -192,17 +192,17 @@
          this.label5.TabIndex = 34;
          this.label5.Text = "License Class:";
          // 
-         // labApplicationDate
+         // lblApplicationDate
          // 
-         this.labApplicationDate.AutoSize = true;
-         this.labApplicationDate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
-         this.labApplicationDate.Font = new System.Drawing.Font("Franklin Gothic Medium", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-         this.labApplicationDate.ForeColor = System.Drawing.Color.WhiteSmoke;
-         this.labApplicationDate.Location = new System.Drawing.Point(188, 191);
-         this.labApplicationDate.Name = "labApplicationDate";
-         this.labApplicationDate.Size = new System.Drawing.Size(43, 24);
-         this.labApplicationDate.TabIndex = 33;
-         this.labApplicationDate.Text = "???";
+         this.lblApplicationDate.AutoSize = true;
+         this.lblApplicationDate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
+         this.lblApplicationDate.Font = new System.Drawing.Font("Franklin Gothic Medium", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+         this.lblApplicationDate.ForeColor = System.Drawing.Color.WhiteSmoke;
+         this.lblApplicationDate.Location = new System.Drawing.Point(188, 191);
+         this.lblApplicationDate.Name = "lblApplicationDate";
+         this.lblApplicationDate.Size = new System.Drawing.Size(43, 24);
+         this.lblApplicationDate.TabIndex = 33;
+         this.lblApplicationDate.Text = "???";
          // 
          // label3
          // 
@@ -216,17 +216,17 @@
          this.label3.TabIndex = 32;
          this.label3.Text = "ApplicationData:";
          // 
-         // lblUserID
+         // lablLocalDrivingLicenseApplicationID
          // 
-         this.lblUserID.AutoSize = true;
-         this.lblUserID.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
-         this.lblUserID.Font = new System.Drawing.Font("Franklin Gothic Medium", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-         this.lblUserID.ForeColor = System.Drawing.Color.WhiteSmoke;
-         this.lblUserID.Location = new System.Drawing.Point(188, 127);
-         this.lblUserID.Name = "lblUserID";
-         this.lblUserID.Size = new System.Drawing.Size(43, 24);
-         this.lblUserID.TabIndex = 31;
-         this.lblUserID.Text = "???";
+         this.lablLocalDrivingLicenseApplicationID.AutoSize = true;
+         this.lablLocalDrivingLicenseApplicationID.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
+         this.lablLocalDrivingLicenseApplicationID.Font = new System.Drawing.Font("Franklin Gothic Medium", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+         this.lablLocalDrivingLicenseApplicationID.ForeColor = System.Drawing.Color.WhiteSmoke;
+         this.lablLocalDrivingLicenseApplicationID.Location = new System.Drawing.Point(188, 127);
+         this.lablLocalDrivingLicenseApplicationID.Name = "lablLocalDrivingLicenseApplicationID";
+         this.lablLocalDrivingLicenseApplicationID.Size = new System.Drawing.Size(43, 24);
+         this.lablLocalDrivingLicenseApplicationID.TabIndex = 31;
+         this.lablLocalDrivingLicenseApplicationID.Text = "???";
          // 
          // label1
          // 
@@ -301,7 +301,7 @@
          this.btnCloseLogin.Text = "Close";
          this.btnCloseLogin.UseVisualStyleBackColor = false;
          // 
-         // frmLocalDrivingLicenseApplication
+         // frmAddUpdateLocalDrivingLicenseApplication
          // 
          this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
          this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -312,7 +312,7 @@
          this.Controls.Add(this.lblTitle);
          this.Controls.Add(this.tabCtrlApp);
          this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-         this.Name = "frmLocalDrivingLicenseApplication";
+         this.Name = "frmAddUpdateLocalDrivingLicenseApplication";
          this.Text = "Local Driving License Application";
          this.Load += new System.EventHandler(this.frmLocalDrivingLicenseApplication_Load);
          this.tabCtrlApp.ResumeLayout(false);
@@ -340,11 +340,11 @@
       private System.Windows.Forms.PictureBox pictureBox1;
       private System.Windows.Forms.Label lblCreatedByUser;
       private System.Windows.Forms.Label labl;
-      private System.Windows.Forms.Label label6;
+      private System.Windows.Forms.Label lblFees;
       private System.Windows.Forms.Label label7;
       private System.Windows.Forms.Label label5;
-      private System.Windows.Forms.Label labApplicationDate;
-      private System.Windows.Forms.Label lblUserID;
+      private System.Windows.Forms.Label lblApplicationDate;
+      private System.Windows.Forms.Label lablLocalDrivingLicenseApplicationID;
       private System.Windows.Forms.Label label1;
       private System.Windows.Forms.Label label3;
       private System.Windows.Forms.ComboBox cmbLicenseClasses;

@@ -174,9 +174,7 @@ namespace DVLD.People
          }
       }
 
-      private void dgvPeople_CellContentClick(object sender, DataGridViewCellEventArgs e)
-      {
-
-      }
+      
+      
    }
 }

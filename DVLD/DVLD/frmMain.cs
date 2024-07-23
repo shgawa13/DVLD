@@ -1,5 +1,6 @@
 ﻿using DVLD.Applications;
 using DVLD.Global_Classes;
+using DVLD.Licenses;
 using DVLD.Tests;
 using DVLD.Users;
 using System;
@@ -83,6 +84,9 @@ namespace DVLD.People
          frm.ShowDialog();
       }
 
-      
+      private void tolStripApplication_Click(object sender, EventArgs e)
+      {
+
+      }
    }
 }

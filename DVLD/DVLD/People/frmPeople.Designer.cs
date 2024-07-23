@@ -30,11 +30,6 @@
       {
          this.components = new System.ComponentModel.Container();
          this.btnCloseLogin = new System.Windows.Forms.Button();
-         this.panel1 = new System.Windows.Forms.Panel();
-         this.btnAddPreson = new System.Windows.Forms.Button();
-         this.txtFilterValue = new System.Windows.Forms.TextBox();
-         this.cbFilter = new System.Windows.Forms.ComboBox();
-         this.label2 = new System.Windows.Forms.Label();
          this.panel2 = new System.Windows.Forms.Panel();
          this.lblRecordsNum = new System.Windows.Forms.Label();
          this.label3 = new System.Windows.Forms.Label();
@@ -46,11 +41,16 @@
          this.tolstmDelete = new System.Windows.Forms.ToolStripMenuItem();
          this.label1 = new System.Windows.Forms.Label();
          this.pictureBox1 = new System.Windows.Forms.PictureBox();
-         this.panel1.SuspendLayout();
+         this.label2 = new System.Windows.Forms.Label();
+         this.txtFilterValue = new System.Windows.Forms.TextBox();
+         this.btnAddPreson = new System.Windows.Forms.Button();
+         this.panel1 = new System.Windows.Forms.Panel();
+         this.cbFilter = new System.Windows.Forms.ComboBox();
          this.panel2.SuspendLayout();
          ((System.ComponentModel.ISupportInitialize)(this.dgvPeople)).BeginInit();
          this.cmstMangePeople.SuspendLayout();
          ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+         this.panel1.SuspendLayout();
          this.SuspendLayout();
          // 
          // btnCloseLogin
@@ -67,73 +67,6 @@
          this.btnCloseLogin.Text = "Close";
          this.btnCloseLogin.UseVisualStyleBackColor = false;
          this.btnCloseLogin.Click += new System.EventHandler(this.btnCloseLogin_Click);
-         // 
-         // panel1
-         // 
-         this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
-         this.panel1.Controls.Add(this.btnAddPreson);
-         this.panel1.Controls.Add(this.txtFilterValue);
-         this.panel1.Controls.Add(this.cbFilter);
-         this.panel1.Controls.Add(this.label2);
-         this.panel1.Location = new System.Drawing.Point(0, 151);
-         this.panel1.Name = "panel1";
-         this.panel1.Size = new System.Drawing.Size(1125, 67);
-         this.panel1.TabIndex = 14;
-         // 
-         // btnAddPreson
-         // 
-         this.btnAddPreson.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(212)))), ((int)(((byte)(212)))));
-         this.btnAddPreson.FlatAppearance.BorderColor = System.Drawing.Color.WhiteSmoke;
-         this.btnAddPreson.Font = new System.Drawing.Font("Verdana", 10F, System.Drawing.FontStyle.Bold);
-         this.btnAddPreson.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(14)))), ((int)(((byte)(36)))));
-         this.btnAddPreson.Location = new System.Drawing.Point(1010, 6);
-         this.btnAddPreson.Name = "btnAddPreson";
-         this.btnAddPreson.Size = new System.Drawing.Size(108, 54);
-         this.btnAddPreson.TabIndex = 21;
-         this.btnAddPreson.Text = "Add New\r\nPerson";
-         this.btnAddPreson.UseVisualStyleBackColor = false;
-         this.btnAddPreson.Click += new System.EventHandler(this.btnAddPreson_Click);
-         // 
-         // txtFilterValue
-         // 
-         this.txtFilterValue.Location = new System.Drawing.Point(297, 24);
-         this.txtFilterValue.Name = "txtFilterValue";
-         this.txtFilterValue.Size = new System.Drawing.Size(170, 20);
-         this.txtFilterValue.TabIndex = 20;
-         this.txtFilterValue.TextChanged += new System.EventHandler(this.txtFilterValue_TextChanged);
-         // 
-         // cbFilter
-         // 
-         this.cbFilter.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-         this.cbFilter.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-         this.cbFilter.Items.AddRange(new object[] {
-            "None",
-            "Person ID",
-            "National Number",
-            "First Name",
-            "Second Name",
-            "Third Name",
-            "Last Name",
-            "Nationlity",
-            "Gendor",
-            "Phone Number",
-            "Email"});
-         this.cbFilter.Location = new System.Drawing.Point(103, 24);
-         this.cbFilter.Name = "cbFilter";
-         this.cbFilter.Size = new System.Drawing.Size(170, 21);
-         this.cbFilter.TabIndex = 19;
-         this.cbFilter.SelectedIndexChanged += new System.EventHandler(this.cbFilter_SelectedIndexChanged);
-         // 
-         // label2
-         // 
-         this.label2.AutoSize = true;
-         this.label2.Font = new System.Drawing.Font("Verdana", 11F, System.Drawing.FontStyle.Bold);
-         this.label2.ForeColor = System.Drawing.Color.WhiteSmoke;
-         this.label2.Location = new System.Drawing.Point(21, 25);
-         this.label2.Name = "label2";
-         this.label2.Size = new System.Drawing.Size(67, 18);
-         this.label2.TabIndex = 18;
-         this.label2.Text = "Find by";
          // 
          // panel2
          // 
@@ -242,6 +175,73 @@
          this.pictureBox1.TabIndex = 17;
          this.pictureBox1.TabStop = false;
          // 
+         // label2
+         // 
+         this.label2.AutoSize = true;
+         this.label2.Font = new System.Drawing.Font("Verdana", 11F, System.Drawing.FontStyle.Bold);
+         this.label2.ForeColor = System.Drawing.Color.WhiteSmoke;
+         this.label2.Location = new System.Drawing.Point(21, 25);
+         this.label2.Name = "label2";
+         this.label2.Size = new System.Drawing.Size(67, 18);
+         this.label2.TabIndex = 18;
+         this.label2.Text = "Find by";
+         // 
+         // txtFilterValue
+         // 
+         this.txtFilterValue.Location = new System.Drawing.Point(297, 24);
+         this.txtFilterValue.Name = "txtFilterValue";
+         this.txtFilterValue.Size = new System.Drawing.Size(170, 20);
+         this.txtFilterValue.TabIndex = 20;
+         this.txtFilterValue.TextChanged += new System.EventHandler(this.txtFilterValue_TextChanged);
+         // 
+         // btnAddPreson
+         // 
+         this.btnAddPreson.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(212)))), ((int)(((byte)(212)))));
+         this.btnAddPreson.FlatAppearance.BorderColor = System.Drawing.Color.WhiteSmoke;
+         this.btnAddPreson.Font = new System.Drawing.Font("Verdana", 10F, System.Drawing.FontStyle.Bold);
+         this.btnAddPreson.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(14)))), ((int)(((byte)(36)))));
+         this.btnAddPreson.Location = new System.Drawing.Point(1010, 6);
+         this.btnAddPreson.Name = "btnAddPreson";
+         this.btnAddPreson.Size = new System.Drawing.Size(108, 54);
+         this.btnAddPreson.TabIndex = 21;
+         this.btnAddPreson.Text = "Add New\r\nPerson";
+         this.btnAddPreson.UseVisualStyleBackColor = false;
+         this.btnAddPreson.Click += new System.EventHandler(this.btnAddPreson_Click);
+         // 
+         // panel1
+         // 
+         this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
+         this.panel1.Controls.Add(this.btnAddPreson);
+         this.panel1.Controls.Add(this.txtFilterValue);
+         this.panel1.Controls.Add(this.cbFilter);
+         this.panel1.Controls.Add(this.label2);
+         this.panel1.Location = new System.Drawing.Point(0, 151);
+         this.panel1.Name = "panel1";
+         this.panel1.Size = new System.Drawing.Size(1125, 67);
+         this.panel1.TabIndex = 14;
+         // 
+         // cbFilter
+         // 
+         this.cbFilter.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+         this.cbFilter.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+         this.cbFilter.Items.AddRange(new object[] {
+            "None",
+            "Person ID",
+            "National Number",
+            "First Name",
+            "Second Name",
+            "Third Name",
+            "Last Name",
+            "Nationlity",
+            "Gendor",
+            "Phone Number",
+            "Email"});
+         this.cbFilter.Location = new System.Drawing.Point(103, 24);
+         this.cbFilter.Name = "cbFilter";
+         this.cbFilter.Size = new System.Drawing.Size(170, 21);
+         this.cbFilter.TabIndex = 19;
+         this.cbFilter.SelectedIndexChanged += new System.EventHandler(this.cbFilter_SelectedIndexChanged);
+         // 
          // frmPeople
          // 
          this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -259,13 +259,13 @@
          this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
          this.Text = "Mange People";
          this.Load += new System.EventHandler(this.frmPeople_Load);
-         this.panel1.ResumeLayout(false);
-         this.panel1.PerformLayout();
          this.panel2.ResumeLayout(false);
          this.panel2.PerformLayout();
          ((System.ComponentModel.ISupportInitialize)(this.dgvPeople)).EndInit();
          this.cmstMangePeople.ResumeLayout(false);
          ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+         this.panel1.ResumeLayout(false);
+         this.panel1.PerformLayout();
          this.ResumeLayout(false);
          this.PerformLayout();
 
@@ -274,14 +274,9 @@
       #endregion
 
       private System.Windows.Forms.Button btnCloseLogin;
-      private System.Windows.Forms.Panel panel1;
       private System.Windows.Forms.DataGridView dgvPeople;
       private System.Windows.Forms.Label label1;
       private System.Windows.Forms.PictureBox pictureBox1;
-      private System.Windows.Forms.Label label2;
-      private System.Windows.Forms.ComboBox cbFilter;
-      private System.Windows.Forms.Button btnAddPreson;
-      private System.Windows.Forms.TextBox txtFilterValue;
       private System.Windows.Forms.Panel panel2;
       private System.Windows.Forms.Label label3;
       private System.Windows.Forms.Label lblRecordsNum;
@@ -290,5 +285,10 @@
       private System.Windows.Forms.ToolStripMenuItem tolstmSendEmail;
       private System.Windows.Forms.ToolStripMenuItem tolstmEdit;
       private System.Windows.Forms.ToolStripMenuItem tolstmDelete;
+      private System.Windows.Forms.Label label2;
+      private System.Windows.Forms.TextBox txtFilterValue;
+      private System.Windows.Forms.Button btnAddPreson;
+      private System.Windows.Forms.Panel panel1;
+      private System.Windows.Forms.ComboBox cbFilter;
    }
 }

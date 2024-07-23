@@ -52,17 +52,17 @@
     <Compile Include="Applications\frmEditApplicationType.Designer.cs">
       <DependentUpon>frmEditApplicationType.cs</DependentUpon>
     </Compile>
+    <Compile Include="Licenses\frmAddUpdateLocalDrivingLicenseApplication.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Licenses\frmAddUpdateLocalDrivingLicenseApplication.Designer.cs">
+      <DependentUpon>frmAddUpdateLocalDrivingLicenseApplication.cs</DependentUpon>
+    </Compile>
     <Compile Include="Licenses\frmListDrivingLicenseApplication.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Licenses\frmListDrivingLicenseApplication.Designer.cs">
       <DependentUpon>frmListDrivingLicenseApplication.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Licenses\frmLocalDrivingLicenseApplication.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Licenses\frmLocalDrivingLicenseApplication.Designer.cs">
-      <DependentUpon>frmLocalDrivingLicenseApplication.cs</DependentUpon>
     </Compile>
     <Compile Include="Applications\frmMangeApplicationTypes.cs">
       <SubType>Form</SubType>
@@ -168,11 +168,11 @@
     <EmbeddedResource Include="Applications\frmEditApplicationType.resx">
       <DependentUpon>frmEditApplicationType.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Licenses\frmAddUpdateLocalDrivingLicenseApplication.resx">
+      <DependentUpon>frmAddUpdateLocalDrivingLicenseApplication.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Licenses\frmListDrivingLicenseApplication.resx">
       <DependentUpon>frmListDrivingLicenseApplication.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Licenses\frmLocalDrivingLicenseApplication.resx">
-      <DependentUpon>frmLocalDrivingLicenseApplication.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Applications\frmMangeApplicationTypes.resx">
       <DependentUpon>frmMangeApplicationTypes.cs</DependentUpon>
@@ -284,6 +284,8 @@
     <None Include="Resources\Application Types 64.png" />
     <None Include="Resources\Application Types 512.png" />
     <None Include="Resources\Application Types 5121.png" />
+    <None Include="Resources\application.png" />
+    <None Include="Resources\App.png" />
     <Content Include="Resources\Female_avatar.png" />
     <None Include="Resources\plus-icon.png" />
     <None Include="Resources\people.png" />

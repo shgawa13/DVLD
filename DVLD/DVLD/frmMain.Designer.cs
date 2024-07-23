@@ -146,6 +146,7 @@
          this.tolStripApplication.Size = new System.Drawing.Size(140, 21);
          this.tolStripApplication.Text = "Application";
          this.tolStripApplication.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+         this.tolStripApplication.Click += new System.EventHandler(this.tolStripApplication_Click);
          // 
          // drivingLicensesServicesToolStripMenuItem
          // 

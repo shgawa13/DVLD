@@ -234,6 +234,7 @@
          this.txtbPhone.Name = "txtbPhone";
          this.txtbPhone.Size = new System.Drawing.Size(186, 26);
          this.txtbPhone.TabIndex = 8;
+         this.txtbPhone.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtbPhone_KeyPress);
          this.txtbPhone.Validating += new System.ComponentModel.CancelEventHandler(this.ValidateEmptyTextBox);
          // 
          // dtpDateOfBirth

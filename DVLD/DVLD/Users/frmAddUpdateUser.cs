@@ -82,6 +82,7 @@ namespace DVLD.Users
          txtbConfirmPassword.Text = _User.Password;
          checkbIsActive.Checked = _User.IsActive;
          ctrlPersonInfoWithFilter1.LoadPersonInfo(_User.PersonID);
+        
       }
 
       private void frmAddUser_Load(object sender, EventArgs e)
@@ -228,7 +229,15 @@ namespace DVLD.Users
          }
       }
 
-      
+      private void ctrlPersonInfoWithFilter1_OnPersonSelected(int obj)
+      {
+         if(obj != -1)
+         {
+            ctrlPersonInfoWithFilter1.ShowAddPerson = false;
+            ctrlPersonInfoWithFilter1.FilterEnable = false;
+
+         }
+      }
    }
 }
 

@@ -185,7 +185,7 @@ namespace DVLD.People
             }
          }
 
-         return true; ;
+         return true; 
 
       }
 
@@ -352,7 +352,9 @@ namespace DVLD.People
          }
       }
 
-      
-
+      private void txtbPhone_KeyPress(object sender, KeyPressEventArgs e)
+      {
+        e.Handled = !char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar);
+      }
    }
 }

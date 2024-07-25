@@ -44,11 +44,11 @@ namespace DVLD
       }
 
       // Replace image name with guid
-      public static string ReplaceFileNameWithGUID(string sourceFile)
+      public static string ReplaceImageNameWithGUID(string sourceFile)
       {
          string FileName = sourceFile;
          FileInfo info = new FileInfo(FileName);
-         string extn = info.Extension;
+         string extn = info.Extension; // .png   .jpg
          return GenrateGUID() + extn;
 
       }
@@ -57,15 +57,16 @@ namespace DVLD
       public static bool CopyImageToProjectImages(ref string sourceFile)
       {
 
-         string DestinationFolder = @"C:\DVLD-People-Image\";
+         string DestinationFolder = @"C:\DVLD-People-Image\"; //hjdhfjdh567643.png
 
          if (!CreateFileIfNotExist(DestinationFolder))
          {
             return false;
          }
 
+
          // the new destinationFile will be the DestinationFolder + the image after replacing the name
-         string destinationFile = DestinationFolder + ReplaceFileNameWithGUID(sourceFile);
+         string destinationFile = DestinationFolder + ReplaceImageNameWithGUID(sourceFile);
          try
          {
             File.Copy(sourceFile, destinationFile, true);

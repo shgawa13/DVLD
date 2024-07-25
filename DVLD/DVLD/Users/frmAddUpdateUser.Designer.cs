@@ -104,6 +104,7 @@
          this.ctrlPersonInfoWithFilter1.ShowAddPerson = true;
          this.ctrlPersonInfoWithFilter1.Size = new System.Drawing.Size(968, 472);
          this.ctrlPersonInfoWithFilter1.TabIndex = 0;
+         this.ctrlPersonInfoWithFilter1.OnPersonSelected += new System.Action<int>(this.ctrlPersonInfoWithFilter1_OnPersonSelected);
          // 
          // tbpLoginInfo
          // 

@@ -19,6 +19,7 @@ namespace Business
       public enum enApplicationStatus { New =0, Cancelled=1,Completed=2}
       public int ApplicationID { set; get; }
       public int ApplicantPersonID { set; get; }
+      public clsPerson PersonInfo { set; get; }
       public string ApplicantFullName
       {
          get { return clsPerson.Find(ApplicantPersonID).FullName;}
@@ -73,6 +74,7 @@ namespace Business
          this.ApplicationID = ApplicationID;
          this.ApplicantPersonID = ApplicantPersonID;
          this.ApplicationDate = ApplicationDate;
+         this.PersonInfo = clsPerson.Find(ApplicantPersonID);
          this.ApplicationTypeID = ApplicationTypeID;
          this.ApplicationStatus = ApplicationStatus;
          this.LastStatusDate = LastStatusDate;

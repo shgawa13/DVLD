@@ -33,10 +33,10 @@ namespace DVLD.People.Controls
          set 
          { 
             _ShowAddPerson = value;
-            btnAddNewPerson.Visible = _ShowAddPerson;
+            btnAddNewPerson.Enabled = _ShowAddPerson;
          }
       }
-
+      
       private bool _FilterEnable = true;
       public bool FilterEnable
       {
@@ -45,7 +45,7 @@ namespace DVLD.People.Controls
          set
          {
             _FilterEnable = value;
-            grbFilter.Visible = _FilterEnable;
+            grbFilter.Enabled = _FilterEnable;
          }
       }
 
@@ -66,6 +66,7 @@ namespace DVLD.People.Controls
          cbFilterBy.SelectedIndex = 0;
          txtFilterValue.Text = PersonID.ToString();
          FindNow();
+
       }
 
       public void LoeadPersonInfo(string NationalNo)
@@ -73,6 +74,7 @@ namespace DVLD.People.Controls
          cbFilterBy.SelectedIndex = 1;
          txtFilterValue.Text = NationalNo;
          FindNow();
+         
       }
 
       public void FindNow()

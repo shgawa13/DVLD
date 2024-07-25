@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using DataLayer;
 namespace Business
 {
+   // here we make inheritance to application to get all information
    public class clsLocalDrivingLicenseApplication : clsApplication
    {
       public enum enMode { AddNew = 0, Update = 1 }
@@ -19,7 +20,8 @@ namespace Business
       public clsLicenseClass LicenseCalssInfo { set; get; }
       public string FullName
       {
-         get { return clsPerson.Find(ApplicantPersonID).FullName; }
+         get { return base.PersonInfo.FullName; }
+        // get { return clsPerson.Find(ApplicantPersonID).FullName; }
       }
 
       public clsLocalDrivingLicenseApplication()
@@ -38,6 +40,10 @@ namespace Business
          this.LocalDrivingLicenseApplicationID = LocalDrivingLicenseApplicationID;
          this.ApplicationID = ApplicationID;
          this.ApplicantPersonID = ApplicantPersonID;
+         this.ApplicationDate = ApplicationDate;
+         this.ApplicationTypeID = (int)ApplicationTypeID;
+         this.ApplicationStatus = ApplicationStatus;
+         this.LastStatusDate = LastStatusDate;
          this.PaidFees = PaidFees;
          this.CreatedByUserID = CreatedByUserID;
          this.LicenseClassID = LicenseClassID;
@@ -72,6 +78,7 @@ namespace Business
 
          if (IsFound)
          {
+            // now we find the base application 
             clsApplication Application = clsApplication.FindBaseApplication(ApplicationID);
 
             return new clsLocalDrivingLicenseApplication(LocalDrivingLicenseApplicationID, ApplicationID

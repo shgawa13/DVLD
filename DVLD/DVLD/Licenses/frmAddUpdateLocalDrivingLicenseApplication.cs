@@ -29,7 +29,10 @@ namespace DVLD.Licenses
          _Mode = enMode.AddNew;
       }
 
-
+      private void _LoadData()
+      {
+         
+      }
 
    }
 }

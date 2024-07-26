@@ -64,7 +64,7 @@ namespace Business
             this.ApplicationID, this.LicenseClassID);
       }
 
-      public DataTable GetAllApplications()
+      public static DataTable GetAllApplications()
       {
          return clsLocalDrivingLicenseApplicaionData.GetAllLocalDrivingLicenseApplications();
       }

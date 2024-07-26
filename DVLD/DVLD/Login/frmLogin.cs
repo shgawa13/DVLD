@@ -23,7 +23,7 @@ namespace DVLD
 
       private void btnCloseLogin_Click(object sender, EventArgs e)
       {
-         this.Close();
+         Application.Exit();
       }
 
       // Checking Active User

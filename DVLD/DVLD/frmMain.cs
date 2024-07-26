@@ -88,5 +88,11 @@ namespace DVLD.People
       {
 
       }
+
+      private void localDrivingLicneseApplicationToolStripMenuItem_Click(object sender, EventArgs e)
+      {
+         Form frm = new frmListLocalDrivingLicenseApplication();
+         frm.ShowDialog();
+      }
    }
 }

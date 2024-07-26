@@ -34,6 +34,9 @@ namespace DVLD.Licenses
       {
          Form frm = new frmAddUpdateLocalDrivingLicenseApplication();
          frm.ShowDialog();
+
+         // Refreshing 
+         _RefreshApplicationList();
       }
    }
 }

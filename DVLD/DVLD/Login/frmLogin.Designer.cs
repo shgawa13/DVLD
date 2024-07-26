@@ -33,7 +33,6 @@
          this.panel3 = new System.Windows.Forms.Panel();
          this.label1 = new System.Windows.Forms.Label();
          this.pictureBox1 = new System.Windows.Forms.PictureBox();
-         this.listBox1 = new System.Windows.Forms.ListBox();
          this.Login = new System.Windows.Forms.Label();
          this.label2 = new System.Windows.Forms.Label();
          this.txtboxUserName = new System.Windows.Forms.TextBox();
@@ -42,6 +41,7 @@
          this.btnLogin = new System.Windows.Forms.Button();
          this.cboxRemember = new System.Windows.Forms.CheckBox();
          this.btnCloseLogin = new System.Windows.Forms.Button();
+         this.splitter1 = new System.Windows.Forms.Splitter();
          this.panel1.SuspendLayout();
          this.panel2.SuspendLayout();
          this.panel3.SuspendLayout();
@@ -70,10 +70,10 @@
          this.panel3.BackColor = System.Drawing.Color.Black;
          this.panel3.Controls.Add(this.label1);
          this.panel3.Controls.Add(this.pictureBox1);
-         this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
-         this.panel3.Location = new System.Drawing.Point(0, -3);
+         this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
+         this.panel3.Location = new System.Drawing.Point(0, 0);
          this.panel3.Name = "panel3";
-         this.panel3.Size = new System.Drawing.Size(397, 498);
+         this.panel3.Size = new System.Drawing.Size(397, 495);
          this.panel3.TabIndex = 1;
          // 
          // label1
@@ -98,19 +98,6 @@
          this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
          this.pictureBox1.TabIndex = 0;
          this.pictureBox1.TabStop = false;
-         // 
-         // listBox1
-         // 
-         this.listBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(33)))), ((int)(((byte)(67)))));
-         this.listBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-         this.listBox1.Dock = System.Windows.Forms.DockStyle.Right;
-         this.listBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-         this.listBox1.FormattingEnabled = true;
-         this.listBox1.ItemHeight = 18;
-         this.listBox1.Location = new System.Drawing.Point(397, 0);
-         this.listBox1.Name = "listBox1";
-         this.listBox1.Size = new System.Drawing.Size(484, 498);
-         this.listBox1.TabIndex = 1;
          // 
          // Login
          // 
@@ -211,13 +198,23 @@
          this.btnCloseLogin.UseVisualStyleBackColor = false;
          this.btnCloseLogin.Click += new System.EventHandler(this.btnCloseLogin_Click);
          // 
+         // splitter1
+         // 
+         this.splitter1.BackColor = System.Drawing.Color.Gainsboro;
+         this.splitter1.Location = new System.Drawing.Point(397, 0);
+         this.splitter1.Name = "splitter1";
+         this.splitter1.Size = new System.Drawing.Size(3, 498);
+         this.splitter1.TabIndex = 12;
+         this.splitter1.TabStop = false;
+         // 
          // frmLogin
          // 
          this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
          this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-         this.BackColor = System.Drawing.Color.Black;
+         this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(33)))), ((int)(((byte)(67)))));
          this.ClientSize = new System.Drawing.Size(881, 498);
          this.ControlBox = false;
+         this.Controls.Add(this.splitter1);
          this.Controls.Add(this.btnCloseLogin);
          this.Controls.Add(this.cboxRemember);
          this.Controls.Add(this.btnLogin);
@@ -226,7 +223,6 @@
          this.Controls.Add(this.txtboxUserName);
          this.Controls.Add(this.label2);
          this.Controls.Add(this.Login);
-         this.Controls.Add(this.listBox1);
          this.Controls.Add(this.panel1);
          this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
          this.Name = "frmLogin";
@@ -249,7 +245,6 @@
       private System.Windows.Forms.Panel panel2;
       private System.Windows.Forms.Panel panel3;
       private System.Windows.Forms.PictureBox pictureBox1;
-      private System.Windows.Forms.ListBox listBox1;
       private System.Windows.Forms.Label label1;
       private System.Windows.Forms.Label Login;
       private System.Windows.Forms.Label label2;
@@ -259,6 +254,7 @@
       private System.Windows.Forms.Button btnLogin;
       private System.Windows.Forms.CheckBox cboxRemember;
       private System.Windows.Forms.Button btnCloseLogin;
+      private System.Windows.Forms.Splitter splitter1;
    }
 }
 

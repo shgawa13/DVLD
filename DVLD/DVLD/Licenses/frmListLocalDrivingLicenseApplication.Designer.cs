@@ -36,6 +36,9 @@
          this.pictureBox1 = new System.Windows.Forms.PictureBox();
          this.lblTitle = new System.Windows.Forms.Label();
          this.dgvDrivingLincesApplications = new System.Windows.Forms.DataGridView();
+         this.cbIsActive = new System.Windows.Forms.ComboBox();
+         this.label1 = new System.Windows.Forms.Label();
+         this.lblLDVLAppNumber = new System.Windows.Forms.Label();
          this.panel1.SuspendLayout();
          ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
          ((System.ComponentModel.ISupportInitialize)(this.dgvDrivingLincesApplications)).BeginInit();
@@ -44,6 +47,7 @@
          // panel1
          // 
          this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(47)))), ((int)(((byte)(88)))));
+         this.panel1.Controls.Add(this.cbIsActive);
          this.panel1.Controls.Add(this.txtFilterValue);
          this.panel1.Controls.Add(this.cbFilterBy);
          this.panel1.Controls.Add(this.label2);
@@ -71,11 +75,10 @@
          this.cbFilterBy.ImeMode = System.Windows.Forms.ImeMode.NoControl;
          this.cbFilterBy.Items.AddRange(new object[] {
             "None",
-            "User ID",
-            "User Name",
-            "Person ID",
+            "L.DLA ID",
+            "National No",
             "Full Name",
-            "Is Active"});
+            "Status"});
          this.cbFilterBy.Location = new System.Drawing.Point(100, 178);
          this.cbFilterBy.Name = "cbFilterBy";
          this.cbFilterBy.Size = new System.Drawing.Size(170, 21);
@@ -136,7 +139,6 @@
          this.dgvDrivingLincesApplications.AllowUserToDeleteRows = false;
          this.dgvDrivingLincesApplications.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
          this.dgvDrivingLincesApplications.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-         this.dgvDrivingLincesApplications.Dock = System.Windows.Forms.DockStyle.Fill;
          this.dgvDrivingLincesApplications.Location = new System.Drawing.Point(0, 211);
          this.dgvDrivingLincesApplications.Name = "dgvDrivingLincesApplications";
          this.dgvDrivingLincesApplications.ReadOnly = true;
@@ -144,12 +146,52 @@
          this.dgvDrivingLincesApplications.Size = new System.Drawing.Size(950, 247);
          this.dgvDrivingLincesApplications.TabIndex = 1;
          // 
+         // cbIsActive
+         // 
+         this.cbIsActive.BackColor = System.Drawing.SystemColors.Window;
+         this.cbIsActive.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+         this.cbIsActive.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+         this.cbIsActive.Items.AddRange(new object[] {
+            "All",
+            "New",
+            "Completed ",
+            "Cancel"});
+         this.cbIsActive.Location = new System.Drawing.Point(294, 178);
+         this.cbIsActive.Name = "cbIsActive";
+         this.cbIsActive.Size = new System.Drawing.Size(90, 21);
+         this.cbIsActive.TabIndex = 54;
+         this.cbIsActive.Visible = false;
+         // 
+         // label1
+         // 
+         this.label1.AutoSize = true;
+         this.label1.Font = new System.Drawing.Font("Franklin Gothic Medium", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+         this.label1.ForeColor = System.Drawing.Color.WhiteSmoke;
+         this.label1.Location = new System.Drawing.Point(18, 470);
+         this.label1.Name = "label1";
+         this.label1.Size = new System.Drawing.Size(97, 24);
+         this.label1.TabIndex = 55;
+         this.label1.Text = "# Record:";
+         // 
+         // lblLDVLAppNumber
+         // 
+         this.lblLDVLAppNumber.AutoSize = true;
+         this.lblLDVLAppNumber.Font = new System.Drawing.Font("Franklin Gothic Medium", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+         this.lblLDVLAppNumber.ForeColor = System.Drawing.Color.WhiteSmoke;
+         this.lblLDVLAppNumber.Location = new System.Drawing.Point(116, 470);
+         this.lblLDVLAppNumber.Name = "lblLDVLAppNumber";
+         this.lblLDVLAppNumber.Size = new System.Drawing.Size(43, 24);
+         this.lblLDVLAppNumber.TabIndex = 56;
+         this.lblLDVLAppNumber.Text = "???";
+         // 
          // frmListLocalDrivingLicenseApplication
          // 
          this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
          this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-         this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(33)))), ((int)(((byte)(67)))));
-         this.ClientSize = new System.Drawing.Size(950, 458);
+         this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(47)))), ((int)(((byte)(88)))));
+         this.ClientSize = new System.Drawing.Size(950, 503);
+         this.Controls.Add(this.lblLDVLAppNumber);
+         this.Controls.Add(this.label1);
          this.Controls.Add(this.dgvDrivingLincesApplications);
          this.Controls.Add(this.panel1);
          this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
@@ -161,6 +203,7 @@
          ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
          ((System.ComponentModel.ISupportInitialize)(this.dgvDrivingLincesApplications)).EndInit();
          this.ResumeLayout(false);
+         this.PerformLayout();
 
       }
 
@@ -174,5 +217,8 @@
       private System.Windows.Forms.TextBox txtFilterValue;
       private System.Windows.Forms.ComboBox cbFilterBy;
       private System.Windows.Forms.Label label2;
+      private System.Windows.Forms.ComboBox cbIsActive;
+      private System.Windows.Forms.Label label1;
+      private System.Windows.Forms.Label lblLDVLAppNumber;
    }
 }

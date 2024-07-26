@@ -29,6 +29,7 @@
       private void InitializeComponent()
       {
          this.panel1 = new System.Windows.Forms.Panel();
+         this.cbStatus = new System.Windows.Forms.ComboBox();
          this.txtFilterValue = new System.Windows.Forms.TextBox();
          this.cbFilterBy = new System.Windows.Forms.ComboBox();
          this.label2 = new System.Windows.Forms.Label();
@@ -36,7 +37,6 @@
          this.pictureBox1 = new System.Windows.Forms.PictureBox();
          this.lblTitle = new System.Windows.Forms.Label();
          this.dgvDrivingLincesApplications = new System.Windows.Forms.DataGridView();
-         this.cbIsActive = new System.Windows.Forms.ComboBox();
          this.label1 = new System.Windows.Forms.Label();
          this.lblLDVLAppNumber = new System.Windows.Forms.Label();
          this.panel1.SuspendLayout();
@@ -47,7 +47,7 @@
          // panel1
          // 
          this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(47)))), ((int)(((byte)(88)))));
-         this.panel1.Controls.Add(this.cbIsActive);
+         this.panel1.Controls.Add(this.cbStatus);
          this.panel1.Controls.Add(this.txtFilterValue);
          this.panel1.Controls.Add(this.cbFilterBy);
          this.panel1.Controls.Add(this.label2);
@@ -59,6 +59,22 @@
          this.panel1.Name = "panel1";
          this.panel1.Size = new System.Drawing.Size(950, 211);
          this.panel1.TabIndex = 0;
+         // 
+         // cbStatus
+         // 
+         this.cbStatus.BackColor = System.Drawing.SystemColors.Window;
+         this.cbStatus.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+         this.cbStatus.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+         this.cbStatus.Items.AddRange(new object[] {
+            "All",
+            "New",
+            "Completed ",
+            "Cancel"});
+         this.cbStatus.Location = new System.Drawing.Point(294, 178);
+         this.cbStatus.Name = "cbStatus";
+         this.cbStatus.Size = new System.Drawing.Size(90, 21);
+         this.cbStatus.TabIndex = 54;
+         this.cbStatus.Visible = false;
          // 
          // txtFilterValue
          // 
@@ -77,12 +93,12 @@
             "None",
             "L.DLA ID",
             "National No",
-            "Full Name",
-            "Status"});
+            "Full Name"});
          this.cbFilterBy.Location = new System.Drawing.Point(100, 178);
          this.cbFilterBy.Name = "cbFilterBy";
          this.cbFilterBy.Size = new System.Drawing.Size(170, 21);
          this.cbFilterBy.TabIndex = 52;
+         this.cbFilterBy.SelectedIndexChanged += new System.EventHandler(this.cbFilterBy_SelectedIndexChanged);
          // 
          // label2
          // 
@@ -146,22 +162,6 @@
          this.dgvDrivingLincesApplications.Size = new System.Drawing.Size(950, 247);
          this.dgvDrivingLincesApplications.TabIndex = 1;
          // 
-         // cbIsActive
-         // 
-         this.cbIsActive.BackColor = System.Drawing.SystemColors.Window;
-         this.cbIsActive.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-         this.cbIsActive.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-         this.cbIsActive.Items.AddRange(new object[] {
-            "All",
-            "New",
-            "Completed ",
-            "Cancel"});
-         this.cbIsActive.Location = new System.Drawing.Point(294, 178);
-         this.cbIsActive.Name = "cbIsActive";
-         this.cbIsActive.Size = new System.Drawing.Size(90, 21);
-         this.cbIsActive.TabIndex = 54;
-         this.cbIsActive.Visible = false;
-         // 
          // label1
          // 
          this.label1.AutoSize = true;
@@ -217,7 +217,7 @@
       private System.Windows.Forms.TextBox txtFilterValue;
       private System.Windows.Forms.ComboBox cbFilterBy;
       private System.Windows.Forms.Label label2;
-      private System.Windows.Forms.ComboBox cbIsActive;
+      private System.Windows.Forms.ComboBox cbStatus;
       private System.Windows.Forms.Label label1;
       private System.Windows.Forms.Label lblLDVLAppNumber;
    }

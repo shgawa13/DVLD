@@ -37,9 +37,9 @@ namespace DVLD.People
       private void btnCloseLogin_Click(object sender, EventArgs e)
       {
          clsGlobal.CurrnetUser = null;
+         base.OnClosed(e);
          _frmLogin.Show();
          this.Close();
-         base.OnClosed(e);
       }
 
       private void tolStripPeople_Click(object sender, EventArgs e)

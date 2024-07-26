@@ -425,8 +425,6 @@
       }
 
       #endregion
-
-      private System.Windows.Forms.Panel panel1;
       private System.Windows.Forms.MenuStrip menuStrip1;
       private System.Windows.Forms.ToolStripMenuItem tolStripApplication;
       private System.Windows.Forms.ToolStripMenuItem tolStripPeople;
@@ -459,5 +457,6 @@
       private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem6;
       private System.Windows.Forms.ToolStripMenuItem localDrivingLicneseApplicationToolStripMenuItem;
       private System.Windows.Forms.ToolStripMenuItem internationalDrivingLicenseApplicationToolStripMenuItem;
+      private System.Windows.Forms.Panel panel1;
    }
 }

@@ -94,7 +94,8 @@
             "None",
             "L.DLA ID",
             "National No",
-            "Full Name"});
+            "Full Name",
+            "Status"});
          this.cbFilterBy.Location = new System.Drawing.Point(100, 178);
          this.cbFilterBy.Name = "cbFilterBy";
          this.cbFilterBy.Size = new System.Drawing.Size(170, 21);

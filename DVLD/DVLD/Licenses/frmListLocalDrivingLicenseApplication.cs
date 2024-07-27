@@ -14,7 +14,9 @@ namespace DVLD.Licenses
    public partial class frmListLocalDrivingLicenseApplication : Form
    {
       private static DataTable _dtAllLocalApplications = clsLocalDrivingLicenseApplication.GetAllApplications();
-      private DataView _dtLocalApplications = _dtAllLocalApplications.DefaultView;
+      private DataTable _dtLocalApplications = _dtAllLocalApplications.DefaultView.ToTable(false,
+         "LocalDrivingLicenseApplicationID", "ClassName", "NationalNo", "FullName", "ApplicationDate",
+         "PassedTestCount","Status");
 
       public frmListLocalDrivingLicenseApplication()
       {
@@ -23,7 +25,10 @@ namespace DVLD.Licenses
 
       private void _RefreshApplicationList()
       {
-         _dtLocalApplications = _dtAllLocalApplications.DefaultView;
+         _dtLocalApplications = _dtAllLocalApplications.DefaultView.ToTable(false, "LocalDrivingLicenseApplicationID",
+          "ClassName", "NationalNo", "FullName", "ApplicationDate",
+         "PassedTestCount", "Status");
+
          dgvDrivingLincesApplications.DataSource = _dtLocalApplications;
          lblLDVLAppNumber.Text = dgvDrivingLincesApplications.RowCount.ToString();
       }
@@ -63,7 +68,8 @@ namespace DVLD.Licenses
             cbStatus.Visible = false;
 
             if (cbFilterBy.Text == "None")
-               txtFilterValue.Enabled = false;
+               //txtFilterValue.Enabled = false;
+               txtFilterValue.Visible = false;
             else
                txtFilterValue.Enabled = true;
                txtFilterValue.Text = "";
@@ -76,7 +82,7 @@ namespace DVLD.Licenses
    
 
       private void txtFilterValue_TextChanged(object sender, EventArgs e)
-      {
+     {
          string FilterColumn = "";
          //Map Selected Filter to real Column name 
 
@@ -84,9 +90,9 @@ namespace DVLD.Licenses
          {
 
             case "L.DLA ID":
-               FilterColumn = "LocalDrivingLicenseApplicaionID";
+               FilterColumn = "LocalDrivingLicenseApplicationID";
                break;
-
+            
             case "National No":
                FilterColumn = "NationalNo";
                break;
@@ -102,21 +108,27 @@ namespace DVLD.Licenses
          }
 
 
-         if(txtFilterValue.Text.Trim() =="" && FilterColumn == "None")
+         if(txtFilterValue.Text.Trim() =="" || FilterColumn == "None")
          {
-            _dtLocalApplications.RowFilter = "";
+            _dtLocalApplications.DefaultView.RowFilter = "";
             lblLDVLAppNumber.Text = dgvDrivingLincesApplications.RowCount.ToString();
             return;
          }
 
+         // here we check if input in not empty
+         
+            if( FilterColumn != "FullName" && FilterColumn != "None" && FilterColumn != "NationalNo")
+                _dtLocalApplications.DefaultView.RowFilter  = string.Format("[{0}] = {1}", FilterColumn, txtFilterValue.Text.Trim());
+            else
+                _dtLocalApplications.DefaultView.RowFilter = string.Format("[{0}] LIKE '{1}%'", FilterColumn, txtFilterValue.Text.Trim());
 
-         if(FilterColumn != "FullName" && FilterColumn != "None")
-            _dtLocalApplications.RowFilter = string.Format("[{0}] = {1}", FilterColumn, txtFilterValue.Text.Trim());
-         else
-            _dtLocalApplications.RowFilter = string.Format("[{0}] LIKE '{1}%'", FilterColumn, txtFilterValue.Text.Trim());
+          lblLDVLAppNumber.Text = dgvDrivingLincesApplications.RowCount.ToString();
 
-         lblLDVLAppNumber.Text = dgvDrivingLincesApplications.RowCount.ToString();
+         
 
+          
       }
+
+      
    }
 }

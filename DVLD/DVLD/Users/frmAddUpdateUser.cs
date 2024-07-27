@@ -105,7 +105,7 @@ namespace DVLD.Users
             return;
          }
 
-         _User.PersonID = ctrlPersonInfoWithFilter1.PersonID;
+         _User.PersonID = _PersonID;
          _User.UserName = txtbUserName.Text;
          _User.Password = txtbPassword.Text;
          _User.IsActive = (checkbIsActive.Checked) ? true : false;
@@ -231,7 +231,8 @@ namespace DVLD.Users
 
       private void ctrlPersonInfoWithFilter1_OnPersonSelected(int obj)
       {
-         if(obj != -1)
+         _PersonID = obj;
+         if (_PersonID != -1)
          {
             ctrlPersonInfoWithFilter1.ShowAddPerson = false;
             ctrlPersonInfoWithFilter1.FilterEnable = false;

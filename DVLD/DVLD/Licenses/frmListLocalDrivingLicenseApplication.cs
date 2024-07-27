@@ -25,6 +25,7 @@ namespace DVLD.Licenses
       {
          _dtLocalApplications = _dtAllLocalApplications.DefaultView;
          dgvDrivingLincesApplications.DataSource = _dtLocalApplications;
+         lblLDVLAppNumber.Text = dgvDrivingLincesApplications.RowCount.ToString();
       }
 
       private void frmListDrivingLicenseApplication_Load(object sender, EventArgs e)
@@ -54,7 +55,68 @@ namespace DVLD.Licenses
             txtFilterValue.Visible = false;
             cbStatus.Visible = true;
             cbStatus.SelectedIndex = 0;
+            cbStatus.Focus();
          }
+         else
+         {
+            txtFilterValue.Visible = (cbFilterBy.Text != "None");
+            cbStatus.Visible = false;
+
+            if (cbFilterBy.Text == "None")
+               txtFilterValue.Enabled = false;
+            else
+               txtFilterValue.Enabled = true;
+               txtFilterValue.Text = "";
+               txtFilterValue.Focus();
+
+
+         }
+      }
+
+   
+
+      private void txtFilterValue_TextChanged(object sender, EventArgs e)
+      {
+         string FilterColumn = "";
+         //Map Selected Filter to real Column name 
+
+         switch (cbFilterBy.Text)
+         {
+
+            case "L.DLA ID":
+               FilterColumn = "LocalDrivingLicenseApplicaionID";
+               break;
+
+            case "National No":
+               FilterColumn = "NationalNo";
+               break;
+
+            case "Full Name":
+               FilterColumn = "FullName";
+               break;
+
+            default:
+               FilterColumn = "None";
+               break;
+
+         }
+
+
+         if(txtFilterValue.Text.Trim() =="" && FilterColumn == "None")
+         {
+            _dtLocalApplications.RowFilter = "";
+            lblLDVLAppNumber.Text = dgvDrivingLincesApplications.RowCount.ToString();
+            return;
+         }
+
+
+         if(FilterColumn != "FullName" && FilterColumn != "None")
+            _dtLocalApplications.RowFilter = string.Format("[{0}] = {1}", FilterColumn, txtFilterValue.Text.Trim());
+         else
+            _dtLocalApplications.RowFilter = string.Format("[{0}] LIKE '{1}%'", FilterColumn, txtFilterValue.Text.Trim());
+
+         lblLDVLAppNumber.Text = dgvDrivingLincesApplications.RowCount.ToString();
+
       }
    }
 }

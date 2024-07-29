@@ -356,5 +356,10 @@ namespace DVLD.People
       {
         e.Handled = !char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar);
       }
+
+      private void cmbCountry_SelectedIndexChanged(object sender, EventArgs e)
+      {
+
+      }
    }
 }

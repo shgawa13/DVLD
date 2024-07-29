@@ -6,10 +6,30 @@ using System.Text;
 using System.Threading.Tasks;
 using BusinessLayer;
 using Business;
+using System.Runtime.InteropServices.WindowsRuntime;
 namespace ConsoleApp1
 {
+      public class Book
+      {
+         public string Title { get; set; }
+         public decimal Price { get; set; }
+
+         public Book(string Ttitle, decimal Price)
+         {
+            this.Title = Ttitle;
+            this.Price = Price;
+         }
+
+      }
+
    internal class Program
    {
+      public delegate bool Predicate(Book book);
+
+      public static bool BooksGreaterThan30(Book book) => book.Price > 30;
+      public static bool BooksLessThan30(Book book) => book.Price <= 30;
+
+
       public static void FindUser(string UserName, string Password)
       {
          // counrty = 
@@ -83,16 +103,41 @@ namespace ConsoleApp1
        
       }
 
-      
+      public static int CountBook(List<Book> books, Predicate pred)
+      {
+         int counter = 0;
+
+         foreach(Book book in books)
+         {
+            if (pred(book))
+               counter++;
+         }
+
+         return counter;
+      }
 
       static void Main(string[] args)
       {
          Console.WriteLine("start");
-         GetConuntyInfoByID(11);
+         // GetConuntyInfoByID(11);
          // FindUser("shgawa","112233");
          // GetAllLicenseClasses(); 
          // GetLicenseClassByID(1);
          //  GetLicenseClassByName("Class 1 - Small Motorcycle");
+
+         List<Book> books = new List<Book>()
+         {
+            new Book("C++ Book",30),
+            new Book("Java Book",40),
+            new Book("JavaScript Book",55),
+            new Book("C# OOP",60),
+
+         };
+
+
+         Console.WriteLine(CountBook(books, BooksGreaterThan30));
+         Console.WriteLine(CountBook(books, BooksLessThan30));
+
          Console.WriteLine("End");
 
         

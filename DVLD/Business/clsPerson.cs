@@ -158,24 +158,15 @@ namespace BusinessLayer
          return false;
       }
 
-      public static DataTable GetAllPeople()
-      {
-         return clsPersonData.GetAllPeople();
-      }
+      public static DataTable GetAllPeople() => clsPersonData.GetAllPeople();
 
-      public static bool DeletePerson(int PersonID)
-      {
-         return clsPersonData.DeletePerson(PersonID);
-      }
+      public static bool DeletePerson(int PersonID) => clsPersonData.DeletePerson(PersonID);
+     
 
-      public static bool IsExist(int PersonID)
-      {
-         return clsPersonData.IsPersonExist(PersonID);
-      }
-      
-      public static bool IsExist(string NationalNo)
-      {
-         return clsPersonData.IsPersonExist(NationalNo);
-      }
+      public static bool IsExist(int PersonID) => clsPersonData.IsPersonExist(PersonID);
+
+
+      public static bool IsExist(string NationalNo) => clsPersonData.IsPersonExist(NationalNo);
+
    }
 }

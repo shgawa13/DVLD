@@ -151,10 +151,8 @@ namespace BusinessLayer
       }
 
       
-      public static DataTable GetAllUsers()
-      {
-         return clsUsersData.GetAllUsers();
-      } 
+      public static DataTable GetAllUsers() => clsUsersData.GetAllUsers();
+
 
    }
 }

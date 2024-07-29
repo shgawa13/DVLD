@@ -226,6 +226,7 @@
          this.cmbCountry.Name = "cmbCountry";
          this.cmbCountry.Size = new System.Drawing.Size(186, 29);
          this.cmbCountry.TabIndex = 10;
+         this.cmbCountry.SelectedIndexChanged += new System.EventHandler(this.cmbCountry_SelectedIndexChanged);
          // 
          // txtbPhone
          // 

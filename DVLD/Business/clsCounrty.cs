@@ -55,10 +55,8 @@ namespace BusinessLayer
 
       }
 
-      public static DataTable GetAllCountries()
-      {
-         return clsCountryData.GetAllCountries();
-      }
+      public static DataTable GetAllCountries() => clsCountryData.GetAllCountries();
+      
 
    }
 }

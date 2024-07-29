@@ -127,6 +127,12 @@ namespace DVLD.People.Controls
          
       }
 
+      public void FilterFocus()
+      {
+         grbFilter.Focus();
+      }
+
+
       private void ctrlPersonInfo1_Load(object sender, EventArgs e)
       {
          cbFilterBy.SelectedIndex = 0;

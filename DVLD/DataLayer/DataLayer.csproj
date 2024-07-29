@@ -63,7 +63,7 @@
     <Compile Include="clsTestAppointmentData.cs" />
     <Compile Include="clsTestTypeData.cs" />
     <Compile Include="clsUsersData.cs" />
-    <Compile Include="clsLocalDrivingLicenseApplicaionData.cs" />
+    <Compile Include="clsLocalDrivingLicenseApplicationData.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

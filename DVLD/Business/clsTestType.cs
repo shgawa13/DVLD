@@ -63,10 +63,9 @@ namespace Business
             return null;
       }
 
-      public static DataTable GetAllTypeTest()
-      {
-         return clsTestTypeData.GetAllTypeTes();
-      }
+      public static DataTable GetAllTypeTest() => clsTestTypeData.GetAllTypeTes();
+
+
 
 
       public bool Save()

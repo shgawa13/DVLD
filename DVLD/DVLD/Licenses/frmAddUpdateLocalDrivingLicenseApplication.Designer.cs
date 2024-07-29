@@ -32,6 +32,7 @@
          this.tabApplication = new System.Windows.Forms.TabControl();
          this.tabPersonInfo = new System.Windows.Forms.TabPage();
          this.btnNext = new System.Windows.Forms.Button();
+         this.ctrlPersonInfoWithFilter1 = new DVLD.People.Controls.ctrlPersonInfoWithFilter();
          this.tabApplicationInfo = new System.Windows.Forms.TabPage();
          this.cbLicenseClasses = new System.Windows.Forms.ComboBox();
          this.lblCreatedByUser = new System.Windows.Forms.Label();
@@ -41,13 +42,12 @@
          this.label5 = new System.Windows.Forms.Label();
          this.lblApplicationDate = new System.Windows.Forms.Label();
          this.label2 = new System.Windows.Forms.Label();
-         this.ApplicationID = new System.Windows.Forms.Label();
+         this.lblApplicationID = new System.Windows.Forms.Label();
          this.label3 = new System.Windows.Forms.Label();
          this.panel1 = new System.Windows.Forms.Panel();
          this.pictureBox1 = new System.Windows.Forms.PictureBox();
          this.btnClose = new System.Windows.Forms.Button();
          this.btnSave = new System.Windows.Forms.Button();
-         this.ctrlPersonInfoWithFilter1 = new DVLD.People.Controls.ctrlPersonInfoWithFilter();
          this.tabApplication.SuspendLayout();
          this.tabPersonInfo.SuspendLayout();
          this.tabApplicationInfo.SuspendLayout();
@@ -94,6 +94,7 @@
          // btnNext
          // 
          this.btnNext.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(212)))), ((int)(((byte)(212)))));
+         this.btnNext.Enabled = false;
          this.btnNext.FlatAppearance.BorderSize = 0;
          this.btnNext.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
          this.btnNext.Font = new System.Drawing.Font("Franklin Gothic Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -104,6 +105,19 @@
          this.btnNext.TabIndex = 21;
          this.btnNext.Text = "Next";
          this.btnNext.UseVisualStyleBackColor = false;
+         this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
+         // 
+         // ctrlPersonInfoWithFilter1
+         // 
+         this.ctrlPersonInfoWithFilter1.BackColor = System.Drawing.Color.Gainsboro;
+         this.ctrlPersonInfoWithFilter1.FilterEnable = true;
+         this.ctrlPersonInfoWithFilter1.Location = new System.Drawing.Point(-4, 3);
+         this.ctrlPersonInfoWithFilter1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+         this.ctrlPersonInfoWithFilter1.Name = "ctrlPersonInfoWithFilter1";
+         this.ctrlPersonInfoWithFilter1.ShowAddPerson = true;
+         this.ctrlPersonInfoWithFilter1.Size = new System.Drawing.Size(1239, 495);
+         this.ctrlPersonInfoWithFilter1.TabIndex = 22;
+         this.ctrlPersonInfoWithFilter1.OnPersonSelected += new System.Action<int>(this.ctrlPersonInfoWithFilter1_OnPersonSelected);
          // 
          // tabApplicationInfo
          // 
@@ -116,7 +130,7 @@
          this.tabApplicationInfo.Controls.Add(this.label5);
          this.tabApplicationInfo.Controls.Add(this.lblApplicationDate);
          this.tabApplicationInfo.Controls.Add(this.label2);
-         this.tabApplicationInfo.Controls.Add(this.ApplicationID);
+         this.tabApplicationInfo.Controls.Add(this.lblApplicationID);
          this.tabApplicationInfo.Controls.Add(this.label3);
          this.tabApplicationInfo.Controls.Add(this.panel1);
          this.tabApplicationInfo.ForeColor = System.Drawing.Color.WhiteSmoke;
@@ -132,21 +146,9 @@
          this.cbLicenseClasses.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
          this.cbLicenseClasses.Font = new System.Drawing.Font("Verdana", 13.25F, System.Drawing.FontStyle.Bold);
          this.cbLicenseClasses.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-         this.cbLicenseClasses.Items.AddRange(new object[] {
-            "None",
-            "Person ID",
-            "National Number",
-            "First Name",
-            "Second Name",
-            "Third Name",
-            "Last Name",
-            "Nationlity",
-            "Gendor",
-            "Phone Number",
-            "Email"});
          this.cbLicenseClasses.Location = new System.Drawing.Point(200, 223);
          this.cbLicenseClasses.Name = "cbLicenseClasses";
-         this.cbLicenseClasses.Size = new System.Drawing.Size(254, 30);
+         this.cbLicenseClasses.Size = new System.Drawing.Size(359, 30);
          this.cbLicenseClasses.TabIndex = 39;
          // 
          // lblCreatedByUser
@@ -155,7 +157,7 @@
          this.lblCreatedByUser.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(47)))), ((int)(((byte)(88)))));
          this.lblCreatedByUser.Font = new System.Drawing.Font("Verdana", 13.25F, System.Drawing.FontStyle.Bold);
          this.lblCreatedByUser.ForeColor = System.Drawing.Color.WhiteSmoke;
-         this.lblCreatedByUser.Location = new System.Drawing.Point(230, 365);
+         this.lblCreatedByUser.Location = new System.Drawing.Point(196, 365);
          this.lblCreatedByUser.Name = "lblCreatedByUser";
          this.lblCreatedByUser.Size = new System.Drawing.Size(43, 22);
          this.lblCreatedByUser.TabIndex = 38;
@@ -179,7 +181,7 @@
          this.lblApplicationFees.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(47)))), ((int)(((byte)(88)))));
          this.lblApplicationFees.Font = new System.Drawing.Font("Verdana", 13.25F, System.Drawing.FontStyle.Bold);
          this.lblApplicationFees.ForeColor = System.Drawing.Color.WhiteSmoke;
-         this.lblApplicationFees.Location = new System.Drawing.Point(230, 295);
+         this.lblApplicationFees.Location = new System.Drawing.Point(198, 295);
          this.lblApplicationFees.Name = "lblApplicationFees";
          this.lblApplicationFees.Size = new System.Drawing.Size(43, 22);
          this.lblApplicationFees.TabIndex = 36;
@@ -215,7 +217,7 @@
          this.lblApplicationDate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(47)))), ((int)(((byte)(88)))));
          this.lblApplicationDate.Font = new System.Drawing.Font("Verdana", 13.25F, System.Drawing.FontStyle.Bold);
          this.lblApplicationDate.ForeColor = System.Drawing.Color.WhiteSmoke;
-         this.lblApplicationDate.Location = new System.Drawing.Point(230, 170);
+         this.lblApplicationDate.Location = new System.Drawing.Point(200, 170);
          this.lblApplicationDate.Name = "lblApplicationDate";
          this.lblApplicationDate.Size = new System.Drawing.Size(43, 22);
          this.lblApplicationDate.TabIndex = 32;
@@ -233,17 +235,17 @@
          this.label2.TabIndex = 31;
          this.label2.Text = "Application Date:";
          // 
-         // ApplicationID
+         // lblApplicationID
          // 
-         this.ApplicationID.AutoSize = true;
-         this.ApplicationID.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(47)))), ((int)(((byte)(88)))));
-         this.ApplicationID.Font = new System.Drawing.Font("Verdana", 13.25F, System.Drawing.FontStyle.Bold);
-         this.ApplicationID.ForeColor = System.Drawing.Color.WhiteSmoke;
-         this.ApplicationID.Location = new System.Drawing.Point(230, 109);
-         this.ApplicationID.Name = "ApplicationID";
-         this.ApplicationID.Size = new System.Drawing.Size(43, 22);
-         this.ApplicationID.TabIndex = 30;
-         this.ApplicationID.Text = "???";
+         this.lblApplicationID.AutoSize = true;
+         this.lblApplicationID.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(47)))), ((int)(((byte)(88)))));
+         this.lblApplicationID.Font = new System.Drawing.Font("Verdana", 13.25F, System.Drawing.FontStyle.Bold);
+         this.lblApplicationID.ForeColor = System.Drawing.Color.WhiteSmoke;
+         this.lblApplicationID.Location = new System.Drawing.Point(126, 109);
+         this.lblApplicationID.Name = "lblApplicationID";
+         this.lblApplicationID.Size = new System.Drawing.Size(43, 22);
+         this.lblApplicationID.TabIndex = 30;
+         this.lblApplicationID.Text = "???";
          // 
          // label3
          // 
@@ -304,17 +306,7 @@
          this.btnSave.TabIndex = 20;
          this.btnSave.Text = "Save";
          this.btnSave.UseVisualStyleBackColor = false;
-         // 
-         // ctrlPersonInfoWithFilter1
-         // 
-         this.ctrlPersonInfoWithFilter1.BackColor = System.Drawing.Color.Gainsboro;
-         this.ctrlPersonInfoWithFilter1.FilterEnable = true;
-         this.ctrlPersonInfoWithFilter1.Location = new System.Drawing.Point(-4, 3);
-         this.ctrlPersonInfoWithFilter1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-         this.ctrlPersonInfoWithFilter1.Name = "ctrlPersonInfoWithFilter1";
-         this.ctrlPersonInfoWithFilter1.ShowAddPerson = true;
-         this.ctrlPersonInfoWithFilter1.Size = new System.Drawing.Size(1239, 495);
-         this.ctrlPersonInfoWithFilter1.TabIndex = 22;
+         this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
          // 
          // frmAddUpdateLocalDrivingLicenseApplication
          // 
@@ -329,6 +321,7 @@
          this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
          this.Name = "frmAddUpdateLocalDrivingLicenseApplication";
          this.Text = "Local Driving License Application";
+         this.Load += new System.EventHandler(this.frmAddUpdateLocalDrivingLicenseApplication_Load);
          this.tabApplication.ResumeLayout(false);
          this.tabPersonInfo.ResumeLayout(false);
          this.tabApplicationInfo.ResumeLayout(false);
@@ -358,7 +351,7 @@
       private System.Windows.Forms.Label label5;
       private System.Windows.Forms.Label lblApplicationDate;
       private System.Windows.Forms.Label label2;
-      private System.Windows.Forms.Label ApplicationID;
+      private System.Windows.Forms.Label lblApplicationID;
       private System.Windows.Forms.Label label3;
       private System.Windows.Forms.ComboBox cbLicenseClasses;
       private People.Controls.ctrlPersonInfoWithFilter ctrlPersonInfoWithFilter1;

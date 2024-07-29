@@ -13,7 +13,7 @@ namespace DVLD.Licenses
 {
    public partial class frmListLocalDrivingLicenseApplication : Form
    {
-      private static DataTable _dtAllLocalApplications = clsLocalDrivingLicenseApplication.GetAllApplications();
+      private static DataTable _dtAllLocalApplications = clsLocalDrivingLicenseApplication.GetAllLocalDrivingLicenseApplications();
       private DataTable _dtLocalApplications = _dtAllLocalApplications.DefaultView.ToTable(false,
          "LocalDrivingLicenseApplicationID", "ClassName", "NationalNo", "FullName", "ApplicationDate",
          "PassedTestCount","Status");
@@ -45,7 +45,8 @@ namespace DVLD.Licenses
 
       private void bntAddNewApplication_Click(object sender, EventArgs e)
       {
-         Form frm = new frmAddUpdateLocalDrivingLicenseApplication();
+         frmAddUpdateLocalDrivingLicenseApplication frm = new frmAddUpdateLocalDrivingLicenseApplication();
+        
          frm.ShowDialog();
 
          // Refreshing 

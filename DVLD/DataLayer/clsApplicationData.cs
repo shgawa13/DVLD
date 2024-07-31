@@ -346,7 +346,7 @@ namespace DataLayer
          SqlConnection connection = new SqlConnection(clsDataAccessSettings.ConnectingString);
          string Query = @"Update Applications
                      set ApplicationStatus=@NewStatus,
-                        LastStatusDate=@LastStatusDate,
+                        LastStatusDate=@LastStatusDate
                      Where ApplicationID=@ApplicationID;";
          SqlCommand command = new SqlCommand(Query, connection);
 

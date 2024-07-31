@@ -286,6 +286,9 @@
     <None Include="Resources\Application Types 5121.png" />
     <None Include="Resources\application.png" />
     <None Include="Resources\App.png" />
+    <None Include="Resources\cross 32.png" />
+    <None Include="Resources\edit 32.png" />
+    <None Include="Resources\Delete 32 2.png" />
     <Content Include="Resources\Female_avatar.png" />
     <None Include="Resources\plus-icon.png" />
     <None Include="Resources\people.png" />

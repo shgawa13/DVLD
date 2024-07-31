@@ -28,6 +28,7 @@
       /// </summary>
       private void InitializeComponent()
       {
+         this.components = new System.ComponentModel.Container();
          this.panel1 = new System.Windows.Forms.Panel();
          this.cbStatus = new System.Windows.Forms.ComboBox();
          this.txtFilterValue = new System.Windows.Forms.TextBox();
@@ -37,11 +38,24 @@
          this.pictureBox1 = new System.Windows.Forms.PictureBox();
          this.lblTitle = new System.Windows.Forms.Label();
          this.dgvDrivingLincesApplications = new System.Windows.Forms.DataGridView();
+         this.ctmsApplication = new System.Windows.Forms.ContextMenuStrip(this.components);
+         this.tlsmShowApplicationDetails = new System.Windows.Forms.ToolStripMenuItem();
+         this.tlsmEditApplication = new System.Windows.Forms.ToolStripMenuItem();
+         this.tlsmCancelApplication = new System.Windows.Forms.ToolStripMenuItem();
+         this.tlsmDeleteApplication = new System.Windows.Forms.ToolStripMenuItem();
+         this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripSeparator();
+         this.tlsmSecheduleTest = new System.Windows.Forms.ToolStripMenuItem();
+         this.vistionTestToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+         this.writtenTestToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+         this.streetTestToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+         this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripSeparator();
+         this.tlsmShowPersonLicenseHistory = new System.Windows.Forms.ToolStripMenuItem();
          this.label1 = new System.Windows.Forms.Label();
          this.lblLDVLAppNumber = new System.Windows.Forms.Label();
          this.panel1.SuspendLayout();
          ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
          ((System.ComponentModel.ISupportInitialize)(this.dgvDrivingLincesApplications)).BeginInit();
+         this.ctmsApplication.SuspendLayout();
          this.SuspendLayout();
          // 
          // panel1
@@ -84,6 +98,7 @@
          this.txtFilterValue.TabIndex = 53;
          this.txtFilterValue.Visible = false;
          this.txtFilterValue.TextChanged += new System.EventHandler(this.txtFilterValue_TextChanged);
+         this.txtFilterValue.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtFilterValue_KeyPress);
          // 
          // cbFilterBy
          // 
@@ -157,12 +172,103 @@
          this.dgvDrivingLincesApplications.AllowUserToDeleteRows = false;
          this.dgvDrivingLincesApplications.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
          this.dgvDrivingLincesApplications.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-         this.dgvDrivingLincesApplications.Location = new System.Drawing.Point(0, 211);
+         this.dgvDrivingLincesApplications.ContextMenuStrip = this.ctmsApplication;
+         this.dgvDrivingLincesApplications.Location = new System.Drawing.Point(0, 229);
          this.dgvDrivingLincesApplications.Name = "dgvDrivingLincesApplications";
          this.dgvDrivingLincesApplications.ReadOnly = true;
          this.dgvDrivingLincesApplications.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-         this.dgvDrivingLincesApplications.Size = new System.Drawing.Size(950, 247);
+         this.dgvDrivingLincesApplications.Size = new System.Drawing.Size(950, 229);
          this.dgvDrivingLincesApplications.TabIndex = 1;
+         // 
+         // ctmsApplication
+         // 
+         this.ctmsApplication.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tlsmShowApplicationDetails,
+            this.tlsmEditApplication,
+            this.tlsmCancelApplication,
+            this.tlsmDeleteApplication,
+            this.toolStripMenuItem2,
+            this.tlsmSecheduleTest,
+            this.toolStripMenuItem1,
+            this.tlsmShowPersonLicenseHistory});
+         this.ctmsApplication.Name = "ctmsApplication";
+         this.ctmsApplication.Size = new System.Drawing.Size(226, 170);
+         // 
+         // tlsmShowApplicationDetails
+         // 
+         this.tlsmShowApplicationDetails.Name = "tlsmShowApplicationDetails";
+         this.tlsmShowApplicationDetails.Size = new System.Drawing.Size(225, 22);
+         this.tlsmShowApplicationDetails.Text = "Show Application Details";
+         // 
+         // tlsmEditApplication
+         // 
+         this.tlsmEditApplication.Image = global::DVLD.Properties.Resources.edit_32;
+         this.tlsmEditApplication.Name = "tlsmEditApplication";
+         this.tlsmEditApplication.Size = new System.Drawing.Size(225, 22);
+         this.tlsmEditApplication.Text = "Edit Application";
+         this.tlsmEditApplication.Click += new System.EventHandler(this.tlsmEditApplication_Click);
+         // 
+         // tlsmCancelApplication
+         // 
+         this.tlsmCancelApplication.Image = global::DVLD.Properties.Resources.cross_32;
+         this.tlsmCancelApplication.Name = "tlsmCancelApplication";
+         this.tlsmCancelApplication.Size = new System.Drawing.Size(225, 22);
+         this.tlsmCancelApplication.Text = "Cancel Application";
+         this.tlsmCancelApplication.Click += new System.EventHandler(this.tlsmCancelApplication_Click);
+         // 
+         // tlsmDeleteApplication
+         // 
+         this.tlsmDeleteApplication.Image = global::DVLD.Properties.Resources.Delete_32_2;
+         this.tlsmDeleteApplication.Name = "tlsmDeleteApplication";
+         this.tlsmDeleteApplication.Size = new System.Drawing.Size(225, 22);
+         this.tlsmDeleteApplication.Text = "Delete Application";
+         // 
+         // toolStripMenuItem2
+         // 
+         this.toolStripMenuItem2.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+         this.toolStripMenuItem2.Name = "toolStripMenuItem2";
+         this.toolStripMenuItem2.Size = new System.Drawing.Size(222, 6);
+         // 
+         // tlsmSecheduleTest
+         // 
+         this.tlsmSecheduleTest.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.vistionTestToolStripMenuItem,
+            this.writtenTestToolStripMenuItem,
+            this.streetTestToolStripMenuItem});
+         this.tlsmSecheduleTest.Name = "tlsmSecheduleTest";
+         this.tlsmSecheduleTest.Size = new System.Drawing.Size(225, 22);
+         this.tlsmSecheduleTest.Text = "Sechedule Test";
+         // 
+         // vistionTestToolStripMenuItem
+         // 
+         this.vistionTestToolStripMenuItem.Name = "vistionTestToolStripMenuItem";
+         this.vistionTestToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+         this.vistionTestToolStripMenuItem.Text = "Vistion Test";
+         this.vistionTestToolStripMenuItem.Click += new System.EventHandler(this.vistionTestToolStripMenuItem_Click);
+         // 
+         // writtenTestToolStripMenuItem
+         // 
+         this.writtenTestToolStripMenuItem.Name = "writtenTestToolStripMenuItem";
+         this.writtenTestToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
+         this.writtenTestToolStripMenuItem.Text = "Written Test";
+         // 
+         // streetTestToolStripMenuItem
+         // 
+         this.streetTestToolStripMenuItem.Name = "streetTestToolStripMenuItem";
+         this.streetTestToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
+         this.streetTestToolStripMenuItem.Text = "Street Test";
+         // 
+         // toolStripMenuItem1
+         // 
+         this.toolStripMenuItem1.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+         this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+         this.toolStripMenuItem1.Size = new System.Drawing.Size(222, 6);
+         // 
+         // tlsmShowPersonLicenseHistory
+         // 
+         this.tlsmShowPersonLicenseHistory.Name = "tlsmShowPersonLicenseHistory";
+         this.tlsmShowPersonLicenseHistory.Size = new System.Drawing.Size(225, 22);
+         this.tlsmShowPersonLicenseHistory.Text = "Show Person License History";
          // 
          // label1
          // 
@@ -198,12 +304,13 @@
          this.Controls.Add(this.panel1);
          this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
          this.Name = "frmListLocalDrivingLicenseApplication";
-         this.Text = "frmListDrivingLicenseApplication";
+         this.Text = "List Driving License Application";
          this.Load += new System.EventHandler(this.frmListDrivingLicenseApplication_Load);
          this.panel1.ResumeLayout(false);
          this.panel1.PerformLayout();
          ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
          ((System.ComponentModel.ISupportInitialize)(this.dgvDrivingLincesApplications)).EndInit();
+         this.ctmsApplication.ResumeLayout(false);
          this.ResumeLayout(false);
          this.PerformLayout();
 
@@ -222,5 +329,17 @@
       private System.Windows.Forms.ComboBox cbStatus;
       private System.Windows.Forms.Label label1;
       private System.Windows.Forms.Label lblLDVLAppNumber;
+      private System.Windows.Forms.ContextMenuStrip ctmsApplication;
+      private System.Windows.Forms.ToolStripMenuItem tlsmShowApplicationDetails;
+      private System.Windows.Forms.ToolStripMenuItem tlsmEditApplication;
+      private System.Windows.Forms.ToolStripMenuItem tlsmDeleteApplication;
+      private System.Windows.Forms.ToolStripMenuItem tlsmSecheduleTest;
+      private System.Windows.Forms.ToolStripMenuItem tlsmShowPersonLicenseHistory;
+      private System.Windows.Forms.ToolStripMenuItem tlsmCancelApplication;
+      private System.Windows.Forms.ToolStripSeparator toolStripMenuItem2;
+      private System.Windows.Forms.ToolStripMenuItem vistionTestToolStripMenuItem;
+      private System.Windows.Forms.ToolStripMenuItem writtenTestToolStripMenuItem;
+      private System.Windows.Forms.ToolStripMenuItem streetTestToolStripMenuItem;
+      private System.Windows.Forms.ToolStripSeparator toolStripMenuItem1;
    }
 }

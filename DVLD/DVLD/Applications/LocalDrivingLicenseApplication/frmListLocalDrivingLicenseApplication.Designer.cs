@@ -71,7 +71,7 @@
          this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
          this.panel1.Location = new System.Drawing.Point(0, 0);
          this.panel1.Name = "panel1";
-         this.panel1.Size = new System.Drawing.Size(950, 211);
+         this.panel1.Size = new System.Drawing.Size(946, 211);
          this.panel1.TabIndex = 0;
          // 
          // cbStatus
@@ -83,7 +83,7 @@
             "All",
             "New",
             "Completed ",
-            "Cancel"});
+            "Cancelled"});
          this.cbStatus.Location = new System.Drawing.Point(294, 178);
          this.cbStatus.Name = "cbStatus";
          this.cbStatus.Size = new System.Drawing.Size(90, 21);
@@ -173,11 +173,11 @@
          this.dgvDrivingLincesApplications.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
          this.dgvDrivingLincesApplications.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
          this.dgvDrivingLincesApplications.ContextMenuStrip = this.ctmsApplication;
-         this.dgvDrivingLincesApplications.Location = new System.Drawing.Point(0, 229);
+         this.dgvDrivingLincesApplications.Location = new System.Drawing.Point(0, 217);
          this.dgvDrivingLincesApplications.Name = "dgvDrivingLincesApplications";
          this.dgvDrivingLincesApplications.ReadOnly = true;
          this.dgvDrivingLincesApplications.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-         this.dgvDrivingLincesApplications.Size = new System.Drawing.Size(950, 229);
+         this.dgvDrivingLincesApplications.Size = new System.Drawing.Size(946, 250);
          this.dgvDrivingLincesApplications.TabIndex = 1;
          // 
          // ctmsApplication
@@ -192,7 +192,7 @@
             this.toolStripMenuItem1,
             this.tlsmShowPersonLicenseHistory});
          this.ctmsApplication.Name = "ctmsApplication";
-         this.ctmsApplication.Size = new System.Drawing.Size(226, 170);
+         this.ctmsApplication.Size = new System.Drawing.Size(226, 148);
          // 
          // tlsmShowApplicationDetails
          // 
@@ -206,7 +206,6 @@
          this.tlsmEditApplication.Name = "tlsmEditApplication";
          this.tlsmEditApplication.Size = new System.Drawing.Size(225, 22);
          this.tlsmEditApplication.Text = "Edit Application";
-         this.tlsmEditApplication.Click += new System.EventHandler(this.tlsmEditApplication_Click);
          // 
          // tlsmCancelApplication
          // 
@@ -242,9 +241,8 @@
          // vistionTestToolStripMenuItem
          // 
          this.vistionTestToolStripMenuItem.Name = "vistionTestToolStripMenuItem";
-         this.vistionTestToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+         this.vistionTestToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
          this.vistionTestToolStripMenuItem.Text = "Vistion Test";
-         this.vistionTestToolStripMenuItem.Click += new System.EventHandler(this.vistionTestToolStripMenuItem_Click);
          // 
          // writtenTestToolStripMenuItem
          // 
@@ -275,7 +273,7 @@
          this.label1.AutoSize = true;
          this.label1.Font = new System.Drawing.Font("Franklin Gothic Medium", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
          this.label1.ForeColor = System.Drawing.Color.WhiteSmoke;
-         this.label1.Location = new System.Drawing.Point(18, 470);
+         this.label1.Location = new System.Drawing.Point(18, 473);
          this.label1.Name = "label1";
          this.label1.Size = new System.Drawing.Size(97, 24);
          this.label1.TabIndex = 55;
@@ -286,7 +284,7 @@
          this.lblLDVLAppNumber.AutoSize = true;
          this.lblLDVLAppNumber.Font = new System.Drawing.Font("Franklin Gothic Medium", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
          this.lblLDVLAppNumber.ForeColor = System.Drawing.Color.WhiteSmoke;
-         this.lblLDVLAppNumber.Location = new System.Drawing.Point(116, 470);
+         this.lblLDVLAppNumber.Location = new System.Drawing.Point(116, 473);
          this.lblLDVLAppNumber.Name = "lblLDVLAppNumber";
          this.lblLDVLAppNumber.Size = new System.Drawing.Size(43, 24);
          this.lblLDVLAppNumber.TabIndex = 56;
@@ -297,7 +295,7 @@
          this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
          this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
          this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(47)))), ((int)(((byte)(88)))));
-         this.ClientSize = new System.Drawing.Size(950, 503);
+         this.ClientSize = new System.Drawing.Size(946, 503);
          this.Controls.Add(this.lblLDVLAppNumber);
          this.Controls.Add(this.label1);
          this.Controls.Add(this.dgvDrivingLincesApplications);
@@ -332,14 +330,14 @@
       private System.Windows.Forms.ContextMenuStrip ctmsApplication;
       private System.Windows.Forms.ToolStripMenuItem tlsmShowApplicationDetails;
       private System.Windows.Forms.ToolStripMenuItem tlsmEditApplication;
-      private System.Windows.Forms.ToolStripMenuItem tlsmDeleteApplication;
-      private System.Windows.Forms.ToolStripMenuItem tlsmSecheduleTest;
-      private System.Windows.Forms.ToolStripMenuItem tlsmShowPersonLicenseHistory;
       private System.Windows.Forms.ToolStripMenuItem tlsmCancelApplication;
+      private System.Windows.Forms.ToolStripMenuItem tlsmDeleteApplication;
       private System.Windows.Forms.ToolStripSeparator toolStripMenuItem2;
+      private System.Windows.Forms.ToolStripMenuItem tlsmSecheduleTest;
       private System.Windows.Forms.ToolStripMenuItem vistionTestToolStripMenuItem;
       private System.Windows.Forms.ToolStripMenuItem writtenTestToolStripMenuItem;
       private System.Windows.Forms.ToolStripMenuItem streetTestToolStripMenuItem;
       private System.Windows.Forms.ToolStripSeparator toolStripMenuItem1;
+      private System.Windows.Forms.ToolStripMenuItem tlsmShowPersonLicenseHistory;
    }
 }

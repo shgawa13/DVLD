@@ -34,22 +34,25 @@ namespace DVLD.Licenses
          {
 
             dgvDrivingLincesApplications.Columns[0].HeaderText = "L.D.L.AppID";
-            dgvDrivingLincesApplications.Columns[0].Width = 120;
+            dgvDrivingLincesApplications.Columns[0].Width = 80;
 
             dgvDrivingLincesApplications.Columns[1].HeaderText = "Driving Class";
-            dgvDrivingLincesApplications.Columns[1].Width = 300;
+            dgvDrivingLincesApplications.Columns[1].Width = 200;
 
             dgvDrivingLincesApplications.Columns[2].HeaderText = "National No.";
-            dgvDrivingLincesApplications.Columns[2].Width = 150;
+            dgvDrivingLincesApplications.Columns[2].Width = 70;
 
             dgvDrivingLincesApplications.Columns[3].HeaderText = "Full Name";
-            dgvDrivingLincesApplications.Columns[3].Width = 350;
+            dgvDrivingLincesApplications.Columns[3].Width = 250;
 
             dgvDrivingLincesApplications.Columns[4].HeaderText = "Application Date";
-            dgvDrivingLincesApplications.Columns[4].Width = 170;
+            dgvDrivingLincesApplications.Columns[4].Width = 120;
 
             dgvDrivingLincesApplications.Columns[5].HeaderText = "Passed Tests";
-            dgvDrivingLincesApplications.Columns[5].Width = 150;
+            dgvDrivingLincesApplications.Columns[5].Width = 50;
+
+            dgvDrivingLincesApplications.Columns[6].HeaderText = "Status";
+            dgvDrivingLincesApplications.Columns[6].Width = 100;
          }
 
          cbFilterBy.SelectedIndex = 0;
@@ -126,6 +129,10 @@ namespace DVLD.Licenses
                FilterColumn = "FullName";
                break;
 
+            case "Status":
+               FilterColumn = "Status";
+               break;
+
             default:
                FilterColumn = "None";
                break;
@@ -154,6 +161,27 @@ namespace DVLD.Licenses
           
       }
 
+         
+      
+
+      private void tlsmEditApplication_Click(object sender, EventArgs e)
+      {
+         int LocalDrivingLicenseApplicationID = (int)dgvDrivingLincesApplications.CurrentRow.Cells[0].Value;
+         frmAddUpdateLocalDrivingLicenseApplication frm =
+            new frmAddUpdateLocalDrivingLicenseApplication(LocalDrivingLicenseApplicationID);
+         frm.ShowDialog();
+
+         frmListDrivingLicenseApplication_Load(null, null);
+
+      }
+
+      // here we should handle the input if it's a number
+      private void txtFilterValue_KeyPress(object sender, KeyPressEventArgs e)
+      {
+        if(cbFilterBy.Text == "L.DLA ID")
+            e.Handled = !char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar);
+      }
+
       private void tlsmCancelApplication_Click(object sender, EventArgs e)
       {
          if (MessageBox.Show("Are you sure do want to cancel this application?", "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.No)
@@ -162,11 +190,11 @@ namespace DVLD.Licenses
          int LocalDrivingApplicationID = (int)dgvDrivingLincesApplications.CurrentRow.Cells[0].Value;
          // we Search for the applicaion
          clsLocalDrivingLicenseApplication LocalDrivingApplication = clsLocalDrivingLicenseApplication.FindByLocalDrivingAppLicenseID(LocalDrivingApplicationID);
-         // if the applicaion was found
-         if(LocalDrivingApplication != null)
+         // if Local application was found
+         if (LocalDrivingApplication != null)
          {
             MessageBox.Show($"Application with ID {LocalDrivingApplication.ApplicationID} Found");
-            // we call Cancel 
+            // we call Cancel function
             if (LocalDrivingApplication.Cancel())
             {
 
@@ -180,32 +208,11 @@ namespace DVLD.Licenses
                MessageBox.Show("Could not cancel applicatoin.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
             }
-
          }
 
-
       }
 
-      private void tlsmEditApplication_Click(object sender, EventArgs e)
-      {
-         int LocalDrivingLicenseApplicationID = (int)dgvDrivingLincesApplications.CurrentRow.Cells[0].Value;
-         frmAddUpdateLocalDrivingLicenseApplication frm =
-            new frmAddUpdateLocalDrivingLicenseApplication(LocalDrivingLicenseApplicationID);
-         frm.ShowDialog();
+      // here
 
-         frmListDrivingLicenseApplication_Load(null, null);
-
-      }
-
-      private void txtFilterValue_KeyPress(object sender, KeyPressEventArgs e)
-      {
-        if(cbFilterBy.Text == "LocalDrivingLicenseApplicationID")
-            e.Handled = !char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar);
-      }
-
-      private void vistionTestToolStripMenuItem_Click(object sender, EventArgs e)
-      {
-
-      }
    }
 }

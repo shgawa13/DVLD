@@ -46,28 +46,28 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Applications\frmEditApplicationType.cs">
+    <Compile Include="Applications\ApplicationTypes\frmEditApplicationType.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Applications\frmEditApplicationType.Designer.cs">
+    <Compile Include="Applications\ApplicationTypes\frmEditApplicationType.Designer.cs">
       <DependentUpon>frmEditApplicationType.cs</DependentUpon>
     </Compile>
-    <Compile Include="Licenses\frmAddUpdateLocalDrivingLicenseApplication.cs">
+    <Compile Include="Applications\LocalDrivingLicenseApplication\frmAddUpdateLocalDrivingLicenseApplication.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Licenses\frmAddUpdateLocalDrivingLicenseApplication.Designer.cs">
+    <Compile Include="Applications\LocalDrivingLicenseApplication\frmAddUpdateLocalDrivingLicenseApplication.Designer.cs">
       <DependentUpon>frmAddUpdateLocalDrivingLicenseApplication.cs</DependentUpon>
     </Compile>
-    <Compile Include="Licenses\frmListLocalDrivingLicenseApplication.cs">
+    <Compile Include="Applications\LocalDrivingLicenseApplication\frmListLocalDrivingLicenseApplication.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Licenses\frmListLocalDrivingLicenseApplication.Designer.cs">
+    <Compile Include="Applications\LocalDrivingLicenseApplication\frmListLocalDrivingLicenseApplication.Designer.cs">
       <DependentUpon>frmListLocalDrivingLicenseApplication.cs</DependentUpon>
     </Compile>
-    <Compile Include="Applications\frmMangeApplicationTypes.cs">
+    <Compile Include="Applications\ApplicationTypes\frmMangeApplicationTypes.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Applications\frmMangeApplicationTypes.Designer.cs">
+    <Compile Include="Applications\ApplicationTypes\frmMangeApplicationTypes.Designer.cs">
       <DependentUpon>frmMangeApplicationTypes.cs</DependentUpon>
     </Compile>
     <Compile Include="Global Classes\clsGlobal.cs" />
@@ -165,16 +165,16 @@
     <Compile Include="Users\frmUserInfo.Designer.cs">
       <DependentUpon>frmUserInfo.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Applications\frmEditApplicationType.resx">
+    <EmbeddedResource Include="Applications\ApplicationTypes\frmEditApplicationType.resx">
       <DependentUpon>frmEditApplicationType.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Licenses\frmAddUpdateLocalDrivingLicenseApplication.resx">
+    <EmbeddedResource Include="Applications\LocalDrivingLicenseApplication\frmAddUpdateLocalDrivingLicenseApplication.resx">
       <DependentUpon>frmAddUpdateLocalDrivingLicenseApplication.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Licenses\frmListLocalDrivingLicenseApplication.resx">
+    <EmbeddedResource Include="Applications\LocalDrivingLicenseApplication\frmListLocalDrivingLicenseApplication.resx">
       <DependentUpon>frmListLocalDrivingLicenseApplication.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Applications\frmMangeApplicationTypes.resx">
+    <EmbeddedResource Include="Applications\ApplicationTypes\frmMangeApplicationTypes.resx">
       <DependentUpon>frmMangeApplicationTypes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login\frmLogin.resx">
@@ -253,6 +253,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Drivers\" />
+    <Folder Include="Licenses\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\preview-bg.png" />

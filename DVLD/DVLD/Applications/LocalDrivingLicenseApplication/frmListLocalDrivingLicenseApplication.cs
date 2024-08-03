@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Business;
 using BusinessLayer;
+using DVLD.Applications.LocalDrivingLicenseApplication;
 namespace DVLD.Licenses
 {
    public partial class frmListLocalDrivingLicenseApplication : Form
@@ -211,6 +212,46 @@ namespace DVLD.Licenses
          }
 
       }
+
+      private void writtenTestToolStripMenuItem_Click(object sender, EventArgs e)
+      {
+         int LocalDrivingLicenseApplicationID = (int)dgvDrivingLincesApplications.CurrentRow.Cells[0].Value;
+
+         if (!clsLocalDrivingLicenseApplication.DoesPassTestType(LocalDrivingLicenseApplicationID, clsTestType.enTypeTest.VisionTest))
+         {
+            MessageBox.Show("Person Should Pass the Vision Test First!", "Not Allowed", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            return;
+         }
+
+         clsTestAppointment Appointment =
+           clsTestAppointment.GetLastTestAppointment(LocalDrivingLicenseApplicationID, clsTestType.enTypeTest.WrittenTest);
+         if (Appointment != null)
+         {
+            MessageBox.Show("No Written Test Appointment Found!", "Set Appointment", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            return;
+         }
+
+         // here we should show reTake Test Form
+
+      }
+
+
+
+      private void vistionTestToolStripMenuItem_Click(object sender, EventArgs e)
+      {
+
+      }
+
+      private void tlsmShowApplicationDetails_Click(object sender, EventArgs e)
+      {
+         frmLocalDrivingLicenseApplicationInfo frm =
+                         new frmLocalDrivingLicenseApplicationInfo((int)dgvDrivingLincesApplications.CurrentRow.Cells[0].Value);
+         frm.ShowDialog();
+         //refresh
+         frmListDrivingLicenseApplication_Load(null, null);
+      }
+
+
 
       // here
 

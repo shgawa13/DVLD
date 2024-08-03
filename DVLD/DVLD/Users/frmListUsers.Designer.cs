@@ -44,7 +44,7 @@
          this.tolsChangePassword = new System.Windows.Forms.ToolStripMenuItem();
          this.tolsSendEamil = new System.Windows.Forms.ToolStripMenuItem();
          this.tolsPhoneCall = new System.Windows.Forms.ToolStripMenuItem();
-         this.label3 = new System.Windows.Forms.Label();
+         this.label4 = new System.Windows.Forms.Label();
          this.lblRecordsNumber = new System.Windows.Forms.Label();
          this.txtFilterValue = new System.Windows.Forms.TextBox();
          this.cbFilterBy = new System.Windows.Forms.ComboBox();
@@ -110,7 +110,7 @@
          this.flowLayoutPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(33)))), ((int)(((byte)(67)))));
          this.flowLayoutPanel1.Controls.Add(this.lblRecordNumber);
          this.flowLayoutPanel1.Controls.Add(this.dgvUsers);
-         this.flowLayoutPanel1.Controls.Add(this.label3);
+         this.flowLayoutPanel1.Controls.Add(this.label4);
          this.flowLayoutPanel1.Controls.Add(this.lblRecordsNumber);
          this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Bottom;
          this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 200);
@@ -141,7 +141,7 @@
          this.dgvUsers.Name = "dgvUsers";
          this.dgvUsers.ReadOnly = true;
          this.dgvUsers.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-         this.dgvUsers.Size = new System.Drawing.Size(855, 238);
+         this.dgvUsers.Size = new System.Drawing.Size(855, 226);
          this.dgvUsers.TabIndex = 38;
          // 
          // ctxMangeUsers
@@ -206,31 +206,31 @@
          this.tolsPhoneCall.Size = new System.Drawing.Size(180, 22);
          this.tolsPhoneCall.Text = "Phone call";
          // 
-         // label3
+         // label4
          // 
-         this.label3.AutoSize = true;
-         this.label3.Font = new System.Drawing.Font("Franklin Gothic Medium", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-         this.label3.ForeColor = System.Drawing.Color.WhiteSmoke;
-         this.label3.Location = new System.Drawing.Point(3, 264);
-         this.label3.Name = "label3";
-         this.label3.Size = new System.Drawing.Size(84, 20);
-         this.label3.TabIndex = 39;
-         this.label3.Text = "# Records";
+         this.label4.AutoSize = true;
+         this.label4.Font = new System.Drawing.Font("Franklin Gothic Medium", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+         this.label4.ForeColor = System.Drawing.Color.WhiteSmoke;
+         this.label4.Location = new System.Drawing.Point(3, 252);
+         this.label4.Name = "label4";
+         this.label4.Size = new System.Drawing.Size(97, 24);
+         this.label4.TabIndex = 57;
+         this.label4.Text = "# Record:";
          // 
          // lblRecordsNumber
          // 
          this.lblRecordsNumber.AutoSize = true;
-         this.lblRecordsNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+         this.lblRecordsNumber.Font = new System.Drawing.Font("Franklin Gothic Medium", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
          this.lblRecordsNumber.ForeColor = System.Drawing.Color.WhiteSmoke;
-         this.lblRecordsNumber.Location = new System.Drawing.Point(93, 264);
+         this.lblRecordsNumber.Location = new System.Drawing.Point(106, 252);
          this.lblRecordsNumber.Name = "lblRecordsNumber";
-         this.lblRecordsNumber.Size = new System.Drawing.Size(26, 18);
-         this.lblRecordsNumber.TabIndex = 40;
-         this.lblRecordsNumber.Text = "??";
+         this.lblRecordsNumber.Size = new System.Drawing.Size(43, 24);
+         this.lblRecordsNumber.TabIndex = 58;
+         this.lblRecordsNumber.Text = "???";
          // 
          // txtFilterValue
          // 
-         this.txtFilterValue.Location = new System.Drawing.Point(288, 168);
+         this.txtFilterValue.Location = new System.Drawing.Point(300, 167);
          this.txtFilterValue.Name = "txtFilterValue";
          this.txtFilterValue.Size = new System.Drawing.Size(170, 20);
          this.txtFilterValue.TabIndex = 23;
@@ -249,7 +249,7 @@
             "Person ID",
             "Full Name",
             "Is Active"});
-         this.cbFilterBy.Location = new System.Drawing.Point(94, 168);
+         this.cbFilterBy.Location = new System.Drawing.Point(106, 167);
          this.cbFilterBy.Name = "cbFilterBy";
          this.cbFilterBy.Size = new System.Drawing.Size(170, 21);
          this.cbFilterBy.TabIndex = 22;
@@ -258,11 +258,11 @@
          // label2
          // 
          this.label2.AutoSize = true;
-         this.label2.Font = new System.Drawing.Font("Franklin Gothic Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+         this.label2.Font = new System.Drawing.Font("Franklin Gothic Medium", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
          this.label2.ForeColor = System.Drawing.Color.WhiteSmoke;
-         this.label2.Location = new System.Drawing.Point(12, 169);
+         this.label2.Location = new System.Drawing.Point(12, 165);
          this.label2.Name = "label2";
-         this.label2.Size = new System.Drawing.Size(67, 21);
+         this.label2.Size = new System.Drawing.Size(75, 24);
          this.label2.TabIndex = 21;
          this.label2.Text = "Find by";
          // 
@@ -275,7 +275,7 @@
             "All",
             "Yes",
             "No"});
-         this.cbIsActive.Location = new System.Drawing.Point(288, 168);
+         this.cbIsActive.Location = new System.Drawing.Point(300, 167);
          this.cbIsActive.Name = "cbIsActive";
          this.cbIsActive.Size = new System.Drawing.Size(90, 21);
          this.cbIsActive.TabIndex = 24;
@@ -325,8 +325,6 @@
       private System.Windows.Forms.ComboBox cbFilterBy;
       private System.Windows.Forms.Label label2;
       private System.Windows.Forms.DataGridView dgvUsers;
-      private System.Windows.Forms.Label label3;
-      private System.Windows.Forms.Label lblRecordsNumber;
       private System.Windows.Forms.ComboBox cbIsActive;
       private System.Windows.Forms.ContextMenuStrip ctxMangeUsers;
       private System.Windows.Forms.ToolStripMenuItem tolsShowDetails;
@@ -336,5 +334,7 @@
       private System.Windows.Forms.ToolStripMenuItem tolsChangePassword;
       private System.Windows.Forms.ToolStripMenuItem tolsSendEamil;
       private System.Windows.Forms.ToolStripMenuItem tolsPhoneCall;
+      private System.Windows.Forms.Label label4;
+      private System.Windows.Forms.Label lblRecordsNumber;
    }
 }

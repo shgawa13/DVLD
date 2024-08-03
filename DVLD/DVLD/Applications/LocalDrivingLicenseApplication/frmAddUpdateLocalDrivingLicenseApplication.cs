@@ -82,7 +82,7 @@ namespace DVLD.Licenses
          lblApplicationDate.Text = _LocalDrivingLicenseApplication.ApplicationDate.ToString();
          cbLicenseClasses.SelectedIndex = cbLicenseClasses.FindString(clsLicenseClass.FindLicenseClassByID(_LocalDrivingLicenseApplication.LicenseClassID).ClassName);
          lblApplicationFees.Text = _LocalDrivingLicenseApplication.PaidFees.ToString();
-         lblCreatedByUser.Text = clsUsers.FindByUserID(_LocalDrivingLicenseApplication.CreatedByUserID).ToString();
+         lblCreatedByUser.Text = clsUsers.FindByUserID(_LocalDrivingLicenseApplication.CreatedByUserID).UserName;
 
       }
 

@@ -52,6 +52,12 @@
          this.tlsmShowPersonLicenseHistory = new System.Windows.Forms.ToolStripMenuItem();
          this.label1 = new System.Windows.Forms.Label();
          this.lblLDVLAppNumber = new System.Windows.Forms.Label();
+         this.issueDrivingLicenseFirstTimeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+         this.showLicenseToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+         this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripSeparator();
+         this.toolStripMenuItem4 = new System.Windows.Forms.ToolStripSeparator();
+         this.toolStripMenuItem5 = new System.Windows.Forms.ToolStripSeparator();
+         this.toolStripMenuItem6 = new System.Windows.Forms.ToolStripSeparator();
          this.panel1.SuspendLayout();
          ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
          ((System.ComponentModel.ISupportInitialize)(this.dgvDrivingLincesApplications)).BeginInit();
@@ -184,20 +190,27 @@
          // 
          this.ctmsApplication.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tlsmShowApplicationDetails,
-            this.tlsmEditApplication,
-            this.tlsmCancelApplication,
-            this.tlsmDeleteApplication,
             this.toolStripMenuItem2,
-            this.tlsmSecheduleTest,
+            this.tlsmEditApplication,
+            this.tlsmDeleteApplication,
             this.toolStripMenuItem1,
+            this.tlsmCancelApplication,
+            this.toolStripMenuItem3,
+            this.tlsmSecheduleTest,
+            this.toolStripMenuItem4,
+            this.issueDrivingLicenseFirstTimeToolStripMenuItem,
+            this.toolStripMenuItem5,
+            this.showLicenseToolStripMenuItem,
+            this.toolStripMenuItem6,
             this.tlsmShowPersonLicenseHistory});
          this.ctmsApplication.Name = "ctmsApplication";
-         this.ctmsApplication.Size = new System.Drawing.Size(226, 170);
+         this.ctmsApplication.Size = new System.Drawing.Size(243, 238);
+         this.ctmsApplication.Opening += new System.ComponentModel.CancelEventHandler(this.ctmsApplication_Opening);
          // 
          // tlsmShowApplicationDetails
          // 
          this.tlsmShowApplicationDetails.Name = "tlsmShowApplicationDetails";
-         this.tlsmShowApplicationDetails.Size = new System.Drawing.Size(225, 22);
+         this.tlsmShowApplicationDetails.Size = new System.Drawing.Size(242, 22);
          this.tlsmShowApplicationDetails.Text = "Show Application Details";
          this.tlsmShowApplicationDetails.Click += new System.EventHandler(this.tlsmShowApplicationDetails_Click);
          // 
@@ -205,14 +218,14 @@
          // 
          this.tlsmEditApplication.Image = global::DVLD.Properties.Resources.edit_32;
          this.tlsmEditApplication.Name = "tlsmEditApplication";
-         this.tlsmEditApplication.Size = new System.Drawing.Size(225, 22);
+         this.tlsmEditApplication.Size = new System.Drawing.Size(242, 22);
          this.tlsmEditApplication.Text = "Edit Application";
          // 
          // tlsmCancelApplication
          // 
          this.tlsmCancelApplication.Image = global::DVLD.Properties.Resources.cross_32;
          this.tlsmCancelApplication.Name = "tlsmCancelApplication";
-         this.tlsmCancelApplication.Size = new System.Drawing.Size(225, 22);
+         this.tlsmCancelApplication.Size = new System.Drawing.Size(242, 22);
          this.tlsmCancelApplication.Text = "Cancel Application";
          this.tlsmCancelApplication.Click += new System.EventHandler(this.tlsmCancelApplication_Click);
          // 
@@ -220,14 +233,14 @@
          // 
          this.tlsmDeleteApplication.Image = global::DVLD.Properties.Resources.Delete_32_2;
          this.tlsmDeleteApplication.Name = "tlsmDeleteApplication";
-         this.tlsmDeleteApplication.Size = new System.Drawing.Size(225, 22);
+         this.tlsmDeleteApplication.Size = new System.Drawing.Size(242, 22);
          this.tlsmDeleteApplication.Text = "Delete Application";
          // 
          // toolStripMenuItem2
          // 
          this.toolStripMenuItem2.ForeColor = System.Drawing.SystemColors.ActiveCaption;
          this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-         this.toolStripMenuItem2.Size = new System.Drawing.Size(222, 6);
+         this.toolStripMenuItem2.Size = new System.Drawing.Size(239, 6);
          // 
          // tlsmSecheduleTest
          // 
@@ -236,39 +249,39 @@
             this.writtenTestToolStripMenuItem,
             this.streetTestToolStripMenuItem});
          this.tlsmSecheduleTest.Name = "tlsmSecheduleTest";
-         this.tlsmSecheduleTest.Size = new System.Drawing.Size(225, 22);
+         this.tlsmSecheduleTest.Size = new System.Drawing.Size(242, 22);
          this.tlsmSecheduleTest.Text = "Sechedule Test";
          // 
          // vistionTestToolStripMenuItem
          // 
          this.vistionTestToolStripMenuItem.Name = "vistionTestToolStripMenuItem";
-         this.vistionTestToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+         this.vistionTestToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
          this.vistionTestToolStripMenuItem.Text = "Vistion Test";
          this.vistionTestToolStripMenuItem.Click += new System.EventHandler(this.vistionTestToolStripMenuItem_Click);
          // 
          // writtenTestToolStripMenuItem
          // 
          this.writtenTestToolStripMenuItem.Name = "writtenTestToolStripMenuItem";
-         this.writtenTestToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+         this.writtenTestToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
          this.writtenTestToolStripMenuItem.Text = "Written Test";
          this.writtenTestToolStripMenuItem.Click += new System.EventHandler(this.writtenTestToolStripMenuItem_Click);
          // 
          // streetTestToolStripMenuItem
          // 
          this.streetTestToolStripMenuItem.Name = "streetTestToolStripMenuItem";
-         this.streetTestToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+         this.streetTestToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
          this.streetTestToolStripMenuItem.Text = "Street Test";
          // 
          // toolStripMenuItem1
          // 
          this.toolStripMenuItem1.ForeColor = System.Drawing.SystemColors.ActiveCaption;
          this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-         this.toolStripMenuItem1.Size = new System.Drawing.Size(222, 6);
+         this.toolStripMenuItem1.Size = new System.Drawing.Size(239, 6);
          // 
          // tlsmShowPersonLicenseHistory
          // 
          this.tlsmShowPersonLicenseHistory.Name = "tlsmShowPersonLicenseHistory";
-         this.tlsmShowPersonLicenseHistory.Size = new System.Drawing.Size(225, 22);
+         this.tlsmShowPersonLicenseHistory.Size = new System.Drawing.Size(242, 22);
          this.tlsmShowPersonLicenseHistory.Text = "Show Person License History";
          // 
          // label1
@@ -292,6 +305,38 @@
          this.lblLDVLAppNumber.Size = new System.Drawing.Size(43, 24);
          this.lblLDVLAppNumber.TabIndex = 56;
          this.lblLDVLAppNumber.Text = "???";
+         // 
+         // issueDrivingLicenseFirstTimeToolStripMenuItem
+         // 
+         this.issueDrivingLicenseFirstTimeToolStripMenuItem.Name = "issueDrivingLicenseFirstTimeToolStripMenuItem";
+         this.issueDrivingLicenseFirstTimeToolStripMenuItem.Size = new System.Drawing.Size(242, 22);
+         this.issueDrivingLicenseFirstTimeToolStripMenuItem.Text = "Issue Driving License(First Time)";
+         // 
+         // showLicenseToolStripMenuItem
+         // 
+         this.showLicenseToolStripMenuItem.Name = "showLicenseToolStripMenuItem";
+         this.showLicenseToolStripMenuItem.Size = new System.Drawing.Size(242, 22);
+         this.showLicenseToolStripMenuItem.Text = "Show License";
+         // 
+         // toolStripMenuItem3
+         // 
+         this.toolStripMenuItem3.Name = "toolStripMenuItem3";
+         this.toolStripMenuItem3.Size = new System.Drawing.Size(239, 6);
+         // 
+         // toolStripMenuItem4
+         // 
+         this.toolStripMenuItem4.Name = "toolStripMenuItem4";
+         this.toolStripMenuItem4.Size = new System.Drawing.Size(239, 6);
+         // 
+         // toolStripMenuItem5
+         // 
+         this.toolStripMenuItem5.Name = "toolStripMenuItem5";
+         this.toolStripMenuItem5.Size = new System.Drawing.Size(239, 6);
+         // 
+         // toolStripMenuItem6
+         // 
+         this.toolStripMenuItem6.Name = "toolStripMenuItem6";
+         this.toolStripMenuItem6.Size = new System.Drawing.Size(239, 6);
          // 
          // frmListLocalDrivingLicenseApplication
          // 
@@ -342,5 +387,11 @@
       private System.Windows.Forms.ToolStripMenuItem streetTestToolStripMenuItem;
       private System.Windows.Forms.ToolStripSeparator toolStripMenuItem1;
       private System.Windows.Forms.ToolStripMenuItem tlsmShowPersonLicenseHistory;
+      private System.Windows.Forms.ToolStripMenuItem issueDrivingLicenseFirstTimeToolStripMenuItem;
+      private System.Windows.Forms.ToolStripMenuItem showLicenseToolStripMenuItem;
+      private System.Windows.Forms.ToolStripSeparator toolStripMenuItem3;
+      private System.Windows.Forms.ToolStripSeparator toolStripMenuItem4;
+      private System.Windows.Forms.ToolStripSeparator toolStripMenuItem5;
+      private System.Windows.Forms.ToolStripSeparator toolStripMenuItem6;
    }
 }

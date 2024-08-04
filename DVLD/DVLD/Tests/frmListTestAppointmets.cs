@@ -10,10 +10,10 @@ using System.Windows.Forms;
 
 namespace DVLD.Applications.LocalDrivingLicenseApplication
 {
-   public partial class frmLocalDrivingLicenseApplicationInfo : Form
+   public partial class frmListTestAppointmets : Form
    {
       private int _ApplicationID = -1;
-      public frmLocalDrivingLicenseApplicationInfo(int ApplicationID)
+      public frmListTestAppointmets(int ApplicationID)
       {
          InitializeComponent();
          _ApplicationID = ApplicationID;
@@ -23,5 +23,12 @@ namespace DVLD.Applications.LocalDrivingLicenseApplication
       {
          ctrlDrivingLicenseApplicationInfo1.LoadApplicationInfoByLocalDrivingAppID(_ApplicationID);
       }
+
+      private void btnSave_Click(object sender, EventArgs e)
+      {
+         this.Close();
+      }
+
+      
    }
 }

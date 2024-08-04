@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Business;
 using BusinessLayer;
-using DVLD.Applications.LocalDrivingLicenseApplication;
+using DVLD.Tests;
 namespace DVLD.Licenses
 {
    public partial class frmListLocalDrivingLicenseApplication : Form
@@ -244,11 +244,16 @@ namespace DVLD.Licenses
 
       private void tlsmShowApplicationDetails_Click(object sender, EventArgs e)
       {
-         frmLocalDrivingLicenseApplicationInfo frm =
-                         new frmLocalDrivingLicenseApplicationInfo((int)dgvDrivingLincesApplications.CurrentRow.Cells[0].Value);
+         frmLoalDrivingLicenseApplicationInfo frm =
+                         new frmLoalDrivingLicenseApplicationInfo((int)dgvDrivingLincesApplications.CurrentRow.Cells[0].Value);
          frm.ShowDialog();
          //refresh
          frmListDrivingLicenseApplication_Load(null, null);
+      }
+
+      private void ctmsApplication_Opening(object sender, CancelEventArgs e)
+      {
+
       }
 
 

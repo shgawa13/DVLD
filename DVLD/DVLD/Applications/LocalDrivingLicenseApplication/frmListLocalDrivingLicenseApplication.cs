@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Business;
 using BusinessLayer;
+using DVLD.Applications.LocalDrivingLicenseApplication;
 using DVLD.Tests;
 namespace DVLD.Licenses
 {
@@ -165,16 +166,10 @@ namespace DVLD.Licenses
          
       
 
-      private void tlsmEditApplication_Click(object sender, EventArgs e)
-      {
-         int LocalDrivingLicenseApplicationID = (int)dgvDrivingLincesApplications.CurrentRow.Cells[0].Value;
-         frmAddUpdateLocalDrivingLicenseApplication frm =
-            new frmAddUpdateLocalDrivingLicenseApplication(LocalDrivingLicenseApplicationID);
-         frm.ShowDialog();
+      
+         
 
-         frmListDrivingLicenseApplication_Load(null, null);
-
-      }
+     
 
       // here we should handle the input if it's a number
       private void txtFilterValue_KeyPress(object sender, KeyPressEventArgs e)
@@ -244,21 +239,72 @@ namespace DVLD.Licenses
 
       private void tlsmShowApplicationDetails_Click(object sender, EventArgs e)
       {
-         frmLoalDrivingLicenseApplicationInfo frm =
-                         new frmLoalDrivingLicenseApplicationInfo((int)dgvDrivingLincesApplications.CurrentRow.Cells[0].Value);
+         frmLocalDrivingLicenseApplicationInfo frm =
+                         new frmLocalDrivingLicenseApplicationInfo((int)dgvDrivingLincesApplications.CurrentRow.Cells[0].Value);
          frm.ShowDialog();
          //refresh
          frmListDrivingLicenseApplication_Load(null, null);
       }
 
-      private void ctmsApplication_Opening(object sender, CancelEventArgs e)
+      private void tlsmEditApplication_Click(object sender, EventArgs e)
       {
+
+         int LocalDrivingLicenseApplicationID = (int)dgvDrivingLincesApplications.CurrentRow.Cells[0].Value;
+         frmAddUpdateLocalDrivingLicenseApplication frm =
+            new frmAddUpdateLocalDrivingLicenseApplication(LocalDrivingLicenseApplicationID);
+         frm.ShowDialog();
+
+         frmListDrivingLicenseApplication_Load(null, null);
 
       }
 
+      private void tlsmDeleteApplication_Click(object sender, EventArgs e)
+      {
+        if(MessageBox.Show("Are you sure to delete this applicatoin.", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation) == DialogResult.No)
+          return;
 
 
-      // here
+         int LocalDrivingLicenseApplicationID = (int)dgvDrivingLincesApplications.CurrentRow.Cells[0].Value;
+         clsLocalDrivingLicenseApplication LocalDrivingLicenseApplication =
+            clsLocalDrivingLicenseApplication.FindByLocalDrivingAppLicenseID(LocalDrivingLicenseApplicationID);
+
+         if(LocalDrivingLicenseApplication != null)
+         {
+
+            if (LocalDrivingLicenseApplication.Delete())
+            {
+               MessageBox.Show("Application Has been deleted Successully", "Confimed", MessageBoxButtons.OK);
+               frmListDrivingLicenseApplication_Load(null, null);
+            }
+            else
+            {
+               MessageBox.Show("Error Couldn't Delete this Application", "ERORR", MessageBoxButtons.OK,MessageBoxIcon.Error);
+
+            }
+
+
+         }
+
+      }
+
+      // Enable and disable option
+      private void ctmsApplication_Opening(object sender, CancelEventArgs e)
+      {
+
+         int LocalDrivingLicenseApplicationID = (int)dgvDrivingLincesApplications.CurrentRow.Cells[0].Value;
+         clsLocalDrivingLicenseApplication LocalDrivingLicenseApplication =
+            clsLocalDrivingLicenseApplication.FindByLocalDrivingAppLicenseID(LocalDrivingLicenseApplicationID);
+        
+         // we get total passed test and if there is a license
+         int TotalPassedTests = (int)dgvDrivingLincesApplications.CurrentRow.Cells[5].Value;
+         bool LicenseExist = LocalDrivingLicenseApplication.IsLicenseIssued();
+
+         issueDrivingLicenseFirstTimeToolStripMenuItem.Enabled = (TotalPassedTests == 3) && !LicenseExist;
+         tlsmShowPersonLicenseHistory.Enabled = LicenseExist;
+
+         tlsmEditApplication.Enabled = !LicenseExist && (LocalDrivingLicenseApplication.ApplicationStatus == clsApplication.enApplicationStatus.New);
+
+      }
 
    }
 }

@@ -30,7 +30,6 @@
       {
          this.components = new System.ComponentModel.Container();
          this.panel1 = new System.Windows.Forms.Panel();
-         this.cbStatus = new System.Windows.Forms.ComboBox();
          this.txtFilterValue = new System.Windows.Forms.TextBox();
          this.cbFilterBy = new System.Windows.Forms.ComboBox();
          this.label2 = new System.Windows.Forms.Label();
@@ -46,7 +45,7 @@
          this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripSeparator();
          this.tlsmCancelApplication = new System.Windows.Forms.ToolStripMenuItem();
          this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripSeparator();
-         this.tlsmSecheduleTest = new System.Windows.Forms.ToolStripMenuItem();
+         this.ScheduleTestsMenue = new System.Windows.Forms.ToolStripMenuItem();
          this.vistionTestToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
          this.writtenTestToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
          this.streetTestToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -67,7 +66,6 @@
          // panel1
          // 
          this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(47)))), ((int)(((byte)(88)))));
-         this.panel1.Controls.Add(this.cbStatus);
          this.panel1.Controls.Add(this.txtFilterValue);
          this.panel1.Controls.Add(this.cbFilterBy);
          this.panel1.Controls.Add(this.label2);
@@ -79,22 +77,6 @@
          this.panel1.Name = "panel1";
          this.panel1.Size = new System.Drawing.Size(946, 211);
          this.panel1.TabIndex = 0;
-         // 
-         // cbStatus
-         // 
-         this.cbStatus.BackColor = System.Drawing.SystemColors.Window;
-         this.cbStatus.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-         this.cbStatus.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-         this.cbStatus.Items.AddRange(new object[] {
-            "All",
-            "New",
-            "Completed ",
-            "Cancelled"});
-         this.cbStatus.Location = new System.Drawing.Point(294, 178);
-         this.cbStatus.Name = "cbStatus";
-         this.cbStatus.Size = new System.Drawing.Size(90, 21);
-         this.cbStatus.TabIndex = 54;
-         this.cbStatus.Visible = false;
          // 
          // txtFilterValue
          // 
@@ -113,7 +95,7 @@
          this.cbFilterBy.ImeMode = System.Windows.Forms.ImeMode.NoControl;
          this.cbFilterBy.Items.AddRange(new object[] {
             "None",
-            "L.DLA ID",
+            "L.D.L.AppID",
             "National No",
             "Full Name",
             "Status"});
@@ -196,7 +178,7 @@
             this.toolStripMenuItem1,
             this.tlsmCancelApplication,
             this.toolStripMenuItem3,
-            this.tlsmSecheduleTest,
+            this.ScheduleTestsMenue,
             this.toolStripMenuItem4,
             this.issueDrivingLicenseFirstTimeToolStripMenuItem,
             this.toolStripMenuItem5,
@@ -255,35 +237,36 @@
          this.toolStripMenuItem3.Name = "toolStripMenuItem3";
          this.toolStripMenuItem3.Size = new System.Drawing.Size(239, 6);
          // 
-         // tlsmSecheduleTest
+         // ScheduleTestsMenue
          // 
-         this.tlsmSecheduleTest.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+         this.ScheduleTestsMenue.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.vistionTestToolStripMenuItem,
             this.writtenTestToolStripMenuItem,
             this.streetTestToolStripMenuItem});
-         this.tlsmSecheduleTest.Name = "tlsmSecheduleTest";
-         this.tlsmSecheduleTest.Size = new System.Drawing.Size(242, 22);
-         this.tlsmSecheduleTest.Text = "Sechedule Test";
+         this.ScheduleTestsMenue.Name = "ScheduleTestsMenue";
+         this.ScheduleTestsMenue.Size = new System.Drawing.Size(242, 22);
+         this.ScheduleTestsMenue.Text = "Sechedule Test";
          // 
          // vistionTestToolStripMenuItem
          // 
          this.vistionTestToolStripMenuItem.Name = "vistionTestToolStripMenuItem";
-         this.vistionTestToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
+         this.vistionTestToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
          this.vistionTestToolStripMenuItem.Text = "Vistion Test";
          this.vistionTestToolStripMenuItem.Click += new System.EventHandler(this.vistionTestToolStripMenuItem_Click);
          // 
          // writtenTestToolStripMenuItem
          // 
          this.writtenTestToolStripMenuItem.Name = "writtenTestToolStripMenuItem";
-         this.writtenTestToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
+         this.writtenTestToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
          this.writtenTestToolStripMenuItem.Text = "Written Test";
          this.writtenTestToolStripMenuItem.Click += new System.EventHandler(this.writtenTestToolStripMenuItem_Click);
          // 
          // streetTestToolStripMenuItem
          // 
          this.streetTestToolStripMenuItem.Name = "streetTestToolStripMenuItem";
-         this.streetTestToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
+         this.streetTestToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
          this.streetTestToolStripMenuItem.Text = "Street Test";
+         this.streetTestToolStripMenuItem.Click += new System.EventHandler(this.streetTestToolStripMenuItem_Click);
          // 
          // toolStripMenuItem4
          // 
@@ -374,7 +357,6 @@
       private System.Windows.Forms.TextBox txtFilterValue;
       private System.Windows.Forms.ComboBox cbFilterBy;
       private System.Windows.Forms.Label label2;
-      private System.Windows.Forms.ComboBox cbStatus;
       private System.Windows.Forms.Label label1;
       private System.Windows.Forms.Label lblLDVLAppNumber;
       private System.Windows.Forms.ContextMenuStrip ctmsApplication;
@@ -383,7 +365,7 @@
       private System.Windows.Forms.ToolStripMenuItem tlsmCancelApplication;
       private System.Windows.Forms.ToolStripMenuItem tlsmDeleteApplication;
       private System.Windows.Forms.ToolStripSeparator toolStripMenuItem2;
-      private System.Windows.Forms.ToolStripMenuItem tlsmSecheduleTest;
+      private System.Windows.Forms.ToolStripMenuItem ScheduleTestsMenue;
       private System.Windows.Forms.ToolStripMenuItem vistionTestToolStripMenuItem;
       private System.Windows.Forms.ToolStripMenuItem writtenTestToolStripMenuItem;
       private System.Windows.Forms.ToolStripMenuItem streetTestToolStripMenuItem;

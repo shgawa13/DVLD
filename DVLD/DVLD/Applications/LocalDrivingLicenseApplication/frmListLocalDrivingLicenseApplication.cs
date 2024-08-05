@@ -66,7 +66,7 @@ namespace DVLD.Licenses
          cbFilterBy.SelectedIndex = 0;
 
          txtFilterValue.Visible = false;
-         cbStatus.Visible = false;
+   
 
       }
 
@@ -82,31 +82,17 @@ namespace DVLD.Licenses
 
       private void cbFilterBy_SelectedIndexChanged(object sender, EventArgs e)
       {
-         //Status
-         if (cbFilterBy.Text == "Status")
+         txtFilterValue.Visible = (cbFilterBy.Text != "None");
+
+         if (txtFilterValue.Visible)
          {
-            txtFilterValue.Visible = false;
-            cbStatus.Visible = true;
-            cbStatus.SelectedIndex = 0;
-            cbStatus.Focus();
+            txtFilterValue.Text = "";
+            txtFilterValue.Focus();
          }
-         else
-         {
-            txtFilterValue.Visible = (cbFilterBy.Text != "None");
-            cbStatus.Visible = false;
 
-            if (cbFilterBy.Text == "None")
-               //txtFilterValue.Enabled = false;
-               txtFilterValue.Visible = false;
-            else
-               txtFilterValue.Enabled = true;
-               txtFilterValue.Text = "";
-               txtFilterValue.Focus();
+         _dtLocalApplications.DefaultView.RowFilter = "";
+         lblLDVLAppNumber.Text = _dtLocalApplications.Rows.Count.ToString();
 
-            _dtLocalApplications.DefaultView.RowFilter = "";
-            lblLDVLAppNumber.Text = dgvDrivingLincesApplications.RowCount.ToString();
-
-         }
       }
 
    
@@ -119,13 +105,14 @@ namespace DVLD.Licenses
          switch (cbFilterBy.Text)
          {
 
-            case "L.DLA ID":
+            case "L.D.L.AppID":
                FilterColumn = "LocalDrivingLicenseApplicationID";
                break;
-            
-            case "National No":
+
+            case "National No.":
                FilterColumn = "NationalNo";
                break;
+
 
             case "Full Name":
                FilterColumn = "FullName";
@@ -134,6 +121,7 @@ namespace DVLD.Licenses
             case "Status":
                FilterColumn = "Status";
                break;
+
 
             default:
                FilterColumn = "None";
@@ -157,19 +145,10 @@ namespace DVLD.Licenses
                 _dtLocalApplications.DefaultView.RowFilter = string.Format("[{0}] LIKE '{1}%'", FilterColumn, txtFilterValue.Text.Trim());
 
           lblLDVLAppNumber.Text = dgvDrivingLincesApplications.RowCount.ToString();
-
-         
-
           
       }
 
-         
-      
-
-      
-         
-
-     
+          
 
       // here we should handle the input if it's a number
       private void txtFilterValue_KeyPress(object sender, KeyPressEventArgs e)
@@ -208,34 +187,7 @@ namespace DVLD.Licenses
 
       }
 
-      private void writtenTestToolStripMenuItem_Click(object sender, EventArgs e)
-      {
-         int LocalDrivingLicenseApplicationID = (int)dgvDrivingLincesApplications.CurrentRow.Cells[0].Value;
-
-         if (!clsLocalDrivingLicenseApplication.DoesPassTestType(LocalDrivingLicenseApplicationID, clsTestType.enTypeTest.VisionTest))
-         {
-            MessageBox.Show("Person Should Pass the Vision Test First!", "Not Allowed", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            return;
-         }
-
-         clsTestAppointment Appointment =
-           clsTestAppointment.GetLastTestAppointment(LocalDrivingLicenseApplicationID, clsTestType.enTypeTest.WrittenTest);
-         if (Appointment != null)
-         {
-            MessageBox.Show("No Written Test Appointment Found!", "Set Appointment", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            return;
-         }
-
-         // here we should show reTake Test Form
-
-      }
-
-
-
-      private void vistionTestToolStripMenuItem_Click(object sender, EventArgs e)
-      {
-
-      }
+      
 
       private void tlsmShowApplicationDetails_Click(object sender, EventArgs e)
       {
@@ -299,12 +251,65 @@ namespace DVLD.Licenses
          int TotalPassedTests = (int)dgvDrivingLincesApplications.CurrentRow.Cells[5].Value;
          bool LicenseExist = LocalDrivingLicenseApplication.IsLicenseIssued();
 
+         //Enabled only if person passed all tests and Does not have license. 
          issueDrivingLicenseFirstTimeToolStripMenuItem.Enabled = (TotalPassedTests == 3) && !LicenseExist;
-         tlsmShowPersonLicenseHistory.Enabled = LicenseExist;
 
+         showLicenseToolStripMenuItem.Enabled = LicenseExist;
          tlsmEditApplication.Enabled = !LicenseExist && (LocalDrivingLicenseApplication.ApplicationStatus == clsApplication.enApplicationStatus.New);
+         ScheduleTestsMenue.Enabled = !LicenseExist;
+         //Enable/Disable Cancel Menue Item
+         //We only canel the applications with status=new.
+         tlsmCancelApplication.Enabled = (LocalDrivingLicenseApplication.ApplicationStatus == clsApplication.enApplicationStatus.New);
+         //Enable/Disable Delete Menue Item
+         //We only allow delete incase the application status is new not complete or Cancelled.
+         tlsmDeleteApplication.Enabled = (LocalDrivingLicenseApplication.ApplicationStatus == clsApplication.enApplicationStatus.New);
+
+         //Enable Disable Schedule menue and it's sub menue
+         bool PassVisionTest = LocalDrivingLicenseApplication.DoesPassTestType(clsTestType.enTypeTest.VisionTest);
+         bool PassWrittenTest = LocalDrivingLicenseApplication.DoesPassTestType(clsTestType.enTypeTest.WrittenTest);
+         bool PassStreetTest = LocalDrivingLicenseApplication.DoesPassTestType(clsTestType.enTypeTest.StreetTest);
+
+         ScheduleTestsMenue.Enabled = (!PassVisionTest || !PassWrittenTest || !PassStreetTest) && (LocalDrivingLicenseApplication.ApplicationStatus == clsApplication.enApplicationStatus.New);
+
+         if (ScheduleTestsMenue.Enabled)
+         {
+            //To Allow Schdule vision test, Person must not passed the same test before.
+            vistionTestToolStripMenuItem.Enabled = !PassVisionTest;
+
+            //To Allow Schdule written test, Person must pass the vision test and must not passed the same test before.
+            writtenTestToolStripMenuItem.Enabled = PassVisionTest && !PassWrittenTest;
+
+            //To Allow Schdule steet test, Person must pass the vision * written tests, and must not passed the same test before.
+            streetTestToolStripMenuItem.Enabled = PassVisionTest && PassWrittenTest && !PassStreetTest; 
+         }
 
       }
 
+      private void _ScheduleTest(clsTestType.enTypeTest TestType)
+      {
+         int LocalDrivingLicenseApplicationID = (int)dgvDrivingLincesApplications.CurrentRow.Cells[0].Value;
+         frmListTestAppointmets frm = new frmListTestAppointmets(LocalDrivingLicenseApplicationID, TestType);
+         frm.ShowDialog();
+
+         frmListDrivingLicenseApplication_Load(null, null);
+      }
+
+
+      private void vistionTestToolStripMenuItem_Click(object sender, EventArgs e)
+      {
+         _ScheduleTest(clsTestType.enTypeTest.VisionTest);
+      }
+
+      private void writtenTestToolStripMenuItem_Click(object sender, EventArgs e)
+      {
+         _ScheduleTest(clsTestType.enTypeTest.WrittenTest);
+      }
+
+      private void streetTestToolStripMenuItem_Click(object sender, EventArgs e)
+      {
+         _ScheduleTest(clsTestType.enTypeTest.StreetTest); ;
+      }
+
+      
    }
 }

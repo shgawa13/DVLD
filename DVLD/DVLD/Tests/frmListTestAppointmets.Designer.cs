@@ -30,14 +30,14 @@
       {
          this.lblTitle = new System.Windows.Forms.Label();
          this.label1 = new System.Windows.Forms.Label();
-         this.dataGridView1 = new System.Windows.Forms.DataGridView();
+         this.dgvTestAppointments = new System.Windows.Forms.DataGridView();
          this.lblLDVLAppNumber = new System.Windows.Forms.Label();
          this.label2 = new System.Windows.Forms.Label();
          this.btnSave = new System.Windows.Forms.Button();
          this.ctrlDrivingLicenseApplicationInfo1 = new DVLD.Applications.LocalDrivingLicenseApplication.controls.ctrlDrivingLicenseApplicationInfo();
          this.btnAddAppointment = new System.Windows.Forms.Button();
          this.picboxLocalDrivingLicense = new System.Windows.Forms.PictureBox();
-         ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+         ((System.ComponentModel.ISupportInitialize)(this.dgvTestAppointments)).BeginInit();
          ((System.ComponentModel.ISupportInitialize)(this.picboxLocalDrivingLicense)).BeginInit();
          this.SuspendLayout();
          // 
@@ -65,16 +65,16 @@
          this.label1.TabIndex = 53;
          this.label1.Text = "Appointments:";
          // 
-         // dataGridView1
+         // dgvTestAppointments
          // 
-         this.dataGridView1.AllowUserToAddRows = false;
-         this.dataGridView1.AllowUserToDeleteRows = false;
-         this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-         this.dataGridView1.Location = new System.Drawing.Point(4, 510);
-         this.dataGridView1.Name = "dataGridView1";
-         this.dataGridView1.ReadOnly = true;
-         this.dataGridView1.Size = new System.Drawing.Size(894, 107);
-         this.dataGridView1.TabIndex = 54;
+         this.dgvTestAppointments.AllowUserToAddRows = false;
+         this.dgvTestAppointments.AllowUserToDeleteRows = false;
+         this.dgvTestAppointments.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+         this.dgvTestAppointments.Location = new System.Drawing.Point(4, 510);
+         this.dgvTestAppointments.Name = "dgvTestAppointments";
+         this.dgvTestAppointments.ReadOnly = true;
+         this.dgvTestAppointments.Size = new System.Drawing.Size(894, 107);
+         this.dgvTestAppointments.TabIndex = 54;
          // 
          // lblLDVLAppNumber
          // 
@@ -150,7 +150,7 @@
          this.picboxLocalDrivingLicense.TabIndex = 51;
          this.picboxLocalDrivingLicense.TabStop = false;
          // 
-         // frmLocalDrivingLicenseApplicationInfo
+         // frmListTestAppointmets
          // 
          this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
          this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -161,15 +161,15 @@
          this.Controls.Add(this.lblLDVLAppNumber);
          this.Controls.Add(this.label2);
          this.Controls.Add(this.ctrlDrivingLicenseApplicationInfo1);
-         this.Controls.Add(this.dataGridView1);
+         this.Controls.Add(this.dgvTestAppointments);
          this.Controls.Add(this.label1);
          this.Controls.Add(this.picboxLocalDrivingLicense);
          this.Controls.Add(this.lblTitle);
          this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-         this.Name = "frmLocalDrivingLicenseApplicationInfo";
+         this.Name = "frmListTestAppointmets";
          this.Text = "frmLocalDrivingLicenseApplicationInfo";
          this.Load += new System.EventHandler(this.frmLocalDrivingLicenseApplicationInfo_Load);
-         ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+         ((System.ComponentModel.ISupportInitialize)(this.dgvTestAppointments)).EndInit();
          ((System.ComponentModel.ISupportInitialize)(this.picboxLocalDrivingLicense)).EndInit();
          this.ResumeLayout(false);
          this.PerformLayout();
@@ -180,7 +180,7 @@
       private System.Windows.Forms.PictureBox picboxLocalDrivingLicense;
       private System.Windows.Forms.Label lblTitle;
       private System.Windows.Forms.Label label1;
-      private System.Windows.Forms.DataGridView dataGridView1;
+      private System.Windows.Forms.DataGridView dgvTestAppointments;
       private controls.ctrlDrivingLicenseApplicationInfo ctrlDrivingLicenseApplicationInfo1;
       private System.Windows.Forms.Label lblLDVLAppNumber;
       private System.Windows.Forms.Label label2;

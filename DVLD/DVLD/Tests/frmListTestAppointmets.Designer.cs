@@ -34,9 +34,9 @@
          this.lblLDVLAppNumber = new System.Windows.Forms.Label();
          this.label2 = new System.Windows.Forms.Label();
          this.btnSave = new System.Windows.Forms.Button();
-         this.ctrlDrivingLicenseApplicationInfo1 = new DVLD.Applications.LocalDrivingLicenseApplication.controls.ctrlDrivingLicenseApplicationInfo();
          this.btnAddAppointment = new System.Windows.Forms.Button();
          this.picboxLocalDrivingLicense = new System.Windows.Forms.PictureBox();
+         this.ctrlDrivingLicenseApplicationInfo1 = new DVLD.Applications.LocalDrivingLicenseApplication.controls.ctrlDrivingLicenseApplicationInfo();
          ((System.ComponentModel.ISupportInitialize)(this.dgvTestAppointments)).BeginInit();
          ((System.ComponentModel.ISupportInitialize)(this.picboxLocalDrivingLicense)).BeginInit();
          this.SuspendLayout();
@@ -69,10 +69,12 @@
          // 
          this.dgvTestAppointments.AllowUserToAddRows = false;
          this.dgvTestAppointments.AllowUserToDeleteRows = false;
+         this.dgvTestAppointments.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
          this.dgvTestAppointments.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
          this.dgvTestAppointments.Location = new System.Drawing.Point(4, 510);
          this.dgvTestAppointments.Name = "dgvTestAppointments";
          this.dgvTestAppointments.ReadOnly = true;
+         this.dgvTestAppointments.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
          this.dgvTestAppointments.Size = new System.Drawing.Size(894, 107);
          this.dgvTestAppointments.TabIndex = 54;
          // 
@@ -114,14 +116,6 @@
          this.btnSave.UseVisualStyleBackColor = false;
          this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
          // 
-         // ctrlDrivingLicenseApplicationInfo1
-         // 
-         this.ctrlDrivingLicenseApplicationInfo1.BackColor = System.Drawing.Color.Gainsboro;
-         this.ctrlDrivingLicenseApplicationInfo1.Location = new System.Drawing.Point(4, 107);
-         this.ctrlDrivingLicenseApplicationInfo1.Name = "ctrlDrivingLicenseApplicationInfo1";
-         this.ctrlDrivingLicenseApplicationInfo1.Size = new System.Drawing.Size(894, 354);
-         this.ctrlDrivingLicenseApplicationInfo1.TabIndex = 55;
-         // 
          // btnAddAppointment
          // 
          this.btnAddAppointment.AutoSize = true;
@@ -149,6 +143,14 @@
          this.picboxLocalDrivingLicense.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
          this.picboxLocalDrivingLicense.TabIndex = 51;
          this.picboxLocalDrivingLicense.TabStop = false;
+         // 
+         // ctrlDrivingLicenseApplicationInfo1
+         // 
+         this.ctrlDrivingLicenseApplicationInfo1.BackColor = System.Drawing.Color.Gainsboro;
+         this.ctrlDrivingLicenseApplicationInfo1.Location = new System.Drawing.Point(4, 107);
+         this.ctrlDrivingLicenseApplicationInfo1.Name = "ctrlDrivingLicenseApplicationInfo1";
+         this.ctrlDrivingLicenseApplicationInfo1.Size = new System.Drawing.Size(894, 354);
+         this.ctrlDrivingLicenseApplicationInfo1.TabIndex = 55;
          // 
          // frmListTestAppointmets
          // 

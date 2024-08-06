@@ -310,6 +310,7 @@
     <None Include="Resources\stand_out_1oag-bg.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\Written Test 512.png" />
     <None Include="Resources\Vision 512.png" />
     <None Include="Resources\map.png" />
     <None Include="Resources\map-modified.png" />
@@ -337,6 +338,7 @@
     <None Include="Resources\edit 32.png" />
     <None Include="Resources\Delete 32 2.png" />
     <None Include="Resources\AddAppointment 32.png" />
+    <None Include="Resources\driving-test 512.png" />
     <Content Include="Resources\Female_avatar.png" />
     <None Include="Resources\plus-icon.png" />
     <None Include="Resources\people.png" />

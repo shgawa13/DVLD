@@ -29,18 +29,17 @@
       private void InitializeComponent()
       {
          this.gbTestType = new System.Windows.Forms.Label();
-         this.lblTestErrorMessage = new System.Windows.Forms.Label();
+         this.lblUserMessage = new System.Windows.Forms.Label();
          this.lblTestTitle = new System.Windows.Forms.Label();
-         this.pbTestTypeImage = new System.Windows.Forms.PictureBox();
          this.label1 = new System.Windows.Forms.Label();
          this.label2 = new System.Windows.Forms.Label();
          this.label3 = new System.Windows.Forms.Label();
          this.label4 = new System.Windows.Forms.Label();
          this.label5 = new System.Windows.Forms.Label();
          this.label6 = new System.Windows.Forms.Label();
-         this.groupBox1 = new System.Windows.Forms.GroupBox();
+         this.gbRetakeTestInfo = new System.Windows.Forms.GroupBox();
          this.lblTotalFees = new System.Windows.Forms.Label();
-         this.lblTestAppID = new System.Windows.Forms.Label();
+         this.lblRetakeTestAppID = new System.Windows.Forms.Label();
          this.lblRetakeFees = new System.Windows.Forms.Label();
          this.label9 = new System.Windows.Forms.Label();
          this.label8 = new System.Windows.Forms.Label();
@@ -48,12 +47,13 @@
          this.btnSave = new System.Windows.Forms.Button();
          this.lblDLAppID = new System.Windows.Forms.Label();
          this.lblDrivingClass = new System.Windows.Forms.Label();
-         this.lblName = new System.Windows.Forms.Label();
-         this.lblTotalTrils = new System.Windows.Forms.Label();
+         this.lblFullName = new System.Windows.Forms.Label();
+         this.lblTrial = new System.Windows.Forms.Label();
          this.lblFees = new System.Windows.Forms.Label();
-         this.dateTimeTest = new System.Windows.Forms.DateTimePicker();
+         this.dtpTestDate = new System.Windows.Forms.DateTimePicker();
+         this.pbTestTypeImage = new System.Windows.Forms.PictureBox();
+         this.gbRetakeTestInfo.SuspendLayout();
          ((System.ComponentModel.ISupportInitialize)(this.pbTestTypeImage)).BeginInit();
-         this.groupBox1.SuspendLayout();
          this.SuspendLayout();
          // 
          // gbTestType
@@ -67,16 +67,16 @@
          this.gbTestType.TabIndex = 0;
          this.gbTestType.Text = "Test Type";
          // 
-         // lblTestErrorMessage
+         // lblUserMessage
          // 
-         this.lblTestErrorMessage.AutoSize = true;
-         this.lblTestErrorMessage.Font = new System.Drawing.Font("Franklin Gothic Medium", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-         this.lblTestErrorMessage.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(83)))), ((int)(((byte)(100)))));
-         this.lblTestErrorMessage.Location = new System.Drawing.Point(162, 145);
-         this.lblTestErrorMessage.Name = "lblTestErrorMessage";
-         this.lblTestErrorMessage.Size = new System.Drawing.Size(105, 26);
-         this.lblTestErrorMessage.TabIndex = 4;
-         this.lblTestErrorMessage.Text = "Test Type";
+         this.lblUserMessage.AutoSize = true;
+         this.lblUserMessage.Font = new System.Drawing.Font("Franklin Gothic Medium", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+         this.lblUserMessage.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(83)))), ((int)(((byte)(100)))));
+         this.lblUserMessage.Location = new System.Drawing.Point(162, 145);
+         this.lblUserMessage.Name = "lblUserMessage";
+         this.lblUserMessage.Size = new System.Drawing.Size(105, 26);
+         this.lblUserMessage.TabIndex = 4;
+         this.lblUserMessage.Text = "Test Type";
          // 
          // lblTestTitle
          // 
@@ -88,16 +88,6 @@
          this.lblTestTitle.Size = new System.Drawing.Size(133, 34);
          this.lblTestTitle.TabIndex = 5;
          this.lblTestTitle.Text = "Test Type";
-         // 
-         // pbTestTypeImage
-         // 
-         this.pbTestTypeImage.Image = global::DVLD.Properties.Resources.driving_test_512;
-         this.pbTestTypeImage.Location = new System.Drawing.Point(157, 5);
-         this.pbTestTypeImage.Name = "pbTestTypeImage";
-         this.pbTestTypeImage.Size = new System.Drawing.Size(127, 101);
-         this.pbTestTypeImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-         this.pbTestTypeImage.TabIndex = 3;
-         this.pbTestTypeImage.TabStop = false;
          // 
          // label1
          // 
@@ -165,22 +155,22 @@
          this.label6.TabIndex = 9;
          this.label6.Text = "Total:";
          // 
-         // groupBox1
+         // gbRetakeTestInfo
          // 
-         this.groupBox1.Controls.Add(this.lblTotalFees);
-         this.groupBox1.Controls.Add(this.lblTestAppID);
-         this.groupBox1.Controls.Add(this.lblRetakeFees);
-         this.groupBox1.Controls.Add(this.label9);
-         this.groupBox1.Controls.Add(this.label8);
-         this.groupBox1.Controls.Add(this.label7);
-         this.groupBox1.Font = new System.Drawing.Font("Franklin Gothic Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-         this.groupBox1.ForeColor = System.Drawing.Color.Gold;
-         this.groupBox1.Location = new System.Drawing.Point(3, 386);
-         this.groupBox1.Name = "groupBox1";
-         this.groupBox1.Size = new System.Drawing.Size(448, 122);
-         this.groupBox1.TabIndex = 12;
-         this.groupBox1.TabStop = false;
-         this.groupBox1.Text = "Retake Test Info";
+         this.gbRetakeTestInfo.Controls.Add(this.lblTotalFees);
+         this.gbRetakeTestInfo.Controls.Add(this.lblRetakeTestAppID);
+         this.gbRetakeTestInfo.Controls.Add(this.lblRetakeFees);
+         this.gbRetakeTestInfo.Controls.Add(this.label9);
+         this.gbRetakeTestInfo.Controls.Add(this.label8);
+         this.gbRetakeTestInfo.Controls.Add(this.label7);
+         this.gbRetakeTestInfo.Font = new System.Drawing.Font("Franklin Gothic Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+         this.gbRetakeTestInfo.ForeColor = System.Drawing.Color.Gold;
+         this.gbRetakeTestInfo.Location = new System.Drawing.Point(3, 386);
+         this.gbRetakeTestInfo.Name = "gbRetakeTestInfo";
+         this.gbRetakeTestInfo.Size = new System.Drawing.Size(448, 122);
+         this.gbRetakeTestInfo.TabIndex = 12;
+         this.gbRetakeTestInfo.TabStop = false;
+         this.gbRetakeTestInfo.Text = "Retake Test Info";
          // 
          // lblTotalFees
          // 
@@ -193,16 +183,16 @@
          this.lblTotalFees.TabIndex = 69;
          this.lblTotalFees.Text = "[???]";
          // 
-         // lblTestAppID
+         // lblRetakeTestAppID
          // 
-         this.lblTestAppID.AutoSize = true;
-         this.lblTestAppID.Font = new System.Drawing.Font("Franklin Gothic Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-         this.lblTestAppID.ForeColor = System.Drawing.Color.WhiteSmoke;
-         this.lblTestAppID.Location = new System.Drawing.Point(134, 65);
-         this.lblTestAppID.Name = "lblTestAppID";
-         this.lblTestAppID.Size = new System.Drawing.Size(49, 21);
-         this.lblTestAppID.TabIndex = 68;
-         this.lblTestAppID.Text = "[???]";
+         this.lblRetakeTestAppID.AutoSize = true;
+         this.lblRetakeTestAppID.Font = new System.Drawing.Font("Franklin Gothic Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+         this.lblRetakeTestAppID.ForeColor = System.Drawing.Color.WhiteSmoke;
+         this.lblRetakeTestAppID.Location = new System.Drawing.Point(134, 65);
+         this.lblRetakeTestAppID.Name = "lblRetakeTestAppID";
+         this.lblRetakeTestAppID.Size = new System.Drawing.Size(49, 21);
+         this.lblRetakeTestAppID.TabIndex = 68;
+         this.lblRetakeTestAppID.Text = "[???]";
          // 
          // lblRetakeFees
          // 
@@ -285,27 +275,27 @@
          this.lblDrivingClass.TabIndex = 62;
          this.lblDrivingClass.Text = "[???]";
          // 
-         // lblName
+         // lblFullName
          // 
-         this.lblName.AutoSize = true;
-         this.lblName.Font = new System.Drawing.Font("Franklin Gothic Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-         this.lblName.ForeColor = System.Drawing.Color.WhiteSmoke;
-         this.lblName.Location = new System.Drawing.Point(158, 247);
-         this.lblName.Name = "lblName";
-         this.lblName.Size = new System.Drawing.Size(49, 21);
-         this.lblName.TabIndex = 63;
-         this.lblName.Text = "[???]";
+         this.lblFullName.AutoSize = true;
+         this.lblFullName.Font = new System.Drawing.Font("Franklin Gothic Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+         this.lblFullName.ForeColor = System.Drawing.Color.WhiteSmoke;
+         this.lblFullName.Location = new System.Drawing.Point(158, 247);
+         this.lblFullName.Name = "lblFullName";
+         this.lblFullName.Size = new System.Drawing.Size(49, 21);
+         this.lblFullName.TabIndex = 63;
+         this.lblFullName.Text = "[???]";
          // 
-         // lblTotalTrils
+         // lblTrial
          // 
-         this.lblTotalTrils.AutoSize = true;
-         this.lblTotalTrils.Font = new System.Drawing.Font("Franklin Gothic Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-         this.lblTotalTrils.ForeColor = System.Drawing.Color.WhiteSmoke;
-         this.lblTotalTrils.Location = new System.Drawing.Point(158, 284);
-         this.lblTotalTrils.Name = "lblTotalTrils";
-         this.lblTotalTrils.Size = new System.Drawing.Size(49, 21);
-         this.lblTotalTrils.TabIndex = 64;
-         this.lblTotalTrils.Text = "[???]";
+         this.lblTrial.AutoSize = true;
+         this.lblTrial.Font = new System.Drawing.Font("Franklin Gothic Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+         this.lblTrial.ForeColor = System.Drawing.Color.WhiteSmoke;
+         this.lblTrial.Location = new System.Drawing.Point(158, 284);
+         this.lblTrial.Name = "lblTrial";
+         this.lblTrial.Size = new System.Drawing.Size(49, 21);
+         this.lblTrial.TabIndex = 64;
+         this.lblTrial.Text = "[???]";
          // 
          // lblFees
          // 
@@ -318,27 +308,37 @@
          this.lblFees.TabIndex = 66;
          this.lblFees.Text = "[???]";
          // 
-         // dateTimeTest
+         // dtpTestDate
          // 
-         this.dateTimeTest.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-         this.dateTimeTest.Location = new System.Drawing.Point(161, 325);
-         this.dateTimeTest.Name = "dateTimeTest";
-         this.dateTimeTest.Size = new System.Drawing.Size(106, 20);
-         this.dateTimeTest.TabIndex = 67;
+         this.dtpTestDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+         this.dtpTestDate.Location = new System.Drawing.Point(161, 325);
+         this.dtpTestDate.Name = "dtpTestDate";
+         this.dtpTestDate.Size = new System.Drawing.Size(106, 20);
+         this.dtpTestDate.TabIndex = 67;
+         // 
+         // pbTestTypeImage
+         // 
+         this.pbTestTypeImage.Image = global::DVLD.Properties.Resources.driving_test_512;
+         this.pbTestTypeImage.Location = new System.Drawing.Point(157, 5);
+         this.pbTestTypeImage.Name = "pbTestTypeImage";
+         this.pbTestTypeImage.Size = new System.Drawing.Size(127, 101);
+         this.pbTestTypeImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+         this.pbTestTypeImage.TabIndex = 3;
+         this.pbTestTypeImage.TabStop = false;
          // 
          // ctrlScheduleTest
          // 
          this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
          this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
          this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(47)))), ((int)(((byte)(88)))));
-         this.Controls.Add(this.dateTimeTest);
+         this.Controls.Add(this.dtpTestDate);
          this.Controls.Add(this.lblFees);
-         this.Controls.Add(this.lblTotalTrils);
-         this.Controls.Add(this.lblName);
+         this.Controls.Add(this.lblTrial);
+         this.Controls.Add(this.lblFullName);
          this.Controls.Add(this.lblDrivingClass);
          this.Controls.Add(this.lblDLAppID);
          this.Controls.Add(this.btnSave);
-         this.Controls.Add(this.groupBox1);
+         this.Controls.Add(this.gbRetakeTestInfo);
          this.Controls.Add(this.label4);
          this.Controls.Add(this.label5);
          this.Controls.Add(this.label6);
@@ -346,14 +346,14 @@
          this.Controls.Add(this.label2);
          this.Controls.Add(this.label1);
          this.Controls.Add(this.lblTestTitle);
-         this.Controls.Add(this.lblTestErrorMessage);
+         this.Controls.Add(this.lblUserMessage);
          this.Controls.Add(this.pbTestTypeImage);
          this.Controls.Add(this.gbTestType);
          this.Name = "ctrlScheduleTest";
          this.Size = new System.Drawing.Size(454, 556);
+         this.gbRetakeTestInfo.ResumeLayout(false);
+         this.gbRetakeTestInfo.PerformLayout();
          ((System.ComponentModel.ISupportInitialize)(this.pbTestTypeImage)).EndInit();
-         this.groupBox1.ResumeLayout(false);
-         this.groupBox1.PerformLayout();
          this.ResumeLayout(false);
          this.PerformLayout();
 
@@ -363,7 +363,7 @@
 
       private System.Windows.Forms.Label gbTestType;
       private System.Windows.Forms.PictureBox pbTestTypeImage;
-      private System.Windows.Forms.Label lblTestErrorMessage;
+      private System.Windows.Forms.Label lblUserMessage;
       private System.Windows.Forms.Label lblTestTitle;
       private System.Windows.Forms.Label label1;
       private System.Windows.Forms.Label label2;
@@ -371,19 +371,19 @@
       private System.Windows.Forms.Label label4;
       private System.Windows.Forms.Label label5;
       private System.Windows.Forms.Label label6;
-      private System.Windows.Forms.GroupBox groupBox1;
+      private System.Windows.Forms.GroupBox gbRetakeTestInfo;
       private System.Windows.Forms.Button btnSave;
       private System.Windows.Forms.Label label8;
       private System.Windows.Forms.Label label7;
       private System.Windows.Forms.Label lblTotalFees;
-      private System.Windows.Forms.Label lblTestAppID;
+      private System.Windows.Forms.Label lblRetakeTestAppID;
       private System.Windows.Forms.Label lblRetakeFees;
       private System.Windows.Forms.Label label9;
       private System.Windows.Forms.Label lblDLAppID;
       private System.Windows.Forms.Label lblDrivingClass;
-      private System.Windows.Forms.Label lblName;
-      private System.Windows.Forms.Label lblTotalTrils;
+      private System.Windows.Forms.Label lblFullName;
+      private System.Windows.Forms.Label lblTrial;
       private System.Windows.Forms.Label lblFees;
-      private System.Windows.Forms.DateTimePicker dateTimeTest;
+      private System.Windows.Forms.DateTimePicker dtpTestDate;
    }
 }

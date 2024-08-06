@@ -28,10 +28,10 @@
       /// </summary>
       private void InitializeComponent()
       {
-         this.lblTestType = new System.Windows.Forms.Label();
-         this.lblTestError = new System.Windows.Forms.Label();
+         this.gbTestType = new System.Windows.Forms.Label();
+         this.lblTestErrorMessage = new System.Windows.Forms.Label();
          this.lblTestTitle = new System.Windows.Forms.Label();
-         this.pictureBox1 = new System.Windows.Forms.PictureBox();
+         this.pbTestTypeImage = new System.Windows.Forms.PictureBox();
          this.label1 = new System.Windows.Forms.Label();
          this.label2 = new System.Windows.Forms.Label();
          this.label3 = new System.Windows.Forms.Label();
@@ -52,31 +52,31 @@
          this.lblTotalTrils = new System.Windows.Forms.Label();
          this.lblFees = new System.Windows.Forms.Label();
          this.dateTimeTest = new System.Windows.Forms.DateTimePicker();
-         ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+         ((System.ComponentModel.ISupportInitialize)(this.pbTestTypeImage)).BeginInit();
          this.groupBox1.SuspendLayout();
          this.SuspendLayout();
          // 
-         // lblTestType
+         // gbTestType
          // 
-         this.lblTestType.AutoSize = true;
-         this.lblTestType.Font = new System.Drawing.Font("Franklin Gothic Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-         this.lblTestType.ForeColor = System.Drawing.Color.WhiteSmoke;
-         this.lblTestType.Location = new System.Drawing.Point(6, 5);
-         this.lblTestType.Name = "lblTestType";
-         this.lblTestType.Size = new System.Drawing.Size(83, 21);
-         this.lblTestType.TabIndex = 0;
-         this.lblTestType.Text = "Test Type";
+         this.gbTestType.AutoSize = true;
+         this.gbTestType.Font = new System.Drawing.Font("Franklin Gothic Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+         this.gbTestType.ForeColor = System.Drawing.Color.WhiteSmoke;
+         this.gbTestType.Location = new System.Drawing.Point(6, 5);
+         this.gbTestType.Name = "gbTestType";
+         this.gbTestType.Size = new System.Drawing.Size(83, 21);
+         this.gbTestType.TabIndex = 0;
+         this.gbTestType.Text = "Test Type";
          // 
-         // lblTestError
+         // lblTestErrorMessage
          // 
-         this.lblTestError.AutoSize = true;
-         this.lblTestError.Font = new System.Drawing.Font("Franklin Gothic Medium", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-         this.lblTestError.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(83)))), ((int)(((byte)(100)))));
-         this.lblTestError.Location = new System.Drawing.Point(162, 145);
-         this.lblTestError.Name = "lblTestError";
-         this.lblTestError.Size = new System.Drawing.Size(105, 26);
-         this.lblTestError.TabIndex = 4;
-         this.lblTestError.Text = "Test Type";
+         this.lblTestErrorMessage.AutoSize = true;
+         this.lblTestErrorMessage.Font = new System.Drawing.Font("Franklin Gothic Medium", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+         this.lblTestErrorMessage.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(83)))), ((int)(((byte)(100)))));
+         this.lblTestErrorMessage.Location = new System.Drawing.Point(162, 145);
+         this.lblTestErrorMessage.Name = "lblTestErrorMessage";
+         this.lblTestErrorMessage.Size = new System.Drawing.Size(105, 26);
+         this.lblTestErrorMessage.TabIndex = 4;
+         this.lblTestErrorMessage.Text = "Test Type";
          // 
          // lblTestTitle
          // 
@@ -89,15 +89,15 @@
          this.lblTestTitle.TabIndex = 5;
          this.lblTestTitle.Text = "Test Type";
          // 
-         // pictureBox1
+         // pbTestTypeImage
          // 
-         this.pictureBox1.Image = global::DVLD.Properties.Resources.Vision_512;
-         this.pictureBox1.Location = new System.Drawing.Point(157, 5);
-         this.pictureBox1.Name = "pictureBox1";
-         this.pictureBox1.Size = new System.Drawing.Size(127, 101);
-         this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-         this.pictureBox1.TabIndex = 3;
-         this.pictureBox1.TabStop = false;
+         this.pbTestTypeImage.Image = global::DVLD.Properties.Resources.driving_test_512;
+         this.pbTestTypeImage.Location = new System.Drawing.Point(157, 5);
+         this.pbTestTypeImage.Name = "pbTestTypeImage";
+         this.pbTestTypeImage.Size = new System.Drawing.Size(127, 101);
+         this.pbTestTypeImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+         this.pbTestTypeImage.TabIndex = 3;
+         this.pbTestTypeImage.TabStop = false;
          // 
          // label1
          // 
@@ -174,7 +174,7 @@
          this.groupBox1.Controls.Add(this.label8);
          this.groupBox1.Controls.Add(this.label7);
          this.groupBox1.Font = new System.Drawing.Font("Franklin Gothic Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-         this.groupBox1.ForeColor = System.Drawing.Color.Gainsboro;
+         this.groupBox1.ForeColor = System.Drawing.Color.Gold;
          this.groupBox1.Location = new System.Drawing.Point(3, 386);
          this.groupBox1.Name = "groupBox1";
          this.groupBox1.Size = new System.Drawing.Size(448, 122);
@@ -346,12 +346,12 @@
          this.Controls.Add(this.label2);
          this.Controls.Add(this.label1);
          this.Controls.Add(this.lblTestTitle);
-         this.Controls.Add(this.lblTestError);
-         this.Controls.Add(this.pictureBox1);
-         this.Controls.Add(this.lblTestType);
+         this.Controls.Add(this.lblTestErrorMessage);
+         this.Controls.Add(this.pbTestTypeImage);
+         this.Controls.Add(this.gbTestType);
          this.Name = "ctrlScheduleTest";
          this.Size = new System.Drawing.Size(454, 556);
-         ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+         ((System.ComponentModel.ISupportInitialize)(this.pbTestTypeImage)).EndInit();
          this.groupBox1.ResumeLayout(false);
          this.groupBox1.PerformLayout();
          this.ResumeLayout(false);
@@ -361,9 +361,9 @@
 
       #endregion
 
-      private System.Windows.Forms.Label lblTestType;
-      private System.Windows.Forms.PictureBox pictureBox1;
-      private System.Windows.Forms.Label lblTestError;
+      private System.Windows.Forms.Label gbTestType;
+      private System.Windows.Forms.PictureBox pbTestTypeImage;
+      private System.Windows.Forms.Label lblTestErrorMessage;
       private System.Windows.Forms.Label lblTestTitle;
       private System.Windows.Forms.Label label1;
       private System.Windows.Forms.Label label2;

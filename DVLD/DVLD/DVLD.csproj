@@ -88,17 +88,17 @@
     <Compile Include="Applications\LocalDrivingLicenseApplication\frmLocalDrivingLicenseApplicationInfo.Designer.cs">
       <DependentUpon>frmLocalDrivingLicenseApplicationInfo.cs</DependentUpon>
     </Compile>
-    <Compile Include="Tests\controls\ctrlScheduledTest.cs">
+    <Compile Include="Tests\controls\ctrlSecheduledTest.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Tests\controls\ctrlScheduledTest.Designer.cs">
-      <DependentUpon>ctrlScheduledTest.cs</DependentUpon>
+    <Compile Include="Tests\controls\ctrlSecheduledTest.Designer.cs">
+      <DependentUpon>ctrlSecheduledTest.cs</DependentUpon>
     </Compile>
-    <Compile Include="Tests\controls\ctrlScheduleTest.cs">
+    <Compile Include="Tests\controls\ctrlSecheduleTest.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Tests\controls\ctrlScheduleTest.Designer.cs">
-      <DependentUpon>ctrlScheduleTest.cs</DependentUpon>
+    <Compile Include="Tests\controls\ctrlSecheduleTest.Designer.cs">
+      <DependentUpon>ctrlSecheduleTest.cs</DependentUpon>
     </Compile>
     <Compile Include="Tests\frmListTestAppointmets.cs">
       <SubType>Form</SubType>
@@ -158,6 +158,12 @@
     </Compile>
     <Compile Include="Tests\frmScheduleTest.Designer.cs">
       <DependentUpon>frmScheduleTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tests\frmTakeTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tests\frmTakeTest.Designer.cs">
+      <DependentUpon>frmTakeTest.cs</DependentUpon>
     </Compile>
     <Compile Include="Tests\Test Types\frmEditTestType.cs">
       <SubType>Form</SubType>
@@ -228,11 +234,11 @@
     <EmbeddedResource Include="Applications\LocalDrivingLicenseApplication\frmLocalDrivingLicenseApplicationInfo.resx">
       <DependentUpon>frmLocalDrivingLicenseApplicationInfo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Tests\controls\ctrlScheduledTest.resx">
-      <DependentUpon>ctrlScheduledTest.cs</DependentUpon>
+    <EmbeddedResource Include="Tests\controls\ctrlSecheduledTest.resx">
+      <DependentUpon>ctrlSecheduledTest.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Tests\controls\ctrlScheduleTest.resx">
-      <DependentUpon>ctrlScheduleTest.cs</DependentUpon>
+    <EmbeddedResource Include="Tests\controls\ctrlSecheduleTest.resx">
+      <DependentUpon>ctrlSecheduleTest.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Tests\frmListTestAppointmets.resx">
       <DependentUpon>frmListTestAppointmets.cs</DependentUpon>
@@ -270,6 +276,9 @@
     </Compile>
     <EmbeddedResource Include="Tests\frmScheduleTest.resx">
       <DependentUpon>frmScheduleTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tests\frmTakeTest.resx">
+      <DependentUpon>frmTakeTest.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Tests\Test Types\frmEditTestType.resx">
       <DependentUpon>frmEditTestType.cs</DependentUpon>
@@ -328,6 +337,7 @@
     <None Include="Resources\stand_out_1oag-bg.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\Save 32.png" />
     <None Include="Resources\Written Test 512.png" />
     <None Include="Resources\Vision 512.png" />
     <None Include="Resources\map.png" />

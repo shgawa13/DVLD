@@ -28,7 +28,7 @@
       /// </summary>
       private void InitializeComponent()
       {
-         this.ctrlScheduleTest1 = new DVLD.Tests.controls.ctrlScheduleTest();
+         this.ctrlScheduleTest1 = new DVLD.Tests.controls.ctrlSecheduleTest();
          this.SuspendLayout();
          // 
          // ctrlScheduleTest1
@@ -57,6 +57,6 @@
 
       #endregion
 
-      private controls.ctrlScheduleTest ctrlScheduleTest1;
+      private controls.ctrlSecheduleTest ctrlScheduleTest1;
    }
 }

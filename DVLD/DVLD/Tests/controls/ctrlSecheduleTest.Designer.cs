@@ -1,6 +1,6 @@
 ﻿namespace DVLD.Tests.controls
 {
-   partial class ctrlScheduleTest
+   partial class ctrlSecheduleTest
    {
       /// <summary> 
       /// Required designer variable.

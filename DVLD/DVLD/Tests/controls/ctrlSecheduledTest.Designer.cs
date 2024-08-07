@@ -1,6 +1,6 @@
 ﻿namespace DVLD.Tests.controls
 {
-   partial class ctrlScheduledTest
+   partial class ctrlSecheduledTest
    {
       /// <summary> 
       /// Required designer variable.
@@ -264,13 +264,13 @@
          this.pbTestTypeImage.TabIndex = 67;
          this.pbTestTypeImage.TabStop = false;
          // 
-         // ctrlScheduledTest
+         // ctrlSecheduledTest
          // 
          this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
          this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
          this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(47)))), ((int)(((byte)(88)))));
          this.Controls.Add(this.gbTestType);
-         this.Name = "ctrlScheduledTest";
+         this.Name = "ctrlSecheduledTest";
          this.Size = new System.Drawing.Size(448, 458);
          this.gbTestType.ResumeLayout(false);
          this.gbTestType.PerformLayout();

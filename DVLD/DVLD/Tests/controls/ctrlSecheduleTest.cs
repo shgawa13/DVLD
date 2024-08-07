@@ -15,7 +15,7 @@ using System.Windows.Forms;
 
 namespace DVLD.Tests.controls
 {
-   public partial class ctrlScheduleTest : UserControl
+   public partial class ctrlSecheduleTest : UserControl
    {
       public enum enMode { AddNew =0, Update=1}
       private enMode _Mode = enMode.AddNew;
@@ -308,7 +308,7 @@ namespace DVLD.Tests.controls
          return true;
       }
 
-      public ctrlScheduleTest()
+      public ctrlSecheduleTest()
       {
          InitializeComponent();
       }

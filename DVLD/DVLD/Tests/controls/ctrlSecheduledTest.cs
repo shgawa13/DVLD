@@ -12,10 +12,10 @@ using DVLD.Properties;
 
 namespace DVLD.Tests.controls
 {
-   public partial class ctrlScheduledTest : UserControl
+   public partial class ctrlSecheduledTest : UserControl
    {
 
-      private clsTestType.enTypeTest _TestTypeID;
+      private clsTestType.enTypeTest _TestTypeID = clsTestType.enTypeTest.VisionTest;
       private int _TestID = -1;
       private clsLocalDrivingLicenseApplication _LocalDrivingLicenseApplication;
 
@@ -124,7 +124,7 @@ namespace DVLD.Tests.controls
 
       }
 
-      public ctrlScheduledTest()
+      public ctrlSecheduledTest()
       {
          InitializeComponent();
       }

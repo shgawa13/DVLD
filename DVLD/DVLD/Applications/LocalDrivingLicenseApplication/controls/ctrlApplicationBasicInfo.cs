@@ -20,7 +20,7 @@ namespace DVLD.Applications.controls
          InitializeComponent();
       }
 
-      clsApplication _Application;
+      private clsApplication _Application;
       private int _ApplicationID;
 
       public int ApplicationID

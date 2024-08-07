@@ -34,7 +34,7 @@ namespace DVLD.Applications.LocalDrivingLicenseApplication.controls
 
          if (_LocalDrivingLicenseApplication == null)
          {
-           // _ResetLocalDrivingLicenseApplicationInfo();
+            _ResetLocalDrivingLicenseApplicationInfo();
 
 
             MessageBox.Show($"No Application with ApplicationID = {LocalDrivingLicenseApplicationID}" , "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -50,7 +50,7 @@ namespace DVLD.Applications.LocalDrivingLicenseApplication.controls
 
          if (_LocalDrivingLicenseApplication == null)
          {
-            // _ResetLocalDrivingLicenseApplicationInfo();
+            _ResetLocalDrivingLicenseApplicationInfo();
 
 
             MessageBox.Show($"No Application with ApplicationID = {ApplicationID}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -64,7 +64,7 @@ namespace DVLD.Applications.LocalDrivingLicenseApplication.controls
       private void _FillDrivingLicenseApplicationInfo()
       {
 
-         _LocalDrivingLicenseApplicationID = _LocalDrivingLicenseApplication.ApplicationID;
+         _LocalDrivingLicenseApplicationID = _LocalDrivingLicenseApplication.LocalDrivingLicenseApplicationID;
          lblDrivingAppID.Text = _LocalDrivingLicenseApplicationID.ToString();
          lblLicenseTypeName.Text = clsLicenseClass.FindLicenseClassByID(_LocalDrivingLicenseApplication.LicenseClassID).ClassName;
          lblPassedTest.Text = $"[ {_LocalDrivingLicenseApplication.GetPassedTestCount()} - 3 ]";

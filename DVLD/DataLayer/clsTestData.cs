@@ -10,14 +10,15 @@ namespace DataLayer
 {
    public class clsTestData
    {
-      public static bool GetTestInfoByID(int TestID,ref int TestAppointment, ref bool TestResult,
+      public static bool GetTestInfoByID(int TestID,ref int TestAppointmentID, ref bool TestResult,
                ref string Notes,ref int CreatedByUserID)
       {
          bool IsFound = false;
 
          SqlConnection connection = new SqlConnection(clsDataAccessSettings.ConnectingString);
-         string Query = @"Select * From Tests where TestID=@TestID;";
-         SqlCommand command = new SqlCommand(Query, connection);
+         string query = "SELECT * FROM Tests WHERE TestID = @TestID";
+
+         SqlCommand command = new SqlCommand(query, connection);
 
          command.Parameters.AddWithValue("@TestID", TestID);
 
@@ -28,22 +29,34 @@ namespace DataLayer
 
             if (reader.Read())
             {
+
+               // The record was found
                IsFound = true;
 
-               TestAppointment = (int)reader["TestAppointment"];
+               TestAppointmentID = (int)reader["TestAppointmentID"];
                TestResult = (bool)reader["TestResult"];
-
                if (reader["Notes"] == DBNull.Value)
+
                   Notes = "";
                else
                   Notes = (string)reader["Notes"];
 
                CreatedByUserID = (int)reader["CreatedByUserID"];
+
             }
+            else
+            {
+               // The record was not found
+               IsFound = false;
+            }
+
             reader.Close();
+
+
          }
-         catch(Exception ex)
+         catch (Exception ex)
          {
+            //Console.WriteLine("Error: " + ex.Message);
             IsFound = false;
          }
          finally
@@ -166,14 +179,10 @@ namespace DataLayer
 
          SqlConnection connection = new SqlConnection(clsDataAccessSettings.ConnectingString);
 
-         string query = @"Insert Into Tests (TestAppointmentID,TestResult,
-                                                Notes,   CreatedByUserID)
-                            Values (@TestAppointmentID,@TestResult,
-                                                @Notes,   @CreatedByUserID);
-                            
+         string query = @"Insert Into Tests (TestAppointmentID,TestResult,Notes,CreatedByUserID)
+                            Values (@TestAppointmentID,@TestResult,@Notes,@CreatedByUserID);
                                 UPDATE TestAppointments 
                                 SET IsLocked=1 where TestAppointmentID = @TestAppointmentID;
-
                                 SELECT SCOPE_IDENTITY();";
 
          SqlCommand command = new SqlCommand(query, connection);

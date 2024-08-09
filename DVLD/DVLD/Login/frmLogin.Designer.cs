@@ -105,7 +105,7 @@
          this.Login.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(33)))), ((int)(((byte)(67)))));
          this.Login.Font = new System.Drawing.Font("Verdana", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
          this.Login.ForeColor = System.Drawing.Color.Gainsboro;
-         this.Login.Location = new System.Drawing.Point(598, 94);
+         this.Login.Location = new System.Drawing.Point(606, 94);
          this.Login.Name = "Login";
          this.Login.Size = new System.Drawing.Size(86, 29);
          this.Login.TabIndex = 2;
@@ -155,7 +155,7 @@
          // 
          // btnLogin
          // 
-         this.btnLogin.BackColor = System.Drawing.Color.Silver;
+         this.btnLogin.BackColor = System.Drawing.Color.Gainsboro;
          this.btnLogin.FlatAppearance.BorderColor = System.Drawing.Color.White;
          this.btnLogin.FlatAppearance.BorderSize = 0;
          this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -175,7 +175,7 @@
          this.cboxRemember.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(33)))), ((int)(((byte)(67)))));
          this.cboxRemember.Font = new System.Drawing.Font("Franklin Gothic Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
          this.cboxRemember.ForeColor = System.Drawing.Color.LightGray;
-         this.cboxRemember.Location = new System.Drawing.Point(648, 292);
+         this.cboxRemember.Location = new System.Drawing.Point(520, 297);
          this.cboxRemember.Name = "cboxRemember";
          this.cboxRemember.Size = new System.Drawing.Size(142, 25);
          this.cboxRemember.TabIndex = 2;

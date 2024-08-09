@@ -15,8 +15,10 @@ namespace DVLD.Tests.controls
    public partial class ctrlSecheduledTest : UserControl
    {
 
-      private clsTestType.enTypeTest _TestTypeID = clsTestType.enTypeTest.VisionTest;
+
+      private clsTestType.enTypeTest _TestTypeID;
       private int _TestID = -1;
+
       private clsLocalDrivingLicenseApplication _LocalDrivingLicenseApplication;
 
       public clsTestType.enTypeTest TestTypeID
@@ -123,6 +125,7 @@ namespace DVLD.Tests.controls
 
 
       }
+
 
       public ctrlSecheduledTest()
       {

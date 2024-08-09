@@ -90,21 +90,22 @@
             this.editToolStripMenuItem,
             this.takeTestToolStripMenuItem});
          this.ctmsAppointmentMenu.Name = "ctmsAppointmentMenu";
-         this.ctmsAppointmentMenu.Size = new System.Drawing.Size(121, 48);
+         this.ctmsAppointmentMenu.Size = new System.Drawing.Size(181, 70);
          this.ctmsAppointmentMenu.Text = "Appointment Menu";
          // 
          // editToolStripMenuItem
          // 
          this.editToolStripMenuItem.Name = "editToolStripMenuItem";
-         this.editToolStripMenuItem.Size = new System.Drawing.Size(120, 22);
+         this.editToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
          this.editToolStripMenuItem.Text = "Edit";
          this.editToolStripMenuItem.Click += new System.EventHandler(this.editToolStripMenuItem_Click);
          // 
          // takeTestToolStripMenuItem
          // 
          this.takeTestToolStripMenuItem.Name = "takeTestToolStripMenuItem";
-         this.takeTestToolStripMenuItem.Size = new System.Drawing.Size(120, 22);
+         this.takeTestToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
          this.takeTestToolStripMenuItem.Text = "Take Test";
+         this.takeTestToolStripMenuItem.Click += new System.EventHandler(this.takeTestToolStripMenuItem_Click);
          // 
          // lblRecordsCount
          // 

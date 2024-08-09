@@ -28,8 +28,10 @@ namespace DVLD.Tests
 
       private void frmScheduleTest_Load(object sender, EventArgs e)
       {
-         ctrlScheduleTest1.TestTypeID = _TestType;
-         ctrlScheduleTest1.LoadInfo(_LocalDrivingLicenseApplicationID, _AppointmentID);
+         //ctrlScheduleTest1.TestTypeID = _TestType;
+         //ctrlScheduleTest1.LoadInfo(_LocalDrivingLicenseApplicationID, _AppointmentID);
+         ctrlSecheduleTest1.TestTypeID = _TestType;
+         ctrlSecheduleTest1.LoadInfo(_LocalDrivingLicenseApplicationID, _AppointmentID);
       }
 
       

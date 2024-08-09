@@ -28,25 +28,25 @@
       /// </summary>
       private void InitializeComponent()
       {
-         this.ctrlScheduleTest1 = new DVLD.Tests.controls.ctrlSecheduleTest();
+         this.ctrlSecheduleTest1 = new DVLD.Tests.controls.ctrlSecheduleTest();
          this.SuspendLayout();
          // 
-         // ctrlScheduleTest1
+         // ctrlSecheduleTest1
          // 
-         this.ctrlScheduleTest1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(47)))), ((int)(((byte)(88)))));
-         this.ctrlScheduleTest1.Location = new System.Drawing.Point(1, 1);
-         this.ctrlScheduleTest1.Name = "ctrlScheduleTest1";
-         this.ctrlScheduleTest1.Size = new System.Drawing.Size(454, 556);
-         this.ctrlScheduleTest1.TabIndex = 0;
-         this.ctrlScheduleTest1.TestTypeID = Business.clsTestType.enTypeTest.VisionTest;
+         this.ctrlSecheduleTest1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(47)))), ((int)(((byte)(88)))));
+         this.ctrlSecheduleTest1.Location = new System.Drawing.Point(1, -1);
+         this.ctrlSecheduleTest1.Name = "ctrlSecheduleTest1";
+         this.ctrlSecheduleTest1.Size = new System.Drawing.Size(454, 551);
+         this.ctrlSecheduleTest1.TabIndex = 0;
+         this.ctrlSecheduleTest1.TestTypeID = Business.clsTestType.enTypeTest.VisionTest;
          // 
          // frmScheduleTest
          // 
          this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
          this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
          this.BackColor = System.Drawing.Color.Gainsboro;
-         this.ClientSize = new System.Drawing.Size(455, 562);
-         this.Controls.Add(this.ctrlScheduleTest1);
+         this.ClientSize = new System.Drawing.Size(455, 550);
+         this.Controls.Add(this.ctrlSecheduleTest1);
          this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
          this.Name = "frmScheduleTest";
          this.Text = "Schedule Test";
@@ -57,6 +57,6 @@
 
       #endregion
 
-      private controls.ctrlSecheduleTest ctrlScheduleTest1;
+      private controls.ctrlSecheduleTest ctrlSecheduleTest1;
    }
 }

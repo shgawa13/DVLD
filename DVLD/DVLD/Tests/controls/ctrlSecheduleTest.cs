@@ -65,7 +65,7 @@ namespace DVLD.Tests.controls
 
       }
 
-      public void LoadInfo(int LocalDrivingLicenseApplicationID, int AppointmentID)
+      public void LoadInfo(int LocalDrivingLicenseApplicationID, int AppointmentID=-1)
       {
          //if no appointment id this means AddNew mode otherwise it's update mode.
          if (AppointmentID == -1)

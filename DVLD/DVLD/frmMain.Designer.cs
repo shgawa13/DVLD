@@ -29,6 +29,7 @@
       private void InitializeComponent()
       {
          this.panel1 = new System.Windows.Forms.Panel();
+         this.pictureBox2 = new System.Windows.Forms.PictureBox();
          this.pictureBox1 = new System.Windows.Forms.PictureBox();
          this.btnCloseLogin = new System.Windows.Forms.Button();
          this.menuStrip1 = new System.Windows.Forms.MenuStrip();
@@ -61,16 +62,21 @@
          this.toolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
          this.toolStripMenuItem5 = new System.Windows.Forms.ToolStripMenuItem();
          this.toolStripMenuItem6 = new System.Windows.Forms.ToolStripMenuItem();
+         this.pictureBox3 = new System.Windows.Forms.PictureBox();
          this.panel1.SuspendLayout();
+         ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
          ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
          this.menuStrip1.SuspendLayout();
+         ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
          this.SuspendLayout();
          // 
          // panel1
          // 
          this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(33)))), ((int)(((byte)(67)))));
-         this.panel1.Controls.Add(this.pictureBox1);
          this.panel1.Controls.Add(this.btnCloseLogin);
+         this.panel1.Controls.Add(this.pictureBox3);
+         this.panel1.Controls.Add(this.pictureBox2);
+         this.panel1.Controls.Add(this.pictureBox1);
          this.panel1.Controls.Add(this.menuStrip1);
          this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
          this.panel1.Font = new System.Drawing.Font("Verdana", 10F, System.Drawing.FontStyle.Bold);
@@ -79,6 +85,17 @@
          this.panel1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
          this.panel1.Size = new System.Drawing.Size(1255, 516);
          this.panel1.TabIndex = 0;
+         // 
+         // pictureBox2
+         // 
+         this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Left;
+         this.pictureBox2.Image = global::DVLD.Properties.Resources.WallPaper2;
+         this.pictureBox2.Location = new System.Drawing.Point(161, 0);
+         this.pictureBox2.Name = "pictureBox2";
+         this.pictureBox2.Size = new System.Drawing.Size(762, 516);
+         this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+         this.pictureBox2.TabIndex = 14;
+         this.pictureBox2.TabStop = false;
          // 
          // pictureBox1
          // 
@@ -98,7 +115,7 @@
          this.btnCloseLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
          this.btnCloseLogin.Font = new System.Drawing.Font("Franklin Gothic Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
          this.btnCloseLogin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(83)))), ((int)(((byte)(100)))));
-         this.btnCloseLogin.Location = new System.Drawing.Point(1214, 0);
+         this.btnCloseLogin.Location = new System.Drawing.Point(1214, 3);
          this.btnCloseLogin.Name = "btnCloseLogin";
          this.btnCloseLogin.Size = new System.Drawing.Size(41, 30);
          this.btnCloseLogin.TabIndex = 12;
@@ -146,7 +163,6 @@
          this.tolStripApplication.Size = new System.Drawing.Size(140, 21);
          this.tolStripApplication.Text = "Application";
          this.tolStripApplication.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-         this.tolStripApplication.Click += new System.EventHandler(this.tolStripApplication_Click);
          // 
          // drivingLicensesServicesToolStripMenuItem
          // 
@@ -404,6 +420,17 @@
          this.toolStripMenuItem6.Name = "toolStripMenuItem6";
          this.toolStripMenuItem6.Size = new System.Drawing.Size(140, 4);
          // 
+         // pictureBox3
+         // 
+         this.pictureBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(33)))), ((int)(((byte)(67)))));
+         this.pictureBox3.Image = global::DVLD.Properties.Resources.dash;
+         this.pictureBox3.Location = new System.Drawing.Point(925, 276);
+         this.pictureBox3.Name = "pictureBox3";
+         this.pictureBox3.Size = new System.Drawing.Size(330, 240);
+         this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+         this.pictureBox3.TabIndex = 15;
+         this.pictureBox3.TabStop = false;
+         // 
          // frmMain
          // 
          this.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
@@ -417,9 +444,11 @@
          this.Text = "Dashboard";
          this.panel1.ResumeLayout(false);
          this.panel1.PerformLayout();
+         ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
          ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
          this.menuStrip1.ResumeLayout(false);
          this.menuStrip1.PerformLayout();
+         ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
          this.ResumeLayout(false);
 
       }
@@ -458,5 +487,7 @@
       private System.Windows.Forms.ToolStripMenuItem localDrivingLicneseApplicationToolStripMenuItem;
       private System.Windows.Forms.ToolStripMenuItem internationalDrivingLicenseApplicationToolStripMenuItem;
       private System.Windows.Forms.Panel panel1;
+      private System.Windows.Forms.PictureBox pictureBox2;
+      private System.Windows.Forms.PictureBox pictureBox3;
    }
 }

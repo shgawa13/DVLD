@@ -84,15 +84,13 @@ namespace DVLD.People
          frm.ShowDialog();
       }
 
-      private void tolStripApplication_Click(object sender, EventArgs e)
-      {
-
-      }
 
       private void localDrivingLicneseApplicationToolStripMenuItem_Click(object sender, EventArgs e)
       {
          Form frm = new frmListLocalDrivingLicenseApplication();
          frm.ShowDialog();
       }
+
+      
    }
 }

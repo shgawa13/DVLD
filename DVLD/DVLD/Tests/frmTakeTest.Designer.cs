@@ -28,7 +28,6 @@
       /// </summary>
       private void InitializeComponent()
       {
-         this.ctrlSecheduledTest1 = new DVLD.Tests.controls.ctrlSecheduledTest();
          this.btnSave = new System.Windows.Forms.Button();
          this.btnCancel = new System.Windows.Forms.Button();
          this.label1 = new System.Windows.Forms.Label();
@@ -38,15 +37,8 @@
          this.rbFail = new System.Windows.Forms.RadioButton();
          this.txtNotes = new System.Windows.Forms.TextBox();
          this.radioButton2 = new System.Windows.Forms.RadioButton();
+         this.ctrlSecheduledTest1 = new DVLD.Tests.controls.ctrlSecheduledTest();
          this.SuspendLayout();
-         // 
-         // ctrlSecheduledTest1
-         // 
-         this.ctrlSecheduledTest1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(47)))), ((int)(((byte)(88)))));
-         this.ctrlSecheduledTest1.Location = new System.Drawing.Point(-2, 0);
-         this.ctrlSecheduledTest1.Name = "ctrlSecheduledTest1";
-         this.ctrlSecheduledTest1.Size = new System.Drawing.Size(448, 458);
-         this.ctrlSecheduledTest1.TabIndex = 0;
          // 
          // btnSave
          // 
@@ -154,6 +146,14 @@
          this.radioButton2.TabStop = true;
          this.radioButton2.Text = "Fail";
          this.radioButton2.UseVisualStyleBackColor = true;
+         // 
+         // ctrlSecheduledTest1
+         // 
+         this.ctrlSecheduledTest1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(47)))), ((int)(((byte)(88)))));
+         this.ctrlSecheduledTest1.Location = new System.Drawing.Point(-2, 0);
+         this.ctrlSecheduledTest1.Name = "ctrlSecheduledTest1";
+         this.ctrlSecheduledTest1.Size = new System.Drawing.Size(448, 458);
+         this.ctrlSecheduledTest1.TabIndex = 0;
          // 
          // frmTakeTest
          // 

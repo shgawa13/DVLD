@@ -24,7 +24,10 @@ namespace Business
       public int RetakeTestApplicationID { set; get; }
       public clsApplication RetakeTestAppInfo { set; get; }
 
-      public int TestID;
+      public int TestID
+      {
+         get { return _GetTestID(); }
+      }
 
 
       public clsTestAppointment()

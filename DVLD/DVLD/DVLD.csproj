@@ -367,6 +367,7 @@
     <None Include="Resources\Delete 32 2.png" />
     <None Include="Resources\AddAppointment 32.png" />
     <None Include="Resources\driving-test 512.png" />
+    <None Include="Resources\dash.png" />
     <Content Include="Resources\Female_avatar.png" />
     <None Include="Resources\plus-icon.png" />
     <None Include="Resources\people.png" />

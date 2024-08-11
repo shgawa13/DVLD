@@ -30,8 +30,8 @@
       {
          this.pictureBox1 = new System.Windows.Forms.PictureBox();
          this.lblTitle = new System.Windows.Forms.Label();
-         this.ctrlDriverLicenseInfo1 = new DVLD.Licenses.Local_License.controls.ctrlDriverLicenseInfo();
          this.btnClose = new System.Windows.Forms.Button();
+         this.ctrlDriverLicenseInfo1 = new DVLD.Licenses.Local_License.controls.ctrlDriverLicenseInfo();
          ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
          this.SuspendLayout();
          // 
@@ -57,14 +57,6 @@
          this.lblTitle.TabIndex = 49;
          this.lblTitle.Text = "Driver License Info";
          // 
-         // ctrlDriverLicenseInfo1
-         // 
-         this.ctrlDriverLicenseInfo1.BackColor = System.Drawing.SystemColors.ControlLight;
-         this.ctrlDriverLicenseInfo1.Location = new System.Drawing.Point(3, 153);
-         this.ctrlDriverLicenseInfo1.Name = "ctrlDriverLicenseInfo1";
-         this.ctrlDriverLicenseInfo1.Size = new System.Drawing.Size(880, 388);
-         this.ctrlDriverLicenseInfo1.TabIndex = 50;
-         // 
          // btnClose
          // 
          this.btnClose.BackColor = System.Drawing.Color.WhiteSmoke;
@@ -80,6 +72,14 @@
          this.btnClose.Text = "Close";
          this.btnClose.UseVisualStyleBackColor = false;
          // 
+         // ctrlDriverLicenseInfo1
+         // 
+         this.ctrlDriverLicenseInfo1.BackColor = System.Drawing.SystemColors.ControlLight;
+         this.ctrlDriverLicenseInfo1.Location = new System.Drawing.Point(3, 153);
+         this.ctrlDriverLicenseInfo1.Name = "ctrlDriverLicenseInfo1";
+         this.ctrlDriverLicenseInfo1.Size = new System.Drawing.Size(880, 388);
+         this.ctrlDriverLicenseInfo1.TabIndex = 50;
+         // 
          // frmShowLicenseInfo
          // 
          this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -92,7 +92,7 @@
          this.Controls.Add(this.pictureBox1);
          this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
          this.Name = "frmShowLicenseInfo";
-         this.Text = "frmShowLicenseInfo";
+         this.Text = "Show License Info";
          this.Load += new System.EventHandler(this.frmShowLicenseInfo_Load);
          ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
          this.ResumeLayout(false);

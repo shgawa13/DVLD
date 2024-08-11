@@ -55,7 +55,7 @@
          // 
          // gbPersonCard
          // 
-         this.gbPersonCard.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(47)))), ((int)(((byte)(88)))));
+         this.gbPersonCard.BackColor = System.Drawing.SystemColors.ControlLight;
          this.gbPersonCard.Controls.Add(this.linkSetImage);
          this.gbPersonCard.Controls.Add(this.pictureBox1);
          this.gbPersonCard.Controls.Add(this.lblGendor);
@@ -90,7 +90,7 @@
          // 
          this.linkSetImage.ActiveLinkColor = System.Drawing.Color.RoyalBlue;
          this.linkSetImage.AutoSize = true;
-         this.linkSetImage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(47)))), ((int)(((byte)(88)))));
+         this.linkSetImage.BackColor = System.Drawing.Color.Transparent;
          this.linkSetImage.Font = new System.Drawing.Font("Franklin Gothic Medium", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
          this.linkSetImage.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
          this.linkSetImage.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
@@ -105,7 +105,7 @@
          // 
          // pictureBox1
          // 
-         this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(47)))), ((int)(((byte)(88)))));
+         this.pictureBox1.BackColor = System.Drawing.SystemColors.ControlLight;
          this.pictureBox1.Location = new System.Drawing.Point(706, 96);
          this.pictureBox1.Name = "pictureBox1";
          this.pictureBox1.Size = new System.Drawing.Size(217, 201);
@@ -116,9 +116,9 @@
          // lblGendor
          // 
          this.lblGendor.AutoSize = true;
-         this.lblGendor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(47)))), ((int)(((byte)(88)))));
+         this.lblGendor.BackColor = System.Drawing.Color.Transparent;
          this.lblGendor.Font = new System.Drawing.Font("Franklin Gothic Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-         this.lblGendor.ForeColor = System.Drawing.Color.WhiteSmoke;
+         this.lblGendor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(47)))), ((int)(((byte)(88)))));
          this.lblGendor.Location = new System.Drawing.Point(507, 235);
          this.lblGendor.Name = "lblGendor";
          this.lblGendor.Size = new System.Drawing.Size(37, 21);
@@ -128,9 +128,9 @@
          // lblPhone
          // 
          this.lblPhone.AutoSize = true;
-         this.lblPhone.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(47)))), ((int)(((byte)(88)))));
+         this.lblPhone.BackColor = System.Drawing.Color.Transparent;
          this.lblPhone.Font = new System.Drawing.Font("Franklin Gothic Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-         this.lblPhone.ForeColor = System.Drawing.Color.WhiteSmoke;
+         this.lblPhone.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(47)))), ((int)(((byte)(88)))));
          this.lblPhone.Location = new System.Drawing.Point(507, 291);
          this.lblPhone.Name = "lblPhone";
          this.lblPhone.Size = new System.Drawing.Size(37, 21);
@@ -140,9 +140,9 @@
          // lblDOB
          // 
          this.lblDOB.AutoSize = true;
-         this.lblDOB.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(47)))), ((int)(((byte)(88)))));
+         this.lblDOB.BackColor = System.Drawing.Color.Transparent;
          this.lblDOB.Font = new System.Drawing.Font("Franklin Gothic Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-         this.lblDOB.ForeColor = System.Drawing.Color.WhiteSmoke;
+         this.lblDOB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(47)))), ((int)(((byte)(88)))));
          this.lblDOB.Location = new System.Drawing.Point(507, 179);
          this.lblDOB.Name = "lblDOB";
          this.lblDOB.Size = new System.Drawing.Size(37, 21);
@@ -152,9 +152,9 @@
          // label16
          // 
          this.label16.AutoSize = true;
-         this.label16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(47)))), ((int)(((byte)(88)))));
+         this.label16.BackColor = System.Drawing.Color.Transparent;
          this.label16.Font = new System.Drawing.Font("Franklin Gothic Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-         this.label16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(212)))), ((int)(((byte)(212)))));
+         this.label16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(47)))), ((int)(((byte)(88)))));
          this.label16.Location = new System.Drawing.Point(389, 235);
          this.label16.Name = "label16";
          this.label16.Size = new System.Drawing.Size(65, 21);
@@ -164,9 +164,9 @@
          // label17
          // 
          this.label17.AutoSize = true;
-         this.label17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(47)))), ((int)(((byte)(88)))));
+         this.label17.BackColor = System.Drawing.Color.Transparent;
          this.label17.Font = new System.Drawing.Font("Franklin Gothic Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-         this.label17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(212)))), ((int)(((byte)(212)))));
+         this.label17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(47)))), ((int)(((byte)(88)))));
          this.label17.Location = new System.Drawing.Point(389, 291);
          this.label17.Name = "label17";
          this.label17.Size = new System.Drawing.Size(59, 21);
@@ -176,9 +176,9 @@
          // label18
          // 
          this.label18.AutoSize = true;
-         this.label18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(47)))), ((int)(((byte)(88)))));
+         this.label18.BackColor = System.Drawing.Color.Transparent;
          this.label18.Font = new System.Drawing.Font("Franklin Gothic Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-         this.label18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(212)))), ((int)(((byte)(212)))));
+         this.label18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(47)))), ((int)(((byte)(88)))));
          this.label18.Location = new System.Drawing.Point(389, 179);
          this.label18.Name = "label18";
          this.label18.Size = new System.Drawing.Size(111, 21);
@@ -188,9 +188,9 @@
          // lblEmail
          // 
          this.lblEmail.AutoSize = true;
-         this.lblEmail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(47)))), ((int)(((byte)(88)))));
+         this.lblEmail.BackColor = System.Drawing.Color.Transparent;
          this.lblEmail.Font = new System.Drawing.Font("Franklin Gothic Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-         this.lblEmail.ForeColor = System.Drawing.Color.WhiteSmoke;
+         this.lblEmail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(47)))), ((int)(((byte)(88)))));
          this.lblEmail.Location = new System.Drawing.Point(145, 291);
          this.lblEmail.Name = "lblEmail";
          this.lblEmail.Size = new System.Drawing.Size(37, 21);
@@ -200,9 +200,9 @@
          // lblAddress
          // 
          this.lblAddress.AutoSize = true;
-         this.lblAddress.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(47)))), ((int)(((byte)(88)))));
+         this.lblAddress.BackColor = System.Drawing.Color.Transparent;
          this.lblAddress.Font = new System.Drawing.Font("Franklin Gothic Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-         this.lblAddress.ForeColor = System.Drawing.Color.WhiteSmoke;
+         this.lblAddress.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(47)))), ((int)(((byte)(88)))));
          this.lblAddress.Location = new System.Drawing.Point(145, 347);
          this.lblAddress.Name = "lblAddress";
          this.lblAddress.Size = new System.Drawing.Size(37, 21);
@@ -212,9 +212,9 @@
          // lblCountry
          // 
          this.lblCountry.AutoSize = true;
-         this.lblCountry.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(47)))), ((int)(((byte)(88)))));
+         this.lblCountry.BackColor = System.Drawing.Color.Transparent;
          this.lblCountry.Font = new System.Drawing.Font("Franklin Gothic Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-         this.lblCountry.ForeColor = System.Drawing.Color.WhiteSmoke;
+         this.lblCountry.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(47)))), ((int)(((byte)(88)))));
          this.lblCountry.Location = new System.Drawing.Point(145, 235);
          this.lblCountry.Name = "lblCountry";
          this.lblCountry.Size = new System.Drawing.Size(37, 21);
@@ -224,9 +224,9 @@
          // lblName
          // 
          this.lblName.AutoSize = true;
-         this.lblName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(47)))), ((int)(((byte)(88)))));
+         this.lblName.BackColor = System.Drawing.Color.Transparent;
          this.lblName.Font = new System.Drawing.Font("Franklin Gothic Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-         this.lblName.ForeColor = System.Drawing.Color.WhiteSmoke;
+         this.lblName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(47)))), ((int)(((byte)(88)))));
          this.lblName.Location = new System.Drawing.Point(145, 123);
          this.lblName.Name = "lblName";
          this.lblName.Size = new System.Drawing.Size(37, 21);
@@ -236,9 +236,9 @@
          // lblNationalNo
          // 
          this.lblNationalNo.AutoSize = true;
-         this.lblNationalNo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(47)))), ((int)(((byte)(88)))));
+         this.lblNationalNo.BackColor = System.Drawing.Color.Transparent;
          this.lblNationalNo.Font = new System.Drawing.Font("Franklin Gothic Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-         this.lblNationalNo.ForeColor = System.Drawing.Color.WhiteSmoke;
+         this.lblNationalNo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(47)))), ((int)(((byte)(88)))));
          this.lblNationalNo.Location = new System.Drawing.Point(145, 179);
          this.lblNationalNo.Name = "lblNationalNo";
          this.lblNationalNo.Size = new System.Drawing.Size(37, 21);
@@ -248,9 +248,9 @@
          // lblPersonID
          // 
          this.lblPersonID.AutoSize = true;
-         this.lblPersonID.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(47)))), ((int)(((byte)(88)))));
+         this.lblPersonID.BackColor = System.Drawing.Color.Transparent;
          this.lblPersonID.Font = new System.Drawing.Font("Franklin Gothic Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-         this.lblPersonID.ForeColor = System.Drawing.Color.WhiteSmoke;
+         this.lblPersonID.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(47)))), ((int)(((byte)(88)))));
          this.lblPersonID.Location = new System.Drawing.Point(145, 44);
          this.lblPersonID.Name = "lblPersonID";
          this.lblPersonID.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -261,9 +261,9 @@
          // label4
          // 
          this.label4.AutoSize = true;
-         this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(47)))), ((int)(((byte)(88)))));
+         this.label4.BackColor = System.Drawing.Color.Transparent;
          this.label4.Font = new System.Drawing.Font("Franklin Gothic Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-         this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(212)))), ((int)(((byte)(212)))));
+         this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(47)))), ((int)(((byte)(88)))));
          this.label4.Location = new System.Drawing.Point(39, 291);
          this.label4.Name = "label4";
          this.label4.Size = new System.Drawing.Size(55, 21);
@@ -273,9 +273,9 @@
          // label5
          // 
          this.label5.AutoSize = true;
-         this.label5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(47)))), ((int)(((byte)(88)))));
+         this.label5.BackColor = System.Drawing.Color.Transparent;
          this.label5.Font = new System.Drawing.Font("Franklin Gothic Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-         this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(212)))), ((int)(((byte)(212)))));
+         this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(47)))), ((int)(((byte)(88)))));
          this.label5.Location = new System.Drawing.Point(39, 347);
          this.label5.Name = "label5";
          this.label5.Size = new System.Drawing.Size(72, 21);
@@ -285,9 +285,9 @@
          // label6
          // 
          this.label6.AutoSize = true;
-         this.label6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(47)))), ((int)(((byte)(88)))));
+         this.label6.BackColor = System.Drawing.Color.Transparent;
          this.label6.Font = new System.Drawing.Font("Franklin Gothic Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-         this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(212)))), ((int)(((byte)(212)))));
+         this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(47)))), ((int)(((byte)(88)))));
          this.label6.Location = new System.Drawing.Point(39, 235);
          this.label6.Name = "label6";
          this.label6.Size = new System.Drawing.Size(69, 21);
@@ -297,9 +297,9 @@
          // label3
          // 
          this.label3.AutoSize = true;
-         this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(47)))), ((int)(((byte)(88)))));
+         this.label3.BackColor = System.Drawing.Color.Transparent;
          this.label3.Font = new System.Drawing.Font("Franklin Gothic Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-         this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(212)))), ((int)(((byte)(212)))));
+         this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(47)))), ((int)(((byte)(88)))));
          this.label3.Location = new System.Drawing.Point(39, 123);
          this.label3.Name = "label3";
          this.label3.Size = new System.Drawing.Size(89, 21);
@@ -309,9 +309,9 @@
          // label1
          // 
          this.label1.AutoSize = true;
-         this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(47)))), ((int)(((byte)(88)))));
+         this.label1.BackColor = System.Drawing.Color.Transparent;
          this.label1.Font = new System.Drawing.Font("Franklin Gothic Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-         this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(212)))), ((int)(((byte)(212)))));
+         this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(47)))), ((int)(((byte)(88)))));
          this.label1.Location = new System.Drawing.Point(39, 179);
          this.label1.Name = "label1";
          this.label1.Size = new System.Drawing.Size(96, 21);
@@ -321,9 +321,9 @@
          // label2
          // 
          this.label2.AutoSize = true;
-         this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(47)))), ((int)(((byte)(88)))));
+         this.label2.BackColor = System.Drawing.Color.Transparent;
          this.label2.Font = new System.Drawing.Font("Franklin Gothic Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-         this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(212)))), ((int)(((byte)(212)))));
+         this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(47)))), ((int)(((byte)(88)))));
          this.label2.Location = new System.Drawing.Point(39, 44);
          this.label2.Name = "label2";
          this.label2.Size = new System.Drawing.Size(79, 21);

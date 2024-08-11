@@ -50,9 +50,8 @@
          // ctrlPersonInfo1
          // 
          this.ctrlPersonInfo1.BackColor = System.Drawing.Color.Gainsboro;
-         this.ctrlPersonInfo1.Dock = System.Windows.Forms.DockStyle.Fill;
          this.ctrlPersonInfo1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(154)))), ((int)(((byte)(231)))));
-         this.ctrlPersonInfo1.Location = new System.Drawing.Point(0, 0);
+         this.ctrlPersonInfo1.Location = new System.Drawing.Point(18, 12);
          this.ctrlPersonInfo1.Name = "ctrlPersonInfo1";
          this.ctrlPersonInfo1.Size = new System.Drawing.Size(965, 429);
          this.ctrlPersonInfo1.TabIndex = 0;
@@ -61,12 +60,13 @@
          // 
          this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
          this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-         this.ClientSize = new System.Drawing.Size(965, 429);
+         this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(47)))), ((int)(((byte)(88)))));
+         this.ClientSize = new System.Drawing.Size(995, 457);
          this.Controls.Add(this.btnCloseLogin);
          this.Controls.Add(this.ctrlPersonInfo1);
-         this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+         this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
          this.Name = "frmShowPersonInfo";
-         this.Text = "frmPersonInfo";
+         this.Text = "Person Info";
          this.ResumeLayout(false);
 
       }

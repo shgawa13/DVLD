@@ -100,6 +100,12 @@
     <Compile Include="Licenses\Local License\frmIssueDriverLicenseFirstTime.Designer.cs">
       <DependentUpon>frmIssueDriverLicenseFirstTime.cs</DependentUpon>
     </Compile>
+    <Compile Include="Licenses\Local License\frmShowLicenseInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Licenses\Local License\frmShowLicenseInfo.Designer.cs">
+      <DependentUpon>frmShowLicenseInfo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Tests\controls\ctrlSecheduledTest.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -252,6 +258,9 @@
     <EmbeddedResource Include="Licenses\Local License\frmIssueDriverLicenseFirstTime.resx">
       <DependentUpon>frmIssueDriverLicenseFirstTime.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Licenses\Local License\frmShowLicenseInfo.resx">
+      <DependentUpon>frmShowLicenseInfo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Tests\controls\ctrlSecheduledTest.resx">
       <DependentUpon>ctrlSecheduledTest.cs</DependentUpon>
     </EmbeddedResource>
@@ -390,6 +399,7 @@
     <None Include="Resources\people.png" />
     <None Include="Resources\list_Users.png" />
     <None Include="Resources\list_Users1.png" />
+    <None Include="Resources\LicenseView 400.png" />
     <Content Include="Resources\Male_avatar.png" />
     <None Include="Resources\WallPaper2.jpg" />
   </ItemGroup>

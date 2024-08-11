@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using Business;
 using BusinessLayer;
 using DVLD.Applications.LocalDrivingLicenseApplication;
+using DVLD.Licenses.Local_License;
 using DVLD.Tests;
 namespace DVLD.Licenses
 {
@@ -312,7 +313,11 @@ namespace DVLD.Licenses
 
       private void issueDrivingLicenseFirstTimeToolStripMenuItem_Click(object sender, EventArgs e)
       {
+         int LocalDrivingLicenseApplicationID = (int)dgvDrivingLincesApplications.CurrentRow.Cells[0].Value;
+         frmIssueDriverLicenseFirstTime frm = new frmIssueDriverLicenseFirstTime(LocalDrivingLicenseApplicationID);
+         frm.ShowDialog();
 
+         frmListDrivingLicenseApplication_Load(null, null);
       }
    }
 }

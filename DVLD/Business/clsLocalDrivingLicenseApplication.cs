@@ -140,9 +140,12 @@ namespace Business
 
          //Because of inheritance first we call the save method in the base class,
          //it will take care of adding all information to the application table.
-         base.Mode = (clsApplication.enMode)Mode;
+         base.Mode = (clsApplication.enMode)Mode; /// Local
          if (!base.Save())
+         {
+
             return false;
+         }
 
 
          //After we save the main application now we save the sub application.

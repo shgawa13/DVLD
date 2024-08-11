@@ -19,6 +19,7 @@ namespace DVLD.Tests.controls
    {
       public enum enMode { AddNew =0, Update=1}
       private enMode _Mode = enMode.AddNew;
+    
       public enum enCreationMode { FirstTimeSchedule=0, RetakeSchedule = 1}
       private enCreationMode _CreationMode=enCreationMode.FirstTimeSchedule;
 
@@ -51,7 +52,7 @@ namespace DVLD.Tests.controls
                      pbTestTypeImage.Image = Resources.Written_Test_512;
                      break;
                   }
-
+                  
 
                case clsTestType.enTypeTest.StreetTest:
                   {
@@ -84,6 +85,7 @@ namespace DVLD.Tests.controls
             btnSave.Enabled = false;
             return;
          }
+         
 
          //decide if the createion mode is retake test or not based if the person attended this test before
          if (_LocalDrivingLicenseApplication.DoesAttendTestType(_TestTypeID))

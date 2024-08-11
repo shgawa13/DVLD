@@ -313,7 +313,7 @@ namespace DataLayer
          {
             connection.Open();
 
-            object result = command.ExecuteScalar();
+            object result = command.ExecuteScalar(); // 0 ,1
 
             if (result != null && bool.TryParse(result.ToString(), out bool returnedResult))
             {

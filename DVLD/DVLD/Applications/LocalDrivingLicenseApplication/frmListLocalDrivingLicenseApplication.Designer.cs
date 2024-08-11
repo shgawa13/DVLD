@@ -250,21 +250,21 @@
          // vistionTestToolStripMenuItem
          // 
          this.vistionTestToolStripMenuItem.Name = "vistionTestToolStripMenuItem";
-         this.vistionTestToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+         this.vistionTestToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
          this.vistionTestToolStripMenuItem.Text = "Vistion Test";
          this.vistionTestToolStripMenuItem.Click += new System.EventHandler(this.vistionTestToolStripMenuItem_Click);
          // 
          // writtenTestToolStripMenuItem
          // 
          this.writtenTestToolStripMenuItem.Name = "writtenTestToolStripMenuItem";
-         this.writtenTestToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+         this.writtenTestToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
          this.writtenTestToolStripMenuItem.Text = "Written Test";
          this.writtenTestToolStripMenuItem.Click += new System.EventHandler(this.writtenTestToolStripMenuItem_Click);
          // 
          // streetTestToolStripMenuItem
          // 
          this.streetTestToolStripMenuItem.Name = "streetTestToolStripMenuItem";
-         this.streetTestToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+         this.streetTestToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
          this.streetTestToolStripMenuItem.Text = "Street Test";
          this.streetTestToolStripMenuItem.Click += new System.EventHandler(this.streetTestToolStripMenuItem_Click);
          // 
@@ -278,6 +278,7 @@
          this.issueDrivingLicenseFirstTimeToolStripMenuItem.Name = "issueDrivingLicenseFirstTimeToolStripMenuItem";
          this.issueDrivingLicenseFirstTimeToolStripMenuItem.Size = new System.Drawing.Size(242, 22);
          this.issueDrivingLicenseFirstTimeToolStripMenuItem.Text = "Issue Driving License(First Time)";
+         this.issueDrivingLicenseFirstTimeToolStripMenuItem.Click += new System.EventHandler(this.issueDrivingLicenseFirstTimeToolStripMenuItem_Click);
          // 
          // toolStripMenuItem5
          // 

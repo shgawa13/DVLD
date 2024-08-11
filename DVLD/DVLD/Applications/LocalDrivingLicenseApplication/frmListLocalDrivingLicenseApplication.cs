@@ -310,6 +310,9 @@ namespace DVLD.Licenses
          _ScheduleTest(clsTestType.enTypeTest.StreetTest); ;
       }
 
-      
+      private void issueDrivingLicenseFirstTimeToolStripMenuItem_Click(object sender, EventArgs e)
+      {
+
+      }
    }
 }

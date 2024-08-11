@@ -38,7 +38,7 @@
          this.ctrlSecheduleTest1.Name = "ctrlSecheduleTest1";
          this.ctrlSecheduleTest1.Size = new System.Drawing.Size(454, 551);
          this.ctrlSecheduleTest1.TabIndex = 0;
-         this.ctrlSecheduleTest1.TestTypeID = Business.clsTestType.enTypeTest.VisionTest;
+         this.ctrlSecheduleTest1.TestTypeID = Business.clsTestType.enTypeTest.WrittenTest;
          // 
          // frmScheduleTest
          // 

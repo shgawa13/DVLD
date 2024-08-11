@@ -29,9 +29,10 @@
       private void InitializeComponent()
       {
          this.panel1 = new System.Windows.Forms.Panel();
+         this.btnCloseLogin = new System.Windows.Forms.Button();
+         this.pictureBox3 = new System.Windows.Forms.PictureBox();
          this.pictureBox2 = new System.Windows.Forms.PictureBox();
          this.pictureBox1 = new System.Windows.Forms.PictureBox();
-         this.btnCloseLogin = new System.Windows.Forms.Button();
          this.menuStrip1 = new System.Windows.Forms.MenuStrip();
          this.tolStripApplication = new System.Windows.Forms.ToolStripMenuItem();
          this.drivingLicensesServicesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -62,12 +63,11 @@
          this.toolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
          this.toolStripMenuItem5 = new System.Windows.Forms.ToolStripMenuItem();
          this.toolStripMenuItem6 = new System.Windows.Forms.ToolStripMenuItem();
-         this.pictureBox3 = new System.Windows.Forms.PictureBox();
          this.panel1.SuspendLayout();
+         ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
          ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
          ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
          this.menuStrip1.SuspendLayout();
-         ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
          this.SuspendLayout();
          // 
          // panel1
@@ -85,6 +85,32 @@
          this.panel1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
          this.panel1.Size = new System.Drawing.Size(1255, 516);
          this.panel1.TabIndex = 0;
+         // 
+         // btnCloseLogin
+         // 
+         this.btnCloseLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(33)))), ((int)(((byte)(67)))));
+         this.btnCloseLogin.FlatAppearance.BorderSize = 0;
+         this.btnCloseLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+         this.btnCloseLogin.Font = new System.Drawing.Font("Franklin Gothic Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+         this.btnCloseLogin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(83)))), ((int)(((byte)(100)))));
+         this.btnCloseLogin.Location = new System.Drawing.Point(1211, 3);
+         this.btnCloseLogin.Name = "btnCloseLogin";
+         this.btnCloseLogin.Size = new System.Drawing.Size(41, 30);
+         this.btnCloseLogin.TabIndex = 12;
+         this.btnCloseLogin.Text = "X";
+         this.btnCloseLogin.UseVisualStyleBackColor = false;
+         this.btnCloseLogin.Click += new System.EventHandler(this.btnCloseLogin_Click);
+         // 
+         // pictureBox3
+         // 
+         this.pictureBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(33)))), ((int)(((byte)(67)))));
+         this.pictureBox3.Image = global::DVLD.Properties.Resources.dash;
+         this.pictureBox3.Location = new System.Drawing.Point(925, 276);
+         this.pictureBox3.Name = "pictureBox3";
+         this.pictureBox3.Size = new System.Drawing.Size(330, 240);
+         this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+         this.pictureBox3.TabIndex = 15;
+         this.pictureBox3.TabStop = false;
          // 
          // pictureBox2
          // 
@@ -107,21 +133,6 @@
          this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
          this.pictureBox1.TabIndex = 13;
          this.pictureBox1.TabStop = false;
-         // 
-         // btnCloseLogin
-         // 
-         this.btnCloseLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(33)))), ((int)(((byte)(67)))));
-         this.btnCloseLogin.FlatAppearance.BorderSize = 0;
-         this.btnCloseLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-         this.btnCloseLogin.Font = new System.Drawing.Font("Franklin Gothic Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-         this.btnCloseLogin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(83)))), ((int)(((byte)(100)))));
-         this.btnCloseLogin.Location = new System.Drawing.Point(1214, 3);
-         this.btnCloseLogin.Name = "btnCloseLogin";
-         this.btnCloseLogin.Size = new System.Drawing.Size(41, 30);
-         this.btnCloseLogin.TabIndex = 12;
-         this.btnCloseLogin.Text = "X";
-         this.btnCloseLogin.UseVisualStyleBackColor = false;
-         this.btnCloseLogin.Click += new System.EventHandler(this.btnCloseLogin_Click);
          // 
          // menuStrip1
          // 
@@ -420,17 +431,6 @@
          this.toolStripMenuItem6.Name = "toolStripMenuItem6";
          this.toolStripMenuItem6.Size = new System.Drawing.Size(140, 4);
          // 
-         // pictureBox3
-         // 
-         this.pictureBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(33)))), ((int)(((byte)(67)))));
-         this.pictureBox3.Image = global::DVLD.Properties.Resources.dash;
-         this.pictureBox3.Location = new System.Drawing.Point(925, 276);
-         this.pictureBox3.Name = "pictureBox3";
-         this.pictureBox3.Size = new System.Drawing.Size(330, 240);
-         this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-         this.pictureBox3.TabIndex = 15;
-         this.pictureBox3.TabStop = false;
-         // 
          // frmMain
          // 
          this.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
@@ -444,11 +444,11 @@
          this.Text = "Dashboard";
          this.panel1.ResumeLayout(false);
          this.panel1.PerformLayout();
+         ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
          ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
          ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
          this.menuStrip1.ResumeLayout(false);
          this.menuStrip1.PerformLayout();
-         ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
          this.ResumeLayout(false);
 
       }

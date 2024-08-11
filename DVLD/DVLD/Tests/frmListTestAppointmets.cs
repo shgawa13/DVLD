@@ -58,8 +58,7 @@ namespace DVLD.Applications.LocalDrivingLicenseApplication
 
       }
 
-      
-      
+
 
       private void frmListTestAppointments_Load(object sender, EventArgs e)
       {

@@ -101,6 +101,7 @@ namespace DVLD.Licenses.Local_License.controls
       public void txtLicenseIDFocus()
       {
          txtLicenseID.Focus();
+
       }
 
       private void txtLicenseID_Validating(object sender, CancelEventArgs e)

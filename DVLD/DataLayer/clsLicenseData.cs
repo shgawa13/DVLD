@@ -51,7 +51,7 @@ namespace DataLayer
          }
          finally
          {
-            connection.Open();
+            connection.Close();
          }
 
 

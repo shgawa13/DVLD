@@ -30,7 +30,7 @@ namespace DataLayer
             connection.Open();
             object result = command.ExecuteScalar();
 
-            if(result != null && int.TryParse((string)result, out int ID))
+            if (result != null && int.TryParse(result.ToString(), out int ID))
             {
                DriverID = ID;
             }

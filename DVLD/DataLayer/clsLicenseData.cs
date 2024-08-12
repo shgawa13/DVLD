@@ -147,8 +147,7 @@ namespace DataLayer
 
          SqlConnection connection = new SqlConnection(clsDataAccessSettings.ConnectingString);
 
-         string query = @"
-                              INSERT INTO Licenses
+         string query = @" INSERT INTO Licenses
                                (ApplicationID,
                                 DriverID,
                                 LicenseClass,

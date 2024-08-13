@@ -37,7 +37,7 @@
          this.dgvLocalLicenses = new System.Windows.Forms.DataGridView();
          this.dgvInternationalLicenses = new System.Windows.Forms.DataGridView();
          this.label1 = new System.Windows.Forms.Label();
-         this.label2 = new System.Windows.Forms.Label();
+         this.lblLicenseNumber = new System.Windows.Forms.Label();
          this.ctrlPersonInfoWithFilter1 = new DVLD.People.Controls.ctrlPersonInfoWithFilter();
          ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
          this.tabControl1.SuspendLayout();
@@ -63,9 +63,9 @@
          // pictureBox1
          // 
          this.pictureBox1.Image = global::DVLD.Properties.Resources.PersonLicenseHistory_512;
-         this.pictureBox1.Location = new System.Drawing.Point(13, 189);
+         this.pictureBox1.Location = new System.Drawing.Point(1, 189);
          this.pictureBox1.Name = "pictureBox1";
-         this.pictureBox1.Size = new System.Drawing.Size(175, 145);
+         this.pictureBox1.Size = new System.Drawing.Size(187, 145);
          this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
          this.pictureBox1.TabIndex = 52;
          this.pictureBox1.TabStop = false;
@@ -104,7 +104,7 @@
          // 
          // groupBox1
          // 
-         this.groupBox1.Controls.Add(this.label2);
+         this.groupBox1.Controls.Add(this.lblLicenseNumber);
          this.groupBox1.Controls.Add(this.label1);
          this.groupBox1.Controls.Add(this.tabControl1);
          this.groupBox1.Font = new System.Drawing.Font("Franklin Gothic Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -156,17 +156,17 @@
          this.label1.TabIndex = 54;
          this.label1.Text = "# Record:";
          // 
-         // label2
+         // lblLicenseNumber
          // 
-         this.label2.AutoSize = true;
-         this.label2.BackColor = System.Drawing.Color.Transparent;
-         this.label2.Font = new System.Drawing.Font("Franklin Gothic Medium", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-         this.label2.ForeColor = System.Drawing.Color.WhiteSmoke;
-         this.label2.Location = new System.Drawing.Point(103, 165);
-         this.label2.Name = "label2";
-         this.label2.Size = new System.Drawing.Size(57, 24);
-         this.label2.TabIndex = 55;
-         this.label2.Text = "[???]";
+         this.lblLicenseNumber.AutoSize = true;
+         this.lblLicenseNumber.BackColor = System.Drawing.Color.Transparent;
+         this.lblLicenseNumber.Font = new System.Drawing.Font("Franklin Gothic Medium", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+         this.lblLicenseNumber.ForeColor = System.Drawing.Color.WhiteSmoke;
+         this.lblLicenseNumber.Location = new System.Drawing.Point(105, 165);
+         this.lblLicenseNumber.Name = "lblLicenseNumber";
+         this.lblLicenseNumber.Size = new System.Drawing.Size(57, 24);
+         this.lblLicenseNumber.TabIndex = 55;
+         this.lblLicenseNumber.Text = "[???]";
          // 
          // ctrlPersonInfoWithFilter1
          // 
@@ -190,7 +190,7 @@
          this.Controls.Add(this.groupBox1);
          this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
          this.Name = "frmShowPersonLicenseHistory";
-         this.Text = "Show PersonLicense History";
+         this.Text = "Show Person License History";
          ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
          this.tabControl1.ResumeLayout(false);
          this.tabpLocal.ResumeLayout(false);
@@ -215,7 +215,7 @@
       private System.Windows.Forms.DataGridView dgvLocalLicenses;
       private System.Windows.Forms.DataGridView dgvInternationalLicenses;
       private System.Windows.Forms.Label label1;
-      private System.Windows.Forms.Label label2;
+      private System.Windows.Forms.Label lblLicenseNumber;
       private People.Controls.ctrlPersonInfoWithFilter ctrlPersonInfoWithFilter1;
    }
 }

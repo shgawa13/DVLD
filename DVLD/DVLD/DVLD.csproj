@@ -88,6 +88,12 @@
     <Compile Include="Applications\LocalDrivingLicenseApplication\frmLocalDrivingLicenseApplicationInfo.Designer.cs">
       <DependentUpon>frmLocalDrivingLicenseApplicationInfo.cs</DependentUpon>
     </Compile>
+    <Compile Include="Licenses\frmShowPersonLicenseHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Licenses\frmShowPersonLicenseHistory.Designer.cs">
+      <DependentUpon>frmShowPersonLicenseHistory.cs</DependentUpon>
+    </Compile>
     <Compile Include="Licenses\Local License\controls\ctrlDriverLicenseInfo.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -258,6 +264,9 @@
     <EmbeddedResource Include="Applications\LocalDrivingLicenseApplication\frmLocalDrivingLicenseApplicationInfo.resx">
       <DependentUpon>frmLocalDrivingLicenseApplicationInfo.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Licenses\frmShowPersonLicenseHistory.resx">
+      <DependentUpon>frmShowPersonLicenseHistory.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Licenses\Local License\controls\ctrlDriverLicenseInfo.resx">
       <DependentUpon>ctrlDriverLicenseInfo.cs</DependentUpon>
     </EmbeddedResource>
@@ -372,6 +381,7 @@
     <None Include="Resources\stand_out_1oag-bg.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\PersonLicenseHistory 512.png" />
     <None Include="Resources\Save 32.png" />
     <None Include="Resources\Written Test 512.png" />
     <None Include="Resources\Vision 512.png" />

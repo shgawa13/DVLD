@@ -28,6 +28,7 @@
       /// </summary>
       private void InitializeComponent()
       {
+         this.components = new System.ComponentModel.Container();
          this.groupBox1 = new System.Windows.Forms.GroupBox();
          this.tabControl1 = new System.Windows.Forms.TabControl();
          this.tabpLocal = new System.Windows.Forms.TabPage();
@@ -38,12 +39,15 @@
          this.dgvInternationalLicensesHistory = new System.Windows.Forms.DataGridView();
          this.lblInternationalLicensesRecords = new System.Windows.Forms.Label();
          this.label3 = new System.Windows.Forms.Label();
+         this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+         this.showLicenseInfoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
          this.groupBox1.SuspendLayout();
          this.tabControl1.SuspendLayout();
          this.tabpLocal.SuspendLayout();
          ((System.ComponentModel.ISupportInitialize)(this.dgvLocalLicensesHistory)).BeginInit();
          this.tabpInternational.SuspendLayout();
          ((System.ComponentModel.ISupportInitialize)(this.dgvInternationalLicensesHistory)).BeginInit();
+         this.contextMenuStrip1.SuspendLayout();
          this.SuspendLayout();
          // 
          // groupBox1
@@ -170,6 +174,20 @@
          this.label3.TabIndex = 56;
          this.label3.Text = "# Record:";
          // 
+         // contextMenuStrip1
+         // 
+         this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.showLicenseInfoToolStripMenuItem});
+         this.contextMenuStrip1.Name = "contextMenuStrip1";
+         this.contextMenuStrip1.Size = new System.Drawing.Size(181, 48);
+         // 
+         // showLicenseInfoToolStripMenuItem
+         // 
+         this.showLicenseInfoToolStripMenuItem.Name = "showLicenseInfoToolStripMenuItem";
+         this.showLicenseInfoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+         this.showLicenseInfoToolStripMenuItem.Text = "Show License Info";
+         this.showLicenseInfoToolStripMenuItem.Click += new System.EventHandler(this.showLicenseInfoToolStripMenuItem_Click);
+         // 
          // ctrlDriverLicenses
          // 
          this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -186,6 +204,7 @@
          this.tabpInternational.ResumeLayout(false);
          this.tabpInternational.PerformLayout();
          ((System.ComponentModel.ISupportInitialize)(this.dgvInternationalLicensesHistory)).EndInit();
+         this.contextMenuStrip1.ResumeLayout(false);
          this.ResumeLayout(false);
 
       }
@@ -202,5 +221,7 @@
       private System.Windows.Forms.DataGridView dgvInternationalLicensesHistory;
       private System.Windows.Forms.Label lblInternationalLicensesRecords;
       private System.Windows.Forms.Label label3;
+      private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+      private System.Windows.Forms.ToolStripMenuItem showLicenseInfoToolStripMenuItem;
    }
 }

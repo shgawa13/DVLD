@@ -57,7 +57,7 @@ namespace DVLD.Licenses.controls
       private void _LoadInternationalLicenseInfo()
       {
 
-      //   _dtDriverInternationalLicensesHistory = clsDriver.GetInternationalLicenses(_DriverID);
+         _dtDriverInternationalLicensesHistory = clsDriver.GetInternationalLicenses(_DriverID);
 
 
          dgvInternationalLicensesHistory.DataSource = _dtDriverInternationalLicensesHistory;
@@ -86,6 +86,36 @@ namespace DVLD.Licenses.controls
          }
       }
 
-     
+
+      public void LoadInfo(int DriverID)
+      {
+         _DriverID = DriverID;
+         _Driver = clsDriver.FindByDriverID(_DriverID);
+
+         _LoadLocalLicenseInfo();
+         _LoadInternationalLicenseInfo();
+
+      }
+
+      public void LoadInfoByPersonID(int PersonID)
+      {
+
+         _Driver = clsDriver.FindByPersonID(PersonID);
+         if (_Driver != null)
+         {
+            _DriverID = clsDriver.FindByPersonID(PersonID).DriverID;
+         }
+
+         _LoadLocalLicenseInfo();
+         _LoadInternationalLicenseInfo();
+      }
+
+      private void showLicenseInfoToolStripMenuItem_Click(object sender, EventArgs e)
+      {
+         int LicenseID = (int)dgvLocalLicensesHistory.CurrentRow.Cells[0].Value;
+        // DriverLicense.frmShowLicenseInfo frm = new DriverLicense.frmShowLicenseInfo(LicenseID);
+        // frm.ShowDialog();
+         
+      }
    }
 }

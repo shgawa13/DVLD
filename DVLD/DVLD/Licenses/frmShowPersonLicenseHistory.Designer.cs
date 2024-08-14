@@ -32,20 +32,20 @@
          this.pictureBox1 = new System.Windows.Forms.PictureBox();
          this.tabControl1 = new System.Windows.Forms.TabControl();
          this.tabpLocal = new System.Windows.Forms.TabPage();
-         this.tabpInternational = new System.Windows.Forms.TabPage();
-         this.groupBox1 = new System.Windows.Forms.GroupBox();
          this.dgvLocalLicenses = new System.Windows.Forms.DataGridView();
+         this.tabpInternational = new System.Windows.Forms.TabPage();
          this.dgvInternationalLicenses = new System.Windows.Forms.DataGridView();
-         this.label1 = new System.Windows.Forms.Label();
+         this.groupBox1 = new System.Windows.Forms.GroupBox();
          this.lblLicenseNumber = new System.Windows.Forms.Label();
+         this.label1 = new System.Windows.Forms.Label();
          this.ctrlPersonInfoWithFilter1 = new DVLD.People.Controls.ctrlPersonInfoWithFilter();
          ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
          this.tabControl1.SuspendLayout();
          this.tabpLocal.SuspendLayout();
-         this.tabpInternational.SuspendLayout();
-         this.groupBox1.SuspendLayout();
          ((System.ComponentModel.ISupportInitialize)(this.dgvLocalLicenses)).BeginInit();
+         this.tabpInternational.SuspendLayout();
          ((System.ComponentModel.ISupportInitialize)(this.dgvInternationalLicenses)).BeginInit();
+         this.groupBox1.SuspendLayout();
          this.SuspendLayout();
          // 
          // lblTitle
@@ -77,7 +77,7 @@
          this.tabControl1.Location = new System.Drawing.Point(15, 25);
          this.tabControl1.Name = "tabControl1";
          this.tabControl1.SelectedIndex = 0;
-         this.tabControl1.Size = new System.Drawing.Size(1031, 136);
+         this.tabControl1.Size = new System.Drawing.Size(1031, 137);
          this.tabControl1.TabIndex = 53;
          // 
          // tabpLocal
@@ -90,31 +90,6 @@
          this.tabpLocal.TabIndex = 0;
          this.tabpLocal.Text = "Local";
          this.tabpLocal.UseVisualStyleBackColor = true;
-         // 
-         // tabpInternational
-         // 
-         this.tabpInternational.Controls.Add(this.dgvInternationalLicenses);
-         this.tabpInternational.Location = new System.Drawing.Point(4, 30);
-         this.tabpInternational.Name = "tabpInternational";
-         this.tabpInternational.Padding = new System.Windows.Forms.Padding(3);
-         this.tabpInternational.Size = new System.Drawing.Size(1023, 102);
-         this.tabpInternational.TabIndex = 1;
-         this.tabpInternational.Text = "International";
-         this.tabpInternational.UseVisualStyleBackColor = true;
-         // 
-         // groupBox1
-         // 
-         this.groupBox1.Controls.Add(this.lblLicenseNumber);
-         this.groupBox1.Controls.Add(this.label1);
-         this.groupBox1.Controls.Add(this.tabControl1);
-         this.groupBox1.Font = new System.Drawing.Font("Franklin Gothic Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-         this.groupBox1.ForeColor = System.Drawing.Color.WhiteSmoke;
-         this.groupBox1.Location = new System.Drawing.Point(24, 496);
-         this.groupBox1.Name = "groupBox1";
-         this.groupBox1.Size = new System.Drawing.Size(1046, 194);
-         this.groupBox1.TabIndex = 54;
-         this.groupBox1.TabStop = false;
-         this.groupBox1.Text = "Driver Licenses";
          // 
          // dgvLocalLicenses
          // 
@@ -130,6 +105,17 @@
          this.dgvLocalLicenses.Size = new System.Drawing.Size(1017, 93);
          this.dgvLocalLicenses.TabIndex = 0;
          // 
+         // tabpInternational
+         // 
+         this.tabpInternational.Controls.Add(this.dgvInternationalLicenses);
+         this.tabpInternational.Location = new System.Drawing.Point(4, 30);
+         this.tabpInternational.Name = "tabpInternational";
+         this.tabpInternational.Padding = new System.Windows.Forms.Padding(3);
+         this.tabpInternational.Size = new System.Drawing.Size(1023, 103);
+         this.tabpInternational.TabIndex = 1;
+         this.tabpInternational.Text = "International";
+         this.tabpInternational.UseVisualStyleBackColor = true;
+         // 
          // dgvInternationalLicenses
          // 
          this.dgvInternationalLicenses.AllowUserToAddRows = false;
@@ -144,17 +130,19 @@
          this.dgvInternationalLicenses.Size = new System.Drawing.Size(1017, 93);
          this.dgvInternationalLicenses.TabIndex = 1;
          // 
-         // label1
+         // groupBox1
          // 
-         this.label1.AutoSize = true;
-         this.label1.BackColor = System.Drawing.Color.Transparent;
-         this.label1.Font = new System.Drawing.Font("Franklin Gothic Medium", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-         this.label1.ForeColor = System.Drawing.Color.WhiteSmoke;
-         this.label1.Location = new System.Drawing.Point(10, 165);
-         this.label1.Name = "label1";
-         this.label1.Size = new System.Drawing.Size(97, 24);
-         this.label1.TabIndex = 54;
-         this.label1.Text = "# Record:";
+         this.groupBox1.Controls.Add(this.lblLicenseNumber);
+         this.groupBox1.Controls.Add(this.label1);
+         this.groupBox1.Controls.Add(this.tabControl1);
+         this.groupBox1.Font = new System.Drawing.Font("Franklin Gothic Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+         this.groupBox1.ForeColor = System.Drawing.Color.WhiteSmoke;
+         this.groupBox1.Location = new System.Drawing.Point(24, 496);
+         this.groupBox1.Name = "groupBox1";
+         this.groupBox1.Size = new System.Drawing.Size(1046, 194);
+         this.groupBox1.TabIndex = 54;
+         this.groupBox1.TabStop = false;
+         this.groupBox1.Text = "Driver Licenses";
          // 
          // lblLicenseNumber
          // 
@@ -167,6 +155,18 @@
          this.lblLicenseNumber.Size = new System.Drawing.Size(57, 24);
          this.lblLicenseNumber.TabIndex = 55;
          this.lblLicenseNumber.Text = "[???]";
+         // 
+         // label1
+         // 
+         this.label1.AutoSize = true;
+         this.label1.BackColor = System.Drawing.Color.Transparent;
+         this.label1.Font = new System.Drawing.Font("Franklin Gothic Medium", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+         this.label1.ForeColor = System.Drawing.Color.WhiteSmoke;
+         this.label1.Location = new System.Drawing.Point(10, 165);
+         this.label1.Name = "label1";
+         this.label1.Size = new System.Drawing.Size(97, 24);
+         this.label1.TabIndex = 54;
+         this.label1.Text = "# Record:";
          // 
          // ctrlPersonInfoWithFilter1
          // 
@@ -194,11 +194,11 @@
          ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
          this.tabControl1.ResumeLayout(false);
          this.tabpLocal.ResumeLayout(false);
+         ((System.ComponentModel.ISupportInitialize)(this.dgvLocalLicenses)).EndInit();
          this.tabpInternational.ResumeLayout(false);
+         ((System.ComponentModel.ISupportInitialize)(this.dgvInternationalLicenses)).EndInit();
          this.groupBox1.ResumeLayout(false);
          this.groupBox1.PerformLayout();
-         ((System.ComponentModel.ISupportInitialize)(this.dgvLocalLicenses)).EndInit();
-         ((System.ComponentModel.ISupportInitialize)(this.dgvInternationalLicenses)).EndInit();
          this.ResumeLayout(false);
          this.PerformLayout();
 

@@ -1,5 +1,6 @@
 ﻿using BusinessLayer;
 using DataLayer;
+using DVLD_DataAccess;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -123,9 +124,10 @@ namespace Business
          return clsLicense.GetDriverLicenses(DriverID);
       }
 
-      //public static DataTable GetInternationalLicenses(int DriverID)
-      //{
-      //   return clsInternationalLicense.GetDriverInternationalLicenses(DriverID);
-      //}
+      public static DataTable GetInternationalLicenses(int DriverID)
+      {
+       
+         return clsInternationalLicenseData.GetDriverInternationalLicenses(DriverID);
+      }
    }
 }

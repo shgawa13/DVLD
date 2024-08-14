@@ -302,6 +302,7 @@
          this.tlsmShowPersonLicenseHistory.Name = "tlsmShowPersonLicenseHistory";
          this.tlsmShowPersonLicenseHistory.Size = new System.Drawing.Size(242, 22);
          this.tlsmShowPersonLicenseHistory.Text = "Show Person License History";
+         this.tlsmShowPersonLicenseHistory.Click += new System.EventHandler(this.tlsmShowPersonLicenseHistory_Click);
          // 
          // label1
          // 

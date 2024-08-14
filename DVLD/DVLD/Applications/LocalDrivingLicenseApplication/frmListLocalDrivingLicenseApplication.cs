@@ -339,5 +339,15 @@ namespace DVLD.Licenses
             return;
          }
       }
+
+      private void tlsmShowPersonLicenseHistory_Click(object sender, EventArgs e)
+      {
+         int LocalDrivingLicenseApplicationID = (int)dgvDrivingLincesApplications.CurrentRow.Cells[0].Value;
+         clsLocalDrivingLicenseApplication LocalDrivingLicenseApplication = clsLocalDrivingLicenseApplication.FindByLocalDrivingAppLicenseID(LocalDrivingLicenseApplicationID);
+         frmShowPersonLicenseHistory frm = new frmShowPersonLicenseHistory(LocalDrivingLicenseApplication.ApplicantPersonID);
+         frm.ShowDialog();
+         frmListDrivingLicenseApplication_Load(null, null);
+
+      }
    }
 }

@@ -117,5 +117,10 @@ namespace DVLD.Licenses.controls
         // frm.ShowDialog();
          
       }
+
+      public void Clear()
+      {
+         _dtDriverLocalLicensesHistory.Clear();
+      }
    }
 }

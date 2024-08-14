@@ -30,8 +30,8 @@
       {
          this.lblTitle = new System.Windows.Forms.Label();
          this.pictureBox1 = new System.Windows.Forms.PictureBox();
-         this.ctrlPersonInfoWithFilter1 = new DVLD.People.Controls.ctrlPersonInfoWithFilter();
          this.ctrlDriverLicenses1 = new DVLD.Licenses.controls.ctrlDriverLicenses();
+         this.ctrlPersonInfoWithFilter1 = new DVLD.People.Controls.ctrlPersonInfoWithFilter();
          ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
          this.SuspendLayout();
          // 
@@ -57,6 +57,14 @@
          this.pictureBox1.TabIndex = 52;
          this.pictureBox1.TabStop = false;
          // 
+         // ctrlDriverLicenses1
+         // 
+         this.ctrlDriverLicenses1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(34)))), ((int)(((byte)(71)))));
+         this.ctrlDriverLicenses1.Location = new System.Drawing.Point(12, 509);
+         this.ctrlDriverLicenses1.Name = "ctrlDriverLicenses1";
+         this.ctrlDriverLicenses1.Size = new System.Drawing.Size(1052, 203);
+         this.ctrlDriverLicenses1.TabIndex = 56;
+         // 
          // ctrlPersonInfoWithFilter1
          // 
          this.ctrlPersonInfoWithFilter1.BackColor = System.Drawing.Color.Gainsboro;
@@ -66,14 +74,7 @@
          this.ctrlPersonInfoWithFilter1.ShowAddPerson = true;
          this.ctrlPersonInfoWithFilter1.Size = new System.Drawing.Size(968, 463);
          this.ctrlPersonInfoWithFilter1.TabIndex = 55;
-         // 
-         // ctrlDriverLicenses1
-         // 
-         this.ctrlDriverLicenses1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(34)))), ((int)(((byte)(71)))));
-         this.ctrlDriverLicenses1.Location = new System.Drawing.Point(12, 509);
-         this.ctrlDriverLicenses1.Name = "ctrlDriverLicenses1";
-         this.ctrlDriverLicenses1.Size = new System.Drawing.Size(1052, 203);
-         this.ctrlDriverLicenses1.TabIndex = 56;
+         this.ctrlPersonInfoWithFilter1.OnPersonSelected += new System.Action<int>(this.ctrlPersonInfoWithFilter1_OnPersonSelected);
          // 
          // frmShowPersonLicenseHistory
          // 
@@ -88,6 +89,7 @@
          this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
          this.Name = "frmShowPersonLicenseHistory";
          this.Text = "Show Person License History";
+         this.Load += new System.EventHandler(this.frmShowPersonLicenseHistory_Load);
          ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
          this.ResumeLayout(false);
          this.PerformLayout();

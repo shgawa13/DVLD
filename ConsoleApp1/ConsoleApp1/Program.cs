@@ -116,6 +116,18 @@ namespace ConsoleApp1
          return counter;
       }
 
+      public static void FindDriverID(int PersonID)
+      {
+         clsDriver Driver = clsDriver.FindByPersonID(PersonID);
+
+         if (Driver != null)
+            Console.WriteLine($"{Driver.DriverID}");
+         else
+            Console.WriteLine("can't find this driver");
+         
+
+      }
+
       static void Main(string[] args)
       {
          Console.WriteLine("start");
@@ -125,19 +137,20 @@ namespace ConsoleApp1
          // GetLicenseClassByID(1);
          //  GetLicenseClassByName("Class 1 - Small Motorcycle");
 
-         List<Book> books = new List<Book>()
-         {
-            new Book("C++ Book",30),
-            new Book("Java Book",40),
-            new Book("JavaScript Book",55),
-            new Book("C# OOP",60),
+         //List<Book> books = new List<Book>()
+         //{
+         //   new Book("C++ Book",30),
+         //   new Book("Java Book",40),
+         //   new Book("JavaScript Book",55),
+         //   new Book("C# OOP",60),
 
-         };
+         //};
 
 
-         Console.WriteLine(CountBook(books, BooksGreaterThan30));
-         Console.WriteLine(CountBook(books, BooksLessThan30));
+         //Console.WriteLine(CountBook(books, BooksGreaterThan30));
+         //Console.WriteLine(CountBook(books, BooksLessThan30));
 
+         FindDriverID(1032);
          Console.WriteLine("End");
 
         

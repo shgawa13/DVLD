@@ -36,9 +36,9 @@
          this.label1 = new System.Windows.Forms.Label();
          this.dgvLocalLicensesHistory = new System.Windows.Forms.DataGridView();
          this.tabpInternational = new System.Windows.Forms.TabPage();
-         this.dgvInternationalLicensesHistory = new System.Windows.Forms.DataGridView();
          this.lblInternationalLicensesRecords = new System.Windows.Forms.Label();
          this.label3 = new System.Windows.Forms.Label();
+         this.dgvInternationalLicensesHistory = new System.Windows.Forms.DataGridView();
          this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
          this.showLicenseInfoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
          this.groupBox1.SuspendLayout();
@@ -136,20 +136,6 @@
          this.tabpInternational.TabIndex = 1;
          this.tabpInternational.Text = "International";
          // 
-         // dgvInternationalLicensesHistory
-         // 
-         this.dgvInternationalLicensesHistory.AllowUserToAddRows = false;
-         this.dgvInternationalLicensesHistory.AllowUserToDeleteRows = false;
-         this.dgvInternationalLicensesHistory.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-         this.dgvInternationalLicensesHistory.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-         this.dgvInternationalLicensesHistory.Dock = System.Windows.Forms.DockStyle.Top;
-         this.dgvInternationalLicensesHistory.Location = new System.Drawing.Point(3, 3);
-         this.dgvInternationalLicensesHistory.Name = "dgvInternationalLicensesHistory";
-         this.dgvInternationalLicensesHistory.ReadOnly = true;
-         this.dgvInternationalLicensesHistory.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-         this.dgvInternationalLicensesHistory.Size = new System.Drawing.Size(1017, 93);
-         this.dgvInternationalLicensesHistory.TabIndex = 1;
-         // 
          // lblInternationalLicensesRecords
          // 
          this.lblInternationalLicensesRecords.AutoSize = true;
@@ -174,17 +160,31 @@
          this.label3.TabIndex = 56;
          this.label3.Text = "# Record:";
          // 
+         // dgvInternationalLicensesHistory
+         // 
+         this.dgvInternationalLicensesHistory.AllowUserToAddRows = false;
+         this.dgvInternationalLicensesHistory.AllowUserToDeleteRows = false;
+         this.dgvInternationalLicensesHistory.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+         this.dgvInternationalLicensesHistory.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+         this.dgvInternationalLicensesHistory.Dock = System.Windows.Forms.DockStyle.Top;
+         this.dgvInternationalLicensesHistory.Location = new System.Drawing.Point(3, 3);
+         this.dgvInternationalLicensesHistory.Name = "dgvInternationalLicensesHistory";
+         this.dgvInternationalLicensesHistory.ReadOnly = true;
+         this.dgvInternationalLicensesHistory.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+         this.dgvInternationalLicensesHistory.Size = new System.Drawing.Size(1017, 93);
+         this.dgvInternationalLicensesHistory.TabIndex = 1;
+         // 
          // contextMenuStrip1
          // 
          this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.showLicenseInfoToolStripMenuItem});
          this.contextMenuStrip1.Name = "contextMenuStrip1";
-         this.contextMenuStrip1.Size = new System.Drawing.Size(181, 48);
+         this.contextMenuStrip1.Size = new System.Drawing.Size(170, 26);
          // 
          // showLicenseInfoToolStripMenuItem
          // 
          this.showLicenseInfoToolStripMenuItem.Name = "showLicenseInfoToolStripMenuItem";
-         this.showLicenseInfoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+         this.showLicenseInfoToolStripMenuItem.Size = new System.Drawing.Size(169, 22);
          this.showLicenseInfoToolStripMenuItem.Text = "Show License Info";
          this.showLicenseInfoToolStripMenuItem.Click += new System.EventHandler(this.showLicenseInfoToolStripMenuItem_Click);
          // 

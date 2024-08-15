@@ -30,7 +30,7 @@
       {
          this.lblTitle = new System.Windows.Forms.Label();
          this.pictureBox1 = new System.Windows.Forms.PictureBox();
-         this.ctrlDriverLicenses1 = new DVLD.Licenses.controls.ctrlDriverLicenses();
+         this.ctrlDriverLicenses = new DVLD.Licenses.controls.ctrlDriverLicenses();
          this.ctrlPersonInfoWithFilter1 = new DVLD.People.Controls.ctrlPersonInfoWithFilter();
          ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
          this.SuspendLayout();
@@ -57,13 +57,13 @@
          this.pictureBox1.TabIndex = 52;
          this.pictureBox1.TabStop = false;
          // 
-         // ctrlDriverLicenses1
+         // ctrlDriverLicenses
          // 
-         this.ctrlDriverLicenses1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(34)))), ((int)(((byte)(71)))));
-         this.ctrlDriverLicenses1.Location = new System.Drawing.Point(12, 509);
-         this.ctrlDriverLicenses1.Name = "ctrlDriverLicenses1";
-         this.ctrlDriverLicenses1.Size = new System.Drawing.Size(1052, 203);
-         this.ctrlDriverLicenses1.TabIndex = 56;
+         this.ctrlDriverLicenses.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(34)))), ((int)(((byte)(71)))));
+         this.ctrlDriverLicenses.Location = new System.Drawing.Point(12, 509);
+         this.ctrlDriverLicenses.Name = "ctrlDriverLicenses";
+         this.ctrlDriverLicenses.Size = new System.Drawing.Size(1052, 203);
+         this.ctrlDriverLicenses.TabIndex = 56;
          // 
          // ctrlPersonInfoWithFilter1
          // 
@@ -82,7 +82,7 @@
          this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
          this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(34)))), ((int)(((byte)(71)))));
          this.ClientSize = new System.Drawing.Size(1161, 707);
-         this.Controls.Add(this.ctrlDriverLicenses1);
+         this.Controls.Add(this.ctrlDriverLicenses);
          this.Controls.Add(this.ctrlPersonInfoWithFilter1);
          this.Controls.Add(this.pictureBox1);
          this.Controls.Add(this.lblTitle);
@@ -101,6 +101,6 @@
       private System.Windows.Forms.Label lblTitle;
       private System.Windows.Forms.PictureBox pictureBox1;
       private People.Controls.ctrlPersonInfoWithFilter ctrlPersonInfoWithFilter1;
-      private controls.ctrlDriverLicenses ctrlDriverLicenses1;
+      private controls.ctrlDriverLicenses ctrlDriverLicenses;
    }
 }

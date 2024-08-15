@@ -19,7 +19,7 @@ namespace DVLD.Tests.controls
    {
       public enum enMode { AddNew =0, Update=1}
       private enMode _Mode = enMode.AddNew;
-    
+
       public enum enCreationMode { FirstTimeSchedule=0, RetakeSchedule = 1}
       private enCreationMode _CreationMode=enCreationMode.FirstTimeSchedule;
 
@@ -28,6 +28,7 @@ namespace DVLD.Tests.controls
       private int _LocalDrivingLicenseApplicationID = -1;
       private clsTestAppointment _TestAppointment;
       private int _TestAppointmentID = -1;
+
 
       public clsTestType.enTypeTest TestTypeID
       {

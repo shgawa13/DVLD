@@ -29,7 +29,7 @@ namespace DVLD.Licenses
          {
             ctrlPersonInfoWithFilter1.LoadPersonInfo(_PersonID);
             ctrlPersonInfoWithFilter1.FilterEnable = false;
-            ctrlDriverLicenses1.LoadInfoByPersonID(_PersonID);
+            ctrlDriverLicenses.LoadInfoByPersonID(_PersonID);
          }
          else
          {
@@ -45,10 +45,10 @@ namespace DVLD.Licenses
          _PersonID = obj;
          if (_PersonID == -1)
          {
-            ctrlDriverLicenses1.Clear();
+            ctrlDriverLicenses.Clear();
          }
          else
-            ctrlDriverLicenses1.LoadInfoByPersonID(_PersonID);
+            ctrlDriverLicenses.LoadInfoByPersonID(_PersonID);
       }
    }
 }

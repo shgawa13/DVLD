@@ -104,6 +104,7 @@ namespace DVLD.Licenses.controls
          if (_Driver != null)
          {
             _DriverID = clsDriver.FindByPersonID(PersonID).DriverID;
+            MessageBox.Show($"DriverID= {_DriverID}");
          }
 
          _LoadLocalLicenseInfo();

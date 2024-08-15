@@ -144,7 +144,7 @@ namespace DataLayer
             {
                IsFound = true;
 
-               PersonID = (int)reader["DriverID"];
+               DriverID = (int)reader["DriverID"];
                CreatedByUserID = (int)reader["CreatedByUserID"];
                CreatedDate = (DateTime)reader["CreatedDate"];
 

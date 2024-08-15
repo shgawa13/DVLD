@@ -374,6 +374,7 @@ namespace DataLayer
          catch (Exception ex)
          {
             //Console.WriteLine("Error: " + ex.Message);
+            
 
          }
 
@@ -401,8 +402,7 @@ namespace DataLayer
                                  Tests ON TestAppointments.TestAppointmentID = Tests.TestAppointmentID
                             WHERE
                             (LocalDrivingLicenseApplications.LocalDrivingLicenseApplicationID = @LocalDrivingLicenseApplicationID) 
-                            AND(TestAppointments.TestTypeID = @TestTypeID)
-                       ";
+                            AND(TestAppointments.TestTypeID = @TestTypeID)";
 
          SqlCommand command = new SqlCommand(query, connection);
 

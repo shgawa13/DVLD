@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Business;
-using DVLD;
+using DVLD.Licenses.Local_License;
 
 namespace DVLD.Licenses.controls
 {
@@ -115,8 +115,8 @@ namespace DVLD.Licenses.controls
       private void showLicenseInfoToolStripMenuItem_Click(object sender, EventArgs e)
       {
          int LicenseID = (int)dgvLocalLicensesHistory.CurrentRow.Cells[0].Value;
-         //DriverLicense.frmShowLicenseInfo frm = new DriverLicense.frmShowLicenseInfo(LicenseID);
-         //frm.ShowDialog();
+        frmShowLicenseInfo frm = new frmShowLicenseInfo(LicenseID);
+         frm.ShowDialog();
 
       }
 

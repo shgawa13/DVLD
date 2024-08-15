@@ -116,6 +116,7 @@
          this.dgvLocalLicensesHistory.AllowUserToDeleteRows = false;
          this.dgvLocalLicensesHistory.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
          this.dgvLocalLicensesHistory.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+         this.dgvLocalLicensesHistory.ContextMenuStrip = this.contextMenuStrip1;
          this.dgvLocalLicensesHistory.Dock = System.Windows.Forms.DockStyle.Top;
          this.dgvLocalLicensesHistory.Location = new System.Drawing.Point(3, 3);
          this.dgvLocalLicensesHistory.Name = "dgvLocalLicensesHistory";

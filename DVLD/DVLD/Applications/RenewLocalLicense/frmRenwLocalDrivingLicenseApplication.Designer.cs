@@ -446,7 +446,7 @@
          this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
          this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
          this.BackColor = System.Drawing.Color.Gainsboro;
-         this.ClientSize = new System.Drawing.Size(853, 718);
+         this.ClientSize = new System.Drawing.Size(844, 718);
          this.Controls.Add(this.linkShowLicenseInfo);
          this.Controls.Add(this.linkLicenseHistory);
          this.Controls.Add(this.btnClose);

@@ -1,4 +1,5 @@
 ﻿using DVLD.Applications;
+using DVLD.Applications.RenewLocalLicense;
 using DVLD.Global_Classes;
 using DVLD.Licenses;
 using DVLD.Tests;
@@ -91,6 +92,10 @@ namespace DVLD.People
          frm.ShowDialog();
       }
 
-      
+      private void renewDrivingLicenseToolStripMenuItem_Click(object sender, EventArgs e)
+      {
+         Form frm = new frmRenwLocalDrivingLicenseApplication();
+         frm.ShowDialog();
+      }
    }
 }

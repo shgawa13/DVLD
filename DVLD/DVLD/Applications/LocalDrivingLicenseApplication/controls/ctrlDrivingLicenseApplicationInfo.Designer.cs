@@ -71,10 +71,11 @@
          this.linkViewPersonInfo.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(154)))), ((int)(((byte)(231)))));
          this.linkViewPersonInfo.Location = new System.Drawing.Point(16, 67);
          this.linkViewPersonInfo.Name = "linkViewPersonInfo";
-         this.linkViewPersonInfo.Size = new System.Drawing.Size(147, 21);
+         this.linkViewPersonInfo.Size = new System.Drawing.Size(178, 21);
          this.linkViewPersonInfo.TabIndex = 46;
          this.linkViewPersonInfo.TabStop = true;
-         this.linkViewPersonInfo.Text = "View Person Info";
+         this.linkViewPersonInfo.Text = "View Driving License";
+         this.linkViewPersonInfo.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkViewPersonInfo_LinkClicked);
          // 
          // lblPassedTest
          // 

@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Business;
+using DVLD;
+
 namespace DVLD.Licenses.controls
 {
    public partial class ctrlDriverLicenses : UserControl
@@ -104,7 +106,6 @@ namespace DVLD.Licenses.controls
          if (_Driver != null)
          {
             _DriverID = clsDriver.FindByPersonID(PersonID).DriverID;
-            MessageBox.Show($"DriverID= {_DriverID}");
          }
 
          _LoadLocalLicenseInfo();
@@ -114,9 +115,9 @@ namespace DVLD.Licenses.controls
       private void showLicenseInfoToolStripMenuItem_Click(object sender, EventArgs e)
       {
          int LicenseID = (int)dgvLocalLicensesHistory.CurrentRow.Cells[0].Value;
-        // DriverLicense.frmShowLicenseInfo frm = new DriverLicense.frmShowLicenseInfo(LicenseID);
-        // frm.ShowDialog();
-         
+         //DriverLicense.frmShowLicenseInfo frm = new DriverLicense.frmShowLicenseInfo(LicenseID);
+         //frm.ShowDialog();
+
       }
 
       public void Clear()

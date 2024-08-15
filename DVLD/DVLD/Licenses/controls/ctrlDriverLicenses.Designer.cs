@@ -78,6 +78,7 @@
          this.tabpLocal.Controls.Add(this.lblLocalLicensesRecords);
          this.tabpLocal.Controls.Add(this.label1);
          this.tabpLocal.Controls.Add(this.dgvLocalLicensesHistory);
+         this.tabpLocal.ForeColor = System.Drawing.Color.Black;
          this.tabpLocal.Location = new System.Drawing.Point(4, 30);
          this.tabpLocal.Name = "tabpLocal";
          this.tabpLocal.Padding = new System.Windows.Forms.Padding(3);

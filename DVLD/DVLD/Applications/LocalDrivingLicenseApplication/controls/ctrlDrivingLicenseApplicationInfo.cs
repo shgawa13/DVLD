@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DVLD.Licenses.Local_License;
 
 namespace DVLD.Applications.LocalDrivingLicenseApplication.controls
 {
@@ -83,13 +84,14 @@ namespace DVLD.Applications.LocalDrivingLicenseApplication.controls
 
       }
 
+      private void linkViewPersonInfo_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+      {
+         frmShowLicenseInfo frm = new frmShowLicenseInfo(_LocalDrivingLicenseApplication.GetActiveLicenseID());
+         frm.ShowDialog();
+      }
+
+
+
       
-
-      //private void llShowLicenceInfo_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-      //{
-      //   frmShowLicenseInfo frm = new frmShowLicenseInfo(_LocalDrivingLicenseApplication.GetActiveLicenseID());
-      //   frm.ShowDialog();
-
-      //}
    }
 }

@@ -126,10 +126,10 @@ namespace DVLD.Applications.ReplaceLostOrDamagedLicense
             return;
          }
 
-       //  lblApplicationID.Text = NewLicense.ApplicationID.ToString();
+         lblAppID.Text = NewLicense.ApplicationID.ToString();
          _NewLicenseID = NewLicense.LicenseID;
 
-         lblReplacementAppID.Text = _NewLicenseID.ToString();
+         lblReplacedLicenseID.Text = _NewLicenseID.ToString();
          MessageBox.Show("Licensed Replaced Successfully with ID=" + _NewLicenseID.ToString(), "License Issued", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
          btnIssueReplacement.Enabled = false;
@@ -138,5 +138,7 @@ namespace DVLD.Applications.ReplaceLostOrDamagedLicense
          linkShowLicenseInfo.Enabled = true;
 
       }
+
+     
    }
 }

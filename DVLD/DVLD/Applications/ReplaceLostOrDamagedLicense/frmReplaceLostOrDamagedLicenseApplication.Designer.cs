@@ -43,7 +43,7 @@
          this.label12 = new System.Windows.Forms.Label();
          this.label6 = new System.Windows.Forms.Label();
          this.label3 = new System.Windows.Forms.Label();
-         this.lblReplacementAppID = new System.Windows.Forms.Label();
+         this.lblAppID = new System.Windows.Forms.Label();
          this.label1 = new System.Windows.Forms.Label();
          this.linkShowLicenseInfo = new System.Windows.Forms.LinkLabel();
          this.linkLicenseHistory = new System.Windows.Forms.LinkLabel();
@@ -94,14 +94,12 @@
          // rbDamagedLicense
          // 
          this.rbDamagedLicense.AutoSize = true;
-         this.rbDamagedLicense.Checked = true;
          this.rbDamagedLicense.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
          this.rbDamagedLicense.ForeColor = System.Drawing.Color.AliceBlue;
          this.rbDamagedLicense.Location = new System.Drawing.Point(15, 19);
          this.rbDamagedLicense.Name = "rbDamagedLicense";
          this.rbDamagedLicense.Size = new System.Drawing.Size(109, 40);
          this.rbDamagedLicense.TabIndex = 0;
-         this.rbDamagedLicense.TabStop = true;
          this.rbDamagedLicense.Text = "Damaged \r\nLicense";
          this.rbDamagedLicense.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
          this.rbDamagedLicense.UseVisualStyleBackColor = true;
@@ -120,7 +118,7 @@
          this.gbReplacementFor.Controls.Add(this.label12);
          this.gbReplacementFor.Controls.Add(this.label6);
          this.gbReplacementFor.Controls.Add(this.label3);
-         this.gbReplacementFor.Controls.Add(this.lblReplacementAppID);
+         this.gbReplacementFor.Controls.Add(this.lblAppID);
          this.gbReplacementFor.Controls.Add(this.label1);
          this.gbReplacementFor.Font = new System.Drawing.Font("Franklin Gothic Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
          this.gbReplacementFor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(83)))), ((int)(((byte)(100)))));
@@ -231,15 +229,15 @@
          this.label3.TabIndex = 2;
          this.label3.Text = "Application Date:";
          // 
-         // lblReplacementAppID
+         // lblAppID
          // 
-         this.lblReplacementAppID.AutoSize = true;
-         this.lblReplacementAppID.ForeColor = System.Drawing.Color.WhiteSmoke;
-         this.lblReplacementAppID.Location = new System.Drawing.Point(197, 33);
-         this.lblReplacementAppID.Name = "lblReplacementAppID";
-         this.lblReplacementAppID.Size = new System.Drawing.Size(49, 21);
-         this.lblReplacementAppID.TabIndex = 1;
-         this.lblReplacementAppID.Text = "[???]";
+         this.lblAppID.AutoSize = true;
+         this.lblAppID.ForeColor = System.Drawing.Color.WhiteSmoke;
+         this.lblAppID.Location = new System.Drawing.Point(197, 33);
+         this.lblAppID.Name = "lblAppID";
+         this.lblAppID.Size = new System.Drawing.Size(49, 21);
+         this.lblAppID.TabIndex = 1;
+         this.lblAppID.Text = "[???]";
          // 
          // label1
          // 
@@ -363,7 +361,7 @@
       private System.Windows.Forms.Label label12;
       private System.Windows.Forms.Label label6;
       private System.Windows.Forms.Label label3;
-      private System.Windows.Forms.Label lblReplacementAppID;
+      private System.Windows.Forms.Label lblAppID;
       private System.Windows.Forms.Label lblCreatedBy;
       private System.Windows.Forms.Label lblOldLicenseID;
       private System.Windows.Forms.Label lblReplacedLicenseID;

@@ -5,6 +5,7 @@ using DVLD.Global_Classes;
 using DVLD.Licenses;
 using DVLD.Tests;
 using DVLD.Users;
+using DVLD.Drivers;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -102,6 +103,12 @@ namespace DVLD.People
       private void replacementForLostOrDamagedLicenseToolStripMenuItem1_Click(object sender, EventArgs e)
       {
          Form frm = new frmReplaceLostOrDamagedLicenseApplication();
+         frm.ShowDialog();
+      }
+
+      private void tolStripDrivers_Click(object sender, EventArgs e)
+      {
+         Form frm = new frmListDrivers();
          frm.ShowDialog();
       }
    }

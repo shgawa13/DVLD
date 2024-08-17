@@ -318,6 +318,7 @@
          this.tolStripDrivers.Name = "tolStripDrivers";
          this.tolStripDrivers.Size = new System.Drawing.Size(140, 21);
          this.tolStripDrivers.Text = "Drivers";
+         this.tolStripDrivers.Click += new System.EventHandler(this.tolStripDrivers_Click);
          // 
          // tolStripUsers
          // 

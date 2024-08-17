@@ -88,10 +88,13 @@
          // 
          this.dgvDrivers.AllowUserToAddRows = false;
          this.dgvDrivers.AllowUserToDeleteRows = false;
+         this.dgvDrivers.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
          this.dgvDrivers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+         this.dgvDrivers.ContextMenuStrip = this.contextMenuStrip1;
          this.dgvDrivers.Location = new System.Drawing.Point(0, 263);
          this.dgvDrivers.Name = "dgvDrivers";
          this.dgvDrivers.ReadOnly = true;
+         this.dgvDrivers.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
          this.dgvDrivers.Size = new System.Drawing.Size(800, 211);
          this.dgvDrivers.TabIndex = 2;
          // 
@@ -184,7 +187,7 @@
             this.tlsmShowInfo,
             this.tlsmshowPersonLicenseHistory});
          this.contextMenuStrip1.Name = "contextMenuStrip1";
-         this.contextMenuStrip1.Size = new System.Drawing.Size(187, 70);
+         this.contextMenuStrip1.Size = new System.Drawing.Size(187, 48);
          // 
          // tlsmShowInfo
          // 

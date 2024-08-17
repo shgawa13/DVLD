@@ -1,4 +1,5 @@
 ﻿using Business;
+using DVLD.Licenses;
 using DVLD.People;
 using System;
 using System.Collections.Generic;
@@ -116,7 +117,7 @@ namespace DVLD.Drivers
             e.Handled = !char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar);
       }
 
-      private void tlsmShowDetails_Click(object sender, EventArgs e)
+      private void tlsmShowInfo_Click(object sender, EventArgs e)
       {
          int PersonID = (int)dgvDrivers.CurrentRow.Cells[1].Value;
          frmShowPersonInfo frm = new frmShowPersonInfo(PersonID);
@@ -124,5 +125,16 @@ namespace DVLD.Drivers
          //refresh
          frmListDrivers_Load(null, null);
       }
+
+      private void tlsmshowPersonLicenseHistory_Click(object sender, EventArgs e)
+      {
+         int PersonID = (int)dgvDrivers.CurrentRow.Cells[1].Value;
+
+
+         frmShowPersonLicenseHistory frm = new frmShowPersonLicenseHistory(PersonID);
+         frm.ShowDialog();
+      }
+
+      
    }
 }

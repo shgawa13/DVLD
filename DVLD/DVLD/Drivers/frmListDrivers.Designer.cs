@@ -40,15 +40,15 @@
          this.txtFilterValue = new System.Windows.Forms.TextBox();
          this.cbFilterBy = new System.Windows.Forms.ComboBox();
          this.label4 = new System.Windows.Forms.Label();
-         this.ctmsDriverMenu = new System.Windows.Forms.ContextMenuStrip(this.components);
-         this.tlsmShowDetails = new System.Windows.Forms.ToolStripMenuItem();
-         this.tolsmShowPersonLicenseHistory = new System.Windows.Forms.ToolStripMenuItem();
+         this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+         this.tlsmShowInfo = new System.Windows.Forms.ToolStripMenuItem();
+         this.tlsmshowPersonLicenseHistory = new System.Windows.Forms.ToolStripMenuItem();
          ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
          this.panel1.SuspendLayout();
          ((System.ComponentModel.ISupportInitialize)(this.dgvDrivers)).BeginInit();
          this.panel2.SuspendLayout();
          this.panel3.SuspendLayout();
-         this.ctmsDriverMenu.SuspendLayout();
+         this.contextMenuStrip1.SuspendLayout();
          this.SuspendLayout();
          // 
          // pictureBox1
@@ -178,26 +178,27 @@
          this.label4.TabIndex = 24;
          this.label4.Text = "Find by";
          // 
-         // ctmsDriverMenu
+         // contextMenuStrip1
          // 
-         this.ctmsDriverMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.tlsmShowDetails,
-            this.tolsmShowPersonLicenseHistory});
-         this.ctmsDriverMenu.Name = "ctmsDriverMenu";
-         this.ctmsDriverMenu.Size = new System.Drawing.Size(181, 70);
+         this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tlsmShowInfo,
+            this.tlsmshowPersonLicenseHistory});
+         this.contextMenuStrip1.Name = "contextMenuStrip1";
+         this.contextMenuStrip1.Size = new System.Drawing.Size(187, 70);
          // 
-         // tlsmShowDetails
+         // tlsmShowInfo
          // 
-         this.tlsmShowDetails.Name = "tlsmShowDetails";
-         this.tlsmShowDetails.Size = new System.Drawing.Size(180, 22);
-         this.tlsmShowDetails.Text = "Show Details";
-         this.tlsmShowDetails.Click += new System.EventHandler(this.tlsmShowDetails_Click);
+         this.tlsmShowInfo.Name = "tlsmShowInfo";
+         this.tlsmShowInfo.Size = new System.Drawing.Size(186, 22);
+         this.tlsmShowInfo.Text = "Show Info";
+         this.tlsmShowInfo.Click += new System.EventHandler(this.tlsmShowInfo_Click);
          // 
-         // tolsmShowPersonLicenseHistory
+         // tlsmshowPersonLicenseHistory
          // 
-         this.tolsmShowPersonLicenseHistory.Name = "tolsmShowPersonLicenseHistory";
-         this.tolsmShowPersonLicenseHistory.Size = new System.Drawing.Size(32, 19);
-         this.tolsmShowPersonLicenseHistory.Text = "Show License History";
+         this.tlsmshowPersonLicenseHistory.Name = "tlsmshowPersonLicenseHistory";
+         this.tlsmshowPersonLicenseHistory.Size = new System.Drawing.Size(186, 22);
+         this.tlsmshowPersonLicenseHistory.Text = "Show License History";
+         this.tlsmshowPersonLicenseHistory.Click += new System.EventHandler(this.tlsmshowPersonLicenseHistory_Click);
          // 
          // frmListDrivers
          // 
@@ -220,7 +221,7 @@
          this.panel2.PerformLayout();
          this.panel3.ResumeLayout(false);
          this.panel3.PerformLayout();
-         this.ctmsDriverMenu.ResumeLayout(false);
+         this.contextMenuStrip1.ResumeLayout(false);
          this.ResumeLayout(false);
 
       }
@@ -238,8 +239,8 @@
       private System.Windows.Forms.TextBox txtFilterValue;
       private System.Windows.Forms.ComboBox cbFilterBy;
       private System.Windows.Forms.Label label4;
-      private System.Windows.Forms.ContextMenuStrip ctmsDriverMenu;
-      private System.Windows.Forms.ToolStripMenuItem tlsmShowDetails;
-      private System.Windows.Forms.ToolStripMenuItem tolsmShowPersonLicenseHistory;
+      private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+      private System.Windows.Forms.ToolStripMenuItem tlsmShowInfo;
+      private System.Windows.Forms.ToolStripMenuItem tlsmshowPersonLicenseHistory;
    }
 }

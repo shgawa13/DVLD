@@ -404,10 +404,10 @@
          // pictureBox3
          // 
          this.pictureBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(33)))), ((int)(((byte)(67)))));
-         this.pictureBox3.Image = global::DVLD.Properties.Resources.dash;
-         this.pictureBox3.Location = new System.Drawing.Point(925, 276);
+         this.pictureBox3.Image = global::DVLD.Properties.Resources.sp2;
+         this.pictureBox3.Location = new System.Drawing.Point(925, 335);
          this.pictureBox3.Name = "pictureBox3";
-         this.pictureBox3.Size = new System.Drawing.Size(330, 240);
+         this.pictureBox3.Size = new System.Drawing.Size(330, 181);
          this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
          this.pictureBox3.TabIndex = 15;
          this.pictureBox3.TabStop = false;

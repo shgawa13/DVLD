@@ -415,6 +415,8 @@
     <None Include="Resources\stand_out_1oag-bg.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\sp2.jpg" />
+    <None Include="Resources\sp3.jpg" />
     <None Include="Resources\PersonLicenseHistory 512.png" />
     <None Include="Resources\Save 32.png" />
     <None Include="Resources\Written Test 512.png" />

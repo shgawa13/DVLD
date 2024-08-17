@@ -54,10 +54,9 @@
          this.groupBox1.Controls.Add(this.label3);
          this.groupBox1.Controls.Add(this.label1);
          this.groupBox1.Controls.Add(this.label2);
-         this.groupBox1.Dock = System.Windows.Forms.DockStyle.Bottom;
          this.groupBox1.Font = new System.Drawing.Font("Franklin Gothic Medium", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
          this.groupBox1.ForeColor = System.Drawing.Color.RoyalBlue;
-         this.groupBox1.Location = new System.Drawing.Point(0, 478);
+         this.groupBox1.Location = new System.Drawing.Point(0, 360);
          this.groupBox1.Name = "groupBox1";
          this.groupBox1.Size = new System.Drawing.Size(987, 176);
          this.groupBox1.TabIndex = 1;
@@ -149,7 +148,7 @@
          this.ctrlUserInfo1.Dock = System.Windows.Forms.DockStyle.Top;
          this.ctrlUserInfo1.Location = new System.Drawing.Point(0, 0);
          this.ctrlUserInfo1.Name = "ctrlUserInfo1";
-         this.ctrlUserInfo1.Size = new System.Drawing.Size(987, 472);
+         this.ctrlUserInfo1.Size = new System.Drawing.Size(949, 472);
          this.ctrlUserInfo1.TabIndex = 0;
          // 
          // ctrlChangePassword
@@ -159,7 +158,7 @@
          this.Controls.Add(this.groupBox1);
          this.Controls.Add(this.ctrlUserInfo1);
          this.Name = "ctrlChangePassword";
-         this.Size = new System.Drawing.Size(987, 654);
+         this.Size = new System.Drawing.Size(949, 533);
          this.groupBox1.ResumeLayout(false);
          this.groupBox1.PerformLayout();
          ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

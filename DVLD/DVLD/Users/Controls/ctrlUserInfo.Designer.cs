@@ -46,7 +46,7 @@
          this.ctrlPersonInfo1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(154)))), ((int)(((byte)(231)))));
          this.ctrlPersonInfo1.Location = new System.Drawing.Point(0, 0);
          this.ctrlPersonInfo1.Name = "ctrlPersonInfo1";
-         this.ctrlPersonInfo1.Size = new System.Drawing.Size(960, 407);
+         this.ctrlPersonInfo1.Size = new System.Drawing.Size(947, 407);
          this.ctrlPersonInfo1.TabIndex = 0;
          // 
          // groupBox1
@@ -58,10 +58,9 @@
          this.groupBox1.Controls.Add(this.label3);
          this.groupBox1.Controls.Add(this.lblUserID);
          this.groupBox1.Controls.Add(this.label1);
-         this.groupBox1.Dock = System.Windows.Forms.DockStyle.Bottom;
          this.groupBox1.Font = new System.Drawing.Font("Franklin Gothic Medium", 12F, System.Drawing.FontStyle.Bold);
          this.groupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(83)))), ((int)(((byte)(100)))));
-         this.groupBox1.Location = new System.Drawing.Point(0, 406);
+         this.groupBox1.Location = new System.Drawing.Point(0, 299);
          this.groupBox1.Name = "groupBox1";
          this.groupBox1.Size = new System.Drawing.Size(960, 62);
          this.groupBox1.TabIndex = 1;
@@ -148,7 +147,7 @@
          this.Controls.Add(this.groupBox1);
          this.Controls.Add(this.ctrlPersonInfo1);
          this.Name = "ctrlUserInfo";
-         this.Size = new System.Drawing.Size(960, 468);
+         this.Size = new System.Drawing.Size(947, 361);
          this.groupBox1.ResumeLayout(false);
          this.groupBox1.PerformLayout();
          this.ResumeLayout(false);

@@ -42,7 +42,7 @@
          this.btnSavePassword.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
          this.btnSavePassword.Font = new System.Drawing.Font("Franklin Gothic Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
          this.btnSavePassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
-         this.btnSavePassword.Location = new System.Drawing.Point(441, 547);
+         this.btnSavePassword.Location = new System.Drawing.Point(817, 477);
          this.btnSavePassword.Name = "btnSavePassword";
          this.btnSavePassword.Size = new System.Drawing.Size(118, 34);
          this.btnSavePassword.TabIndex = 33;
@@ -56,17 +56,16 @@
          // 
          // ctrlChangePassword1
          // 
-         this.ctrlChangePassword1.Dock = System.Windows.Forms.DockStyle.Fill;
-         this.ctrlChangePassword1.Location = new System.Drawing.Point(0, 0);
+         this.ctrlChangePassword1.Location = new System.Drawing.Point(-3, -2);
          this.ctrlChangePassword1.Name = "ctrlChangePassword1";
-         this.ctrlChangePassword1.Size = new System.Drawing.Size(984, 652);
+         this.ctrlChangePassword1.Size = new System.Drawing.Size(951, 527);
          this.ctrlChangePassword1.TabIndex = 0;
          // 
          // frmChangePassword
          // 
          this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
          this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-         this.ClientSize = new System.Drawing.Size(984, 652);
+         this.ClientSize = new System.Drawing.Size(947, 523);
          this.Controls.Add(this.btnSavePassword);
          this.Controls.Add(this.ctrlChangePassword1);
          this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;

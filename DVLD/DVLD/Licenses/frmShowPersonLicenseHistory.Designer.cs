@@ -60,7 +60,7 @@
          // ctrlDriverLicenses
          // 
          this.ctrlDriverLicenses.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(34)))), ((int)(((byte)(71)))));
-         this.ctrlDriverLicenses.Location = new System.Drawing.Point(12, 509);
+         this.ctrlDriverLicenses.Location = new System.Drawing.Point(12, 426);
          this.ctrlDriverLicenses.Name = "ctrlDriverLicenses";
          this.ctrlDriverLicenses.Size = new System.Drawing.Size(1052, 203);
          this.ctrlDriverLicenses.TabIndex = 56;
@@ -72,7 +72,7 @@
          this.ctrlPersonInfoWithFilter1.Location = new System.Drawing.Point(194, 40);
          this.ctrlPersonInfoWithFilter1.Name = "ctrlPersonInfoWithFilter1";
          this.ctrlPersonInfoWithFilter1.ShowAddPerson = true;
-         this.ctrlPersonInfoWithFilter1.Size = new System.Drawing.Size(968, 463);
+         this.ctrlPersonInfoWithFilter1.Size = new System.Drawing.Size(968, 380);
          this.ctrlPersonInfoWithFilter1.TabIndex = 55;
          this.ctrlPersonInfoWithFilter1.OnPersonSelected += new System.Action<int>(this.ctrlPersonInfoWithFilter1_OnPersonSelected);
          // 
@@ -81,7 +81,7 @@
          this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
          this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
          this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(34)))), ((int)(((byte)(71)))));
-         this.ClientSize = new System.Drawing.Size(1161, 707);
+         this.ClientSize = new System.Drawing.Size(1161, 631);
          this.Controls.Add(this.ctrlDriverLicenses);
          this.Controls.Add(this.ctrlPersonInfoWithFilter1);
          this.Controls.Add(this.pictureBox1);

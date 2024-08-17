@@ -39,7 +39,7 @@
          this.btnCloseLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
          this.btnCloseLogin.Font = new System.Drawing.Font("Franklin Gothic Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
          this.btnCloseLogin.ForeColor = System.Drawing.Color.Black;
-         this.btnCloseLogin.Location = new System.Drawing.Point(835, 383);
+         this.btnCloseLogin.Location = new System.Drawing.Point(850, 327);
          this.btnCloseLogin.Name = "btnCloseLogin";
          this.btnCloseLogin.Size = new System.Drawing.Size(118, 34);
          this.btnCloseLogin.TabIndex = 16;
@@ -51,9 +51,9 @@
          // 
          this.ctrlPersonInfo1.BackColor = System.Drawing.Color.Gainsboro;
          this.ctrlPersonInfo1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(154)))), ((int)(((byte)(231)))));
-         this.ctrlPersonInfo1.Location = new System.Drawing.Point(18, 12);
+         this.ctrlPersonInfo1.Location = new System.Drawing.Point(18, 16);
          this.ctrlPersonInfo1.Name = "ctrlPersonInfo1";
-         this.ctrlPersonInfo1.Size = new System.Drawing.Size(965, 429);
+         this.ctrlPersonInfo1.Size = new System.Drawing.Size(950, 300);
          this.ctrlPersonInfo1.TabIndex = 0;
          // 
          // frmShowPersonInfo
@@ -61,7 +61,7 @@
          this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
          this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
          this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(47)))), ((int)(((byte)(88)))));
-         this.ClientSize = new System.Drawing.Size(995, 457);
+         this.ClientSize = new System.Drawing.Size(995, 371);
          this.Controls.Add(this.btnCloseLogin);
          this.Controls.Add(this.ctrlPersonInfo1);
          this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;

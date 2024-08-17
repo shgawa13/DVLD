@@ -48,7 +48,7 @@
          this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
          this.panel1.Location = new System.Drawing.Point(0, 0);
          this.panel1.Name = "panel1";
-         this.panel1.Size = new System.Drawing.Size(968, 70);
+         this.panel1.Size = new System.Drawing.Size(953, 70);
          this.panel1.TabIndex = 1;
          // 
          // grbFilter
@@ -64,7 +64,7 @@
          this.grbFilter.ForeColor = System.Drawing.Color.Gainsboro;
          this.grbFilter.Location = new System.Drawing.Point(0, 0);
          this.grbFilter.Name = "grbFilter";
-         this.grbFilter.Size = new System.Drawing.Size(966, 70);
+         this.grbFilter.Size = new System.Drawing.Size(951, 70);
          this.grbFilter.TabIndex = 3;
          this.grbFilter.TabStop = false;
          this.grbFilter.Text = "Filter";
@@ -134,9 +134,9 @@
          // 
          this.ctrlPersonInfo1.BackColor = System.Drawing.Color.Gainsboro;
          this.ctrlPersonInfo1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(154)))), ((int)(((byte)(231)))));
-         this.ctrlPersonInfo1.Location = new System.Drawing.Point(0, 76);
+         this.ctrlPersonInfo1.Location = new System.Drawing.Point(3, 73);
          this.ctrlPersonInfo1.Name = "ctrlPersonInfo1";
-         this.ctrlPersonInfo1.Size = new System.Drawing.Size(968, 397);
+         this.ctrlPersonInfo1.Size = new System.Drawing.Size(946, 306);
          this.ctrlPersonInfo1.TabIndex = 2;
          this.ctrlPersonInfo1.Load += new System.EventHandler(this.ctrlPersonInfo1_Load);
          // 
@@ -148,7 +148,7 @@
          this.Controls.Add(this.ctrlPersonInfo1);
          this.Controls.Add(this.panel1);
          this.Name = "ctrlPersonInfoWithFilter";
-         this.Size = new System.Drawing.Size(968, 472);
+         this.Size = new System.Drawing.Size(953, 373);
          this.panel1.ResumeLayout(false);
          this.grbFilter.ResumeLayout(false);
          this.grbFilter.PerformLayout();

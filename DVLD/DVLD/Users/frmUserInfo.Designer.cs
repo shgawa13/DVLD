@@ -37,14 +37,14 @@
          this.ctrlUserInfo1.Dock = System.Windows.Forms.DockStyle.Fill;
          this.ctrlUserInfo1.Location = new System.Drawing.Point(0, 0);
          this.ctrlUserInfo1.Name = "ctrlUserInfo1";
-         this.ctrlUserInfo1.Size = new System.Drawing.Size(977, 461);
+         this.ctrlUserInfo1.Size = new System.Drawing.Size(949, 363);
          this.ctrlUserInfo1.TabIndex = 0;
          // 
          // frmUserInfo
          // 
          this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
          this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-         this.ClientSize = new System.Drawing.Size(977, 461);
+         this.ClientSize = new System.Drawing.Size(949, 363);
          this.Controls.Add(this.ctrlUserInfo1);
          this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
          this.Name = "frmUserInfo";

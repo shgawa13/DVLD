@@ -213,6 +213,16 @@ namespace DVLD.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap driver {
+            get {
+                object obj = ResourceManager.GetObject("driver", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap driving_test_512 {
             get {
                 object obj = ResourceManager.GetObject("driving-test 512", resourceCulture);
@@ -246,6 +256,16 @@ namespace DVLD.Properties {
         internal static System.Drawing.Bitmap gzexperts_logo {
             get {
                 object obj = ResourceManager.GetObject("gzexperts_logo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap istockphoto_1132910949_612x612 {
+            get {
+                object obj = ResourceManager.GetObject("istockphoto-1132910949-612x612", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

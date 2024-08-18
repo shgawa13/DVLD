@@ -113,10 +113,22 @@ namespace DVLD.People
          frm.ShowDialog();
       }
 
-      private void detianLicensesToolStripMenuItem_Click(object sender, EventArgs e)
+      private void detainLicenseToolStripMenuItem_Click(object sender, EventArgs e)
       {
          Form frm = new frmDetainLicenseApplication();
          frm.ShowDialog();
       }
+
+      private void releaseDetainedDrivingLicenseToolStripMenuItem_Click(object sender, EventArgs e)
+      {
+         Form frm = new frmReleaseDetainLicense();
+         frm.ShowDialog();
+      }
+
+      //private void detianLicensesToolStripMenuItem_Click(object sender, EventArgs e)
+      //{
+      //   Form frm = new frmDetainLicenseApplication();
+      //   frm.ShowDialog();
+      //}
    }
 }

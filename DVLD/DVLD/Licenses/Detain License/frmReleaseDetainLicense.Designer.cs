@@ -30,18 +30,6 @@
       {
          this.ctrlDriverLicenseInfoWithFilter1 = new DVLD.Licenses.Local_License.controls.ctrlDriverLicenseInfoWithFilter();
          this.groupBox1 = new System.Windows.Forms.GroupBox();
-         this.linkShowLicenseInfo = new System.Windows.Forms.LinkLabel();
-         this.linkLicenseHistory = new System.Windows.Forms.LinkLabel();
-         this.btnClose = new System.Windows.Forms.Button();
-         this.btnRelase = new System.Windows.Forms.Button();
-         this.lblDetainID = new System.Windows.Forms.Label();
-         this.label1 = new System.Windows.Forms.Label();
-         this.lblDetainDate = new System.Windows.Forms.Label();
-         this.label3 = new System.Windows.Forms.Label();
-         this.lblApplicationFees = new System.Windows.Forms.Label();
-         this.label5 = new System.Windows.Forms.Label();
-         this.lblTotalFees = new System.Windows.Forms.Label();
-         this.label7 = new System.Windows.Forms.Label();
          this.lblApplicationID = new System.Windows.Forms.Label();
          this.label9 = new System.Windows.Forms.Label();
          this.lblFineFees = new System.Windows.Forms.Label();
@@ -50,6 +38,18 @@
          this.label13 = new System.Windows.Forms.Label();
          this.lblLicenseID = new System.Windows.Forms.Label();
          this.label15 = new System.Windows.Forms.Label();
+         this.lblTotalFees = new System.Windows.Forms.Label();
+         this.label7 = new System.Windows.Forms.Label();
+         this.lblApplicationFees = new System.Windows.Forms.Label();
+         this.label5 = new System.Windows.Forms.Label();
+         this.lblDetainDate = new System.Windows.Forms.Label();
+         this.label3 = new System.Windows.Forms.Label();
+         this.lblDetainID = new System.Windows.Forms.Label();
+         this.label1 = new System.Windows.Forms.Label();
+         this.linkShowLicenseInfo = new System.Windows.Forms.LinkLabel();
+         this.linkLicenseHistory = new System.Windows.Forms.LinkLabel();
+         this.btnClose = new System.Windows.Forms.Button();
+         this.btnRelease = new System.Windows.Forms.Button();
          this.groupBox1.SuspendLayout();
          this.SuspendLayout();
          // 
@@ -61,6 +61,7 @@
          this.ctrlDriverLicenseInfoWithFilter1.Name = "ctrlDriverLicenseInfoWithFilter1";
          this.ctrlDriverLicenseInfoWithFilter1.Size = new System.Drawing.Size(882, 464);
          this.ctrlDriverLicenseInfoWithFilter1.TabIndex = 0;
+         this.ctrlDriverLicenseInfoWithFilter1.OnLicenseSelected += new System.Action<int>(this.ctrlDriverLicenseInfoWithFilter1_OnLicenseSelected);
          // 
          // groupBox1
          // 
@@ -89,161 +90,6 @@
          this.groupBox1.TabIndex = 1;
          this.groupBox1.TabStop = false;
          this.groupBox1.Text = "Detain Info";
-         // 
-         // linkShowLicenseInfo
-         // 
-         this.linkShowLicenseInfo.ActiveLinkColor = System.Drawing.Color.RoyalBlue;
-         this.linkShowLicenseInfo.AutoSize = true;
-         this.linkShowLicenseInfo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
-         this.linkShowLicenseInfo.Font = new System.Drawing.Font("Franklin Gothic Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-         this.linkShowLicenseInfo.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-         this.linkShowLicenseInfo.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
-         this.linkShowLicenseInfo.LinkColor = System.Drawing.Color.RoyalBlue;
-         this.linkShowLicenseInfo.Location = new System.Drawing.Point(198, 628);
-         this.linkShowLicenseInfo.Name = "linkShowLicenseInfo";
-         this.linkShowLicenseInfo.Size = new System.Drawing.Size(181, 21);
-         this.linkShowLicenseInfo.TabIndex = 59;
-         this.linkShowLicenseInfo.TabStop = true;
-         this.linkShowLicenseInfo.Text = "Show New LicenseInfo";
-         // 
-         // linkLicenseHistory
-         // 
-         this.linkLicenseHistory.ActiveLinkColor = System.Drawing.Color.RoyalBlue;
-         this.linkLicenseHistory.AutoSize = true;
-         this.linkLicenseHistory.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
-         this.linkLicenseHistory.Font = new System.Drawing.Font("Franklin Gothic Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-         this.linkLicenseHistory.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-         this.linkLicenseHistory.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
-         this.linkLicenseHistory.LinkColor = System.Drawing.Color.RoyalBlue;
-         this.linkLicenseHistory.Location = new System.Drawing.Point(8, 628);
-         this.linkLicenseHistory.Name = "linkLicenseHistory";
-         this.linkLicenseHistory.Size = new System.Drawing.Size(172, 21);
-         this.linkLicenseHistory.TabIndex = 58;
-         this.linkLicenseHistory.TabStop = true;
-         this.linkLicenseHistory.Text = "Show License History";
-         // 
-         // btnClose
-         // 
-         this.btnClose.BackColor = System.Drawing.Color.DimGray;
-         this.btnClose.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-         this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-         this.btnClose.Font = new System.Drawing.Font("Franklin Gothic Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-         this.btnClose.ForeColor = System.Drawing.Color.WhiteSmoke;
-         this.btnClose.Location = new System.Drawing.Point(626, 620);
-         this.btnClose.Name = "btnClose";
-         this.btnClose.Size = new System.Drawing.Size(86, 37);
-         this.btnClose.TabIndex = 57;
-         this.btnClose.Text = "Close";
-         this.btnClose.UseVisualStyleBackColor = false;
-         // 
-         // btnRelase
-         // 
-         this.btnRelase.BackColor = System.Drawing.Color.Azure;
-         this.btnRelase.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-         this.btnRelase.Font = new System.Drawing.Font("Franklin Gothic Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-         this.btnRelase.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(47)))), ((int)(((byte)(88)))));
-         this.btnRelase.Location = new System.Drawing.Point(733, 620);
-         this.btnRelase.Name = "btnRelase";
-         this.btnRelase.Size = new System.Drawing.Size(138, 37);
-         this.btnRelase.TabIndex = 56;
-         this.btnRelase.Text = "Release";
-         this.btnRelase.UseVisualStyleBackColor = false;
-         // 
-         // lblDetainID
-         // 
-         this.lblDetainID.AutoSize = true;
-         this.lblDetainID.BackColor = System.Drawing.Color.Gainsboro;
-         this.lblDetainID.Font = new System.Drawing.Font("Franklin Gothic Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-         this.lblDetainID.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(47)))), ((int)(((byte)(88)))));
-         this.lblDetainID.Location = new System.Drawing.Point(209, 25);
-         this.lblDetainID.Name = "lblDetainID";
-         this.lblDetainID.Size = new System.Drawing.Size(49, 21);
-         this.lblDetainID.TabIndex = 91;
-         this.lblDetainID.Text = "[???]";
-         // 
-         // label1
-         // 
-         this.label1.AutoSize = true;
-         this.label1.BackColor = System.Drawing.Color.Gainsboro;
-         this.label1.Font = new System.Drawing.Font("Franklin Gothic Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-         this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(47)))), ((int)(((byte)(88)))));
-         this.label1.Location = new System.Drawing.Point(67, 25);
-         this.label1.Name = "label1";
-         this.label1.Size = new System.Drawing.Size(87, 21);
-         this.label1.TabIndex = 90;
-         this.label1.Text = "Detain ID:";
-         // 
-         // lblDetainDate
-         // 
-         this.lblDetainDate.AutoSize = true;
-         this.lblDetainDate.BackColor = System.Drawing.Color.Gainsboro;
-         this.lblDetainDate.Font = new System.Drawing.Font("Franklin Gothic Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-         this.lblDetainDate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(47)))), ((int)(((byte)(88)))));
-         this.lblDetainDate.Location = new System.Drawing.Point(209, 56);
-         this.lblDetainDate.Name = "lblDetainDate";
-         this.lblDetainDate.Size = new System.Drawing.Size(49, 21);
-         this.lblDetainDate.TabIndex = 93;
-         this.lblDetainDate.Text = "[???]";
-         // 
-         // label3
-         // 
-         this.label3.AutoSize = true;
-         this.label3.BackColor = System.Drawing.Color.Gainsboro;
-         this.label3.Font = new System.Drawing.Font("Franklin Gothic Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-         this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(47)))), ((int)(((byte)(88)))));
-         this.label3.Location = new System.Drawing.Point(67, 56);
-         this.label3.Name = "label3";
-         this.label3.Size = new System.Drawing.Size(107, 21);
-         this.label3.TabIndex = 92;
-         this.label3.Text = "Detain Date:";
-         // 
-         // lblApplicationFees
-         // 
-         this.lblApplicationFees.AutoSize = true;
-         this.lblApplicationFees.BackColor = System.Drawing.Color.Gainsboro;
-         this.lblApplicationFees.Font = new System.Drawing.Font("Franklin Gothic Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-         this.lblApplicationFees.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(47)))), ((int)(((byte)(88)))));
-         this.lblApplicationFees.Location = new System.Drawing.Point(209, 92);
-         this.lblApplicationFees.Name = "lblApplicationFees";
-         this.lblApplicationFees.Size = new System.Drawing.Size(49, 21);
-         this.lblApplicationFees.TabIndex = 95;
-         this.lblApplicationFees.Text = "[???]";
-         // 
-         // label5
-         // 
-         this.label5.AutoSize = true;
-         this.label5.BackColor = System.Drawing.Color.Gainsboro;
-         this.label5.Font = new System.Drawing.Font("Franklin Gothic Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-         this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(47)))), ((int)(((byte)(88)))));
-         this.label5.Location = new System.Drawing.Point(67, 92);
-         this.label5.Name = "label5";
-         this.label5.Size = new System.Drawing.Size(144, 21);
-         this.label5.TabIndex = 94;
-         this.label5.Text = "Application Fees:";
-         // 
-         // lblTotalFees
-         // 
-         this.lblTotalFees.AutoSize = true;
-         this.lblTotalFees.BackColor = System.Drawing.Color.Gainsboro;
-         this.lblTotalFees.Font = new System.Drawing.Font("Franklin Gothic Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-         this.lblTotalFees.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(47)))), ((int)(((byte)(88)))));
-         this.lblTotalFees.Location = new System.Drawing.Point(209, 121);
-         this.lblTotalFees.Name = "lblTotalFees";
-         this.lblTotalFees.Size = new System.Drawing.Size(49, 21);
-         this.lblTotalFees.TabIndex = 97;
-         this.lblTotalFees.Text = "[???]";
-         // 
-         // label7
-         // 
-         this.label7.AutoSize = true;
-         this.label7.BackColor = System.Drawing.Color.Gainsboro;
-         this.label7.Font = new System.Drawing.Font("Franklin Gothic Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-         this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(47)))), ((int)(((byte)(88)))));
-         this.label7.Location = new System.Drawing.Point(67, 121);
-         this.label7.Name = "label7";
-         this.label7.Size = new System.Drawing.Size(94, 21);
-         this.label7.TabIndex = 96;
-         this.label7.Text = "Total Fees:";
          // 
          // lblApplicationID
          // 
@@ -341,6 +187,164 @@
          this.label15.TabIndex = 98;
          this.label15.Text = "License ID:";
          // 
+         // lblTotalFees
+         // 
+         this.lblTotalFees.AutoSize = true;
+         this.lblTotalFees.BackColor = System.Drawing.Color.Gainsboro;
+         this.lblTotalFees.Font = new System.Drawing.Font("Franklin Gothic Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+         this.lblTotalFees.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(47)))), ((int)(((byte)(88)))));
+         this.lblTotalFees.Location = new System.Drawing.Point(209, 121);
+         this.lblTotalFees.Name = "lblTotalFees";
+         this.lblTotalFees.Size = new System.Drawing.Size(49, 21);
+         this.lblTotalFees.TabIndex = 97;
+         this.lblTotalFees.Text = "[???]";
+         // 
+         // label7
+         // 
+         this.label7.AutoSize = true;
+         this.label7.BackColor = System.Drawing.Color.Gainsboro;
+         this.label7.Font = new System.Drawing.Font("Franklin Gothic Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+         this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(47)))), ((int)(((byte)(88)))));
+         this.label7.Location = new System.Drawing.Point(67, 121);
+         this.label7.Name = "label7";
+         this.label7.Size = new System.Drawing.Size(94, 21);
+         this.label7.TabIndex = 96;
+         this.label7.Text = "Total Fees:";
+         // 
+         // lblApplicationFees
+         // 
+         this.lblApplicationFees.AutoSize = true;
+         this.lblApplicationFees.BackColor = System.Drawing.Color.Gainsboro;
+         this.lblApplicationFees.Font = new System.Drawing.Font("Franklin Gothic Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+         this.lblApplicationFees.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(47)))), ((int)(((byte)(88)))));
+         this.lblApplicationFees.Location = new System.Drawing.Point(209, 92);
+         this.lblApplicationFees.Name = "lblApplicationFees";
+         this.lblApplicationFees.Size = new System.Drawing.Size(49, 21);
+         this.lblApplicationFees.TabIndex = 95;
+         this.lblApplicationFees.Text = "[???]";
+         // 
+         // label5
+         // 
+         this.label5.AutoSize = true;
+         this.label5.BackColor = System.Drawing.Color.Gainsboro;
+         this.label5.Font = new System.Drawing.Font("Franklin Gothic Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+         this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(47)))), ((int)(((byte)(88)))));
+         this.label5.Location = new System.Drawing.Point(67, 92);
+         this.label5.Name = "label5";
+         this.label5.Size = new System.Drawing.Size(144, 21);
+         this.label5.TabIndex = 94;
+         this.label5.Text = "Application Fees:";
+         // 
+         // lblDetainDate
+         // 
+         this.lblDetainDate.AutoSize = true;
+         this.lblDetainDate.BackColor = System.Drawing.Color.Gainsboro;
+         this.lblDetainDate.Font = new System.Drawing.Font("Franklin Gothic Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+         this.lblDetainDate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(47)))), ((int)(((byte)(88)))));
+         this.lblDetainDate.Location = new System.Drawing.Point(209, 56);
+         this.lblDetainDate.Name = "lblDetainDate";
+         this.lblDetainDate.Size = new System.Drawing.Size(49, 21);
+         this.lblDetainDate.TabIndex = 93;
+         this.lblDetainDate.Text = "[???]";
+         // 
+         // label3
+         // 
+         this.label3.AutoSize = true;
+         this.label3.BackColor = System.Drawing.Color.Gainsboro;
+         this.label3.Font = new System.Drawing.Font("Franklin Gothic Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+         this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(47)))), ((int)(((byte)(88)))));
+         this.label3.Location = new System.Drawing.Point(67, 56);
+         this.label3.Name = "label3";
+         this.label3.Size = new System.Drawing.Size(107, 21);
+         this.label3.TabIndex = 92;
+         this.label3.Text = "Detain Date:";
+         // 
+         // lblDetainID
+         // 
+         this.lblDetainID.AutoSize = true;
+         this.lblDetainID.BackColor = System.Drawing.Color.Gainsboro;
+         this.lblDetainID.Font = new System.Drawing.Font("Franklin Gothic Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+         this.lblDetainID.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(47)))), ((int)(((byte)(88)))));
+         this.lblDetainID.Location = new System.Drawing.Point(209, 25);
+         this.lblDetainID.Name = "lblDetainID";
+         this.lblDetainID.Size = new System.Drawing.Size(49, 21);
+         this.lblDetainID.TabIndex = 91;
+         this.lblDetainID.Text = "[???]";
+         // 
+         // label1
+         // 
+         this.label1.AutoSize = true;
+         this.label1.BackColor = System.Drawing.Color.Gainsboro;
+         this.label1.Font = new System.Drawing.Font("Franklin Gothic Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+         this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(47)))), ((int)(((byte)(88)))));
+         this.label1.Location = new System.Drawing.Point(67, 25);
+         this.label1.Name = "label1";
+         this.label1.Size = new System.Drawing.Size(87, 21);
+         this.label1.TabIndex = 90;
+         this.label1.Text = "Detain ID:";
+         // 
+         // linkShowLicenseInfo
+         // 
+         this.linkShowLicenseInfo.ActiveLinkColor = System.Drawing.Color.RoyalBlue;
+         this.linkShowLicenseInfo.AutoSize = true;
+         this.linkShowLicenseInfo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
+         this.linkShowLicenseInfo.Font = new System.Drawing.Font("Franklin Gothic Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+         this.linkShowLicenseInfo.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+         this.linkShowLicenseInfo.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
+         this.linkShowLicenseInfo.LinkColor = System.Drawing.Color.RoyalBlue;
+         this.linkShowLicenseInfo.Location = new System.Drawing.Point(198, 628);
+         this.linkShowLicenseInfo.Name = "linkShowLicenseInfo";
+         this.linkShowLicenseInfo.Size = new System.Drawing.Size(181, 21);
+         this.linkShowLicenseInfo.TabIndex = 59;
+         this.linkShowLicenseInfo.TabStop = true;
+         this.linkShowLicenseInfo.Text = "Show New LicenseInfo";
+         this.linkShowLicenseInfo.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkShowLicenseInfo_LinkClicked);
+         // 
+         // linkLicenseHistory
+         // 
+         this.linkLicenseHistory.ActiveLinkColor = System.Drawing.Color.RoyalBlue;
+         this.linkLicenseHistory.AutoSize = true;
+         this.linkLicenseHistory.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
+         this.linkLicenseHistory.Font = new System.Drawing.Font("Franklin Gothic Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+         this.linkLicenseHistory.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+         this.linkLicenseHistory.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
+         this.linkLicenseHistory.LinkColor = System.Drawing.Color.RoyalBlue;
+         this.linkLicenseHistory.Location = new System.Drawing.Point(8, 628);
+         this.linkLicenseHistory.Name = "linkLicenseHistory";
+         this.linkLicenseHistory.Size = new System.Drawing.Size(172, 21);
+         this.linkLicenseHistory.TabIndex = 58;
+         this.linkLicenseHistory.TabStop = true;
+         this.linkLicenseHistory.Text = "Show License History";
+         this.linkLicenseHistory.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLicenseHistory_LinkClicked);
+         // 
+         // btnClose
+         // 
+         this.btnClose.BackColor = System.Drawing.Color.DimGray;
+         this.btnClose.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+         this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+         this.btnClose.Font = new System.Drawing.Font("Franklin Gothic Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+         this.btnClose.ForeColor = System.Drawing.Color.WhiteSmoke;
+         this.btnClose.Location = new System.Drawing.Point(626, 620);
+         this.btnClose.Name = "btnClose";
+         this.btnClose.Size = new System.Drawing.Size(86, 37);
+         this.btnClose.TabIndex = 57;
+         this.btnClose.Text = "Close";
+         this.btnClose.UseVisualStyleBackColor = false;
+         // 
+         // btnRelease
+         // 
+         this.btnRelease.BackColor = System.Drawing.Color.Azure;
+         this.btnRelease.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+         this.btnRelease.Font = new System.Drawing.Font("Franklin Gothic Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+         this.btnRelease.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(47)))), ((int)(((byte)(88)))));
+         this.btnRelease.Location = new System.Drawing.Point(733, 620);
+         this.btnRelease.Name = "btnRelease";
+         this.btnRelease.Size = new System.Drawing.Size(138, 37);
+         this.btnRelease.TabIndex = 56;
+         this.btnRelease.Text = "Release";
+         this.btnRelease.UseVisualStyleBackColor = false;
+         this.btnRelease.Click += new System.EventHandler(this.btnRelease_Click);
+         // 
          // frmReleaseDetainLicense
          // 
          this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -350,7 +354,7 @@
          this.Controls.Add(this.linkShowLicenseInfo);
          this.Controls.Add(this.linkLicenseHistory);
          this.Controls.Add(this.btnClose);
-         this.Controls.Add(this.btnRelase);
+         this.Controls.Add(this.btnRelease);
          this.Controls.Add(this.groupBox1);
          this.Controls.Add(this.ctrlDriverLicenseInfoWithFilter1);
          this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
@@ -370,7 +374,7 @@
       private System.Windows.Forms.LinkLabel linkShowLicenseInfo;
       private System.Windows.Forms.LinkLabel linkLicenseHistory;
       private System.Windows.Forms.Button btnClose;
-      private System.Windows.Forms.Button btnRelase;
+      private System.Windows.Forms.Button btnRelease;
       private System.Windows.Forms.Label lblApplicationFees;
       private System.Windows.Forms.Label label5;
       private System.Windows.Forms.Label lblDetainDate;

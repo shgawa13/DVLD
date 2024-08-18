@@ -125,10 +125,6 @@ namespace DVLD.People
          frm.ShowDialog();
       }
 
-      //private void detianLicensesToolStripMenuItem_Click(object sender, EventArgs e)
-      //{
-      //   Form frm = new frmDetainLicenseApplication();
-      //   frm.ShowDialog();
-      //}
+      
    }
 }

@@ -54,6 +54,7 @@ namespace DVLD.Licenses.Detain_License
 
          lblApplicationFees.Text = clsApplicationTypes.GetApplicationTypeByID((int)clsApplication.enApplicationType.ReleaseDetainedDrivingLicsense).ApplicationFees.ToString();
          lblCreatedBy.Text = clsGlobal.CurrnetUser.UserName;
+         
 
          lblDetainID.Text = ctrlDriverLicenseInfoWithFilter1.SelectedLicenseInfo.DetainedInfo.DetainID.ToString();
          lblLicenseID.Text = ctrlDriverLicenseInfoWithFilter1.SelectedLicenseInfo.LicenseID.ToString();

@@ -79,7 +79,7 @@ namespace Business
 
          this.DriverInfo = clsDriver.FindByDriverID(this.DriverID);
          this.LicenseClassIfo = clsLicenseClass.FindLicenseClassByID(this.LicenseClass);
-       //  this.DetainedInfo = clsDetainedLicense.FindByLicenseID(this.LicenseID);
+         this.DetainedInfo = clsDetainedLicense.FindByLicenseID(this.LicenseID);
 
          Mode = enMode.Update;
       }

@@ -275,6 +275,7 @@
          this.detianLicensesToolStripMenuItem.RightToLeft = System.Windows.Forms.RightToLeft.No;
          this.detianLicensesToolStripMenuItem.Size = new System.Drawing.Size(232, 22);
          this.detianLicensesToolStripMenuItem.Text = "Detian Licenses";
+         this.detianLicensesToolStripMenuItem.Click += new System.EventHandler(this.detianLicensesToolStripMenuItem_Click);
          // 
          // mangeApplicationTypesToolStripMenuItem
          // 

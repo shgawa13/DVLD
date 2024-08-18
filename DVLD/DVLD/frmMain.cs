@@ -6,6 +6,7 @@ using DVLD.Licenses;
 using DVLD.Tests;
 using DVLD.Users;
 using DVLD.Drivers;
+using DVLD.Licenses.Detain_License;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -109,6 +110,12 @@ namespace DVLD.People
       private void tolStripDrivers_Click(object sender, EventArgs e)
       {
          Form frm = new frmListDrivers();
+         frm.ShowDialog();
+      }
+
+      private void detianLicensesToolStripMenuItem_Click(object sender, EventArgs e)
+      {
+         Form frm = new frmDetainLicenseApplication();
          frm.ShowDialog();
       }
    }

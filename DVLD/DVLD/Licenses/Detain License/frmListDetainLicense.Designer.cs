@@ -105,7 +105,6 @@
          // btnDetain
          // 
          this.btnDetain.BackColor = System.Drawing.Color.IndianRed;
-         this.btnDetain.DialogResult = System.Windows.Forms.DialogResult.Cancel;
          this.btnDetain.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
          this.btnDetain.Font = new System.Drawing.Font("Franklin Gothic Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
          this.btnDetain.ForeColor = System.Drawing.Color.WhiteSmoke;
@@ -115,6 +114,7 @@
          this.btnDetain.TabIndex = 59;
          this.btnDetain.Text = "Detain";
          this.btnDetain.UseVisualStyleBackColor = false;
+         this.btnDetain.Click += new System.EventHandler(this.btnDetain_Click);
          // 
          // btnRelease
          // 
@@ -128,6 +128,7 @@
          this.btnRelease.TabIndex = 58;
          this.btnRelease.Text = "Release";
          this.btnRelease.UseVisualStyleBackColor = false;
+         this.btnRelease.Click += new System.EventHandler(this.btnRelease_Click);
          // 
          // cbIsReleased
          // 
@@ -190,6 +191,7 @@
          this.dgvDetainedLicenses.AllowUserToDeleteRows = false;
          this.dgvDetainedLicenses.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
          this.dgvDetainedLicenses.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+         this.dgvDetainedLicenses.ContextMenuStrip = this.cmsApplications;
          this.dgvDetainedLicenses.Location = new System.Drawing.Point(0, 237);
          this.dgvDetainedLicenses.Name = "dgvDetainedLicenses";
          this.dgvDetainedLicenses.ReadOnly = true;

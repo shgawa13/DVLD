@@ -217,7 +217,20 @@ namespace DVLD.Licenses.Detain_License
          frmListDetainedLicense_Load(null, null);
       }
 
-      
-      
+      private void btnDetain_Click(object sender, EventArgs e)
+      {
+         frmDetainLicenseApplication frm = new frmDetainLicenseApplication();
+         frm.ShowDialog();
+         //refresh
+         frmListDetainedLicense_Load(null, null);
+      }
+
+      private void btnRelease_Click(object sender, EventArgs e)
+      {
+         frmReleaseDetainLicense frm = new frmReleaseDetainLicense();
+         frm.ShowDialog();
+         //refresh
+         frmListDetainedLicense_Load(null, null);
+      }
    }
 }

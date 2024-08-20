@@ -64,6 +64,7 @@
          this.toolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
          this.toolStripMenuItem5 = new System.Windows.Forms.ToolStripMenuItem();
          this.toolStripMenuItem6 = new System.Windows.Forms.ToolStripMenuItem();
+         this.detainedLicenseListToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
          this.panel1.SuspendLayout();
          ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
          ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -296,7 +297,8 @@
          this.detianLicensesToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(14)))), ((int)(((byte)(36)))));
          this.detianLicensesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.detainLicenseToolStripMenuItem,
-            this.releaseDetainedDrivingLicenseToolStripMenuItem});
+            this.releaseDetainedDrivingLicenseToolStripMenuItem,
+            this.detainedLicenseListToolStripMenuItem});
          this.detianLicensesToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
          this.detianLicensesToolStripMenuItem.ForeColor = System.Drawing.Color.Gainsboro;
          this.detianLicensesToolStripMenuItem.Name = "detianLicensesToolStripMenuItem";
@@ -447,6 +449,15 @@
          this.toolStripMenuItem6.Name = "toolStripMenuItem6";
          this.toolStripMenuItem6.Size = new System.Drawing.Size(140, 4);
          // 
+         // detainedLicenseListToolStripMenuItem
+         // 
+         this.detainedLicenseListToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(14)))), ((int)(((byte)(36)))));
+         this.detainedLicenseListToolStripMenuItem.ForeColor = System.Drawing.Color.Gainsboro;
+         this.detainedLicenseListToolStripMenuItem.Name = "detainedLicenseListToolStripMenuItem";
+         this.detainedLicenseListToolStripMenuItem.Size = new System.Drawing.Size(281, 22);
+         this.detainedLicenseListToolStripMenuItem.Text = "Detained License List";
+         this.detainedLicenseListToolStripMenuItem.Click += new System.EventHandler(this.detainedLicenseListToolStripMenuItem_Click);
+         // 
          // frmMain
          // 
          this.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
@@ -506,5 +517,6 @@
       private System.Windows.Forms.PictureBox pictureBox3;
       private System.Windows.Forms.ToolStripMenuItem detainLicenseToolStripMenuItem;
       private System.Windows.Forms.ToolStripMenuItem releaseDetainedDrivingLicenseToolStripMenuItem;
+      private System.Windows.Forms.ToolStripMenuItem detainedLicenseListToolStripMenuItem;
    }
 }

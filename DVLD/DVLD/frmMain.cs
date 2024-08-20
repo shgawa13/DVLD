@@ -125,6 +125,10 @@ namespace DVLD.People
          frm.ShowDialog();
       }
 
-      
+      private void detainedLicenseListToolStripMenuItem_Click(object sender, EventArgs e)
+      {
+         Form frm = new frmListDetainedLicense();
+         frm.ShowDialog();
+      }
    }
 }

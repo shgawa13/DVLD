@@ -442,6 +442,7 @@
     <None Include="Resources\stand_out_1oag-bg.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\suspended license.jpg" />
     <None Include="Resources\sp2.jpg" />
     <None Include="Resources\sp3.jpg" />
     <None Include="Resources\PersonLicenseHistory 512.png" />
@@ -477,6 +478,7 @@
     <None Include="Resources\driving-test 512.png" />
     <None Include="Resources\dash.png" />
     <None Include="Resources\driver.png" />
+    <None Include="Resources\Detain 512.png" />
     <Content Include="Resources\Female_avatar.png" />
     <None Include="Resources\plus-icon.png" />
     <None Include="Resources\people.png" />

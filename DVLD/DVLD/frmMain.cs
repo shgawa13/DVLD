@@ -1,6 +1,7 @@
 ﻿using DVLD.Applications;
 using DVLD.Applications.RenewLocalLicense;
 using DVLD.Applications.ReplaceLostOrDamagedLicense;
+using DVLD.Applications.InternationalDrivingApplication;
 using DVLD.Global_Classes;
 using DVLD.Licenses;
 using DVLD.Tests;
@@ -128,6 +129,12 @@ namespace DVLD.People
       private void detainedLicenseListToolStripMenuItem_Click(object sender, EventArgs e)
       {
          Form frm = new frmListDetainedLicense();
+         frm.ShowDialog();
+      }
+
+      private void internationalLicenseToolStripMenuItem_Click(object sender, EventArgs e)
+      {
+         Form frm = new frmNewInternationalDrivingLicense();
          frm.ShowDialog();
       }
    }

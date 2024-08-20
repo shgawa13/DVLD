@@ -30,9 +30,6 @@
       {
          this.panel1 = new System.Windows.Forms.Panel();
          this.btnCloseLogin = new System.Windows.Forms.Button();
-         this.pictureBox3 = new System.Windows.Forms.PictureBox();
-         this.pictureBox2 = new System.Windows.Forms.PictureBox();
-         this.pictureBox1 = new System.Windows.Forms.PictureBox();
          this.menuStrip1 = new System.Windows.Forms.MenuStrip();
          this.tolStripApplication = new System.Windows.Forms.ToolStripMenuItem();
          this.drivingLicensesServicesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -65,11 +62,14 @@
          this.toolStripMenuItem5 = new System.Windows.Forms.ToolStripMenuItem();
          this.toolStripMenuItem6 = new System.Windows.Forms.ToolStripMenuItem();
          this.detainedLicenseListToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+         this.pictureBox3 = new System.Windows.Forms.PictureBox();
+         this.pictureBox2 = new System.Windows.Forms.PictureBox();
+         this.pictureBox1 = new System.Windows.Forms.PictureBox();
          this.panel1.SuspendLayout();
+         this.menuStrip1.SuspendLayout();
          ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
          ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
          ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-         this.menuStrip1.SuspendLayout();
          this.SuspendLayout();
          // 
          // panel1
@@ -102,39 +102,6 @@
          this.btnCloseLogin.Text = "X";
          this.btnCloseLogin.UseVisualStyleBackColor = false;
          this.btnCloseLogin.Click += new System.EventHandler(this.btnCloseLogin_Click);
-         // 
-         // pictureBox3
-         // 
-         this.pictureBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(33)))), ((int)(((byte)(67)))));
-         this.pictureBox3.Image = global::DVLD.Properties.Resources.sp2;
-         this.pictureBox3.Location = new System.Drawing.Point(925, 335);
-         this.pictureBox3.Name = "pictureBox3";
-         this.pictureBox3.Size = new System.Drawing.Size(330, 181);
-         this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-         this.pictureBox3.TabIndex = 15;
-         this.pictureBox3.TabStop = false;
-         // 
-         // pictureBox2
-         // 
-         this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Left;
-         this.pictureBox2.Image = global::DVLD.Properties.Resources.WallPaper2;
-         this.pictureBox2.Location = new System.Drawing.Point(161, 0);
-         this.pictureBox2.Name = "pictureBox2";
-         this.pictureBox2.Size = new System.Drawing.Size(762, 516);
-         this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-         this.pictureBox2.TabIndex = 14;
-         this.pictureBox2.TabStop = false;
-         // 
-         // pictureBox1
-         // 
-         this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(14)))), ((int)(((byte)(36)))));
-         this.pictureBox1.Image = global::DVLD.Properties.Resources.gzexperts_logo;
-         this.pictureBox1.Location = new System.Drawing.Point(12, 12);
-         this.pictureBox1.Name = "pictureBox1";
-         this.pictureBox1.Size = new System.Drawing.Size(125, 97);
-         this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-         this.pictureBox1.TabIndex = 13;
-         this.pictureBox1.TabStop = false;
          // 
          // menuStrip1
          // 
@@ -221,6 +188,7 @@
          this.internationalLicenseToolStripMenuItem.Name = "internationalLicenseToolStripMenuItem";
          this.internationalLicenseToolStripMenuItem.Size = new System.Drawing.Size(205, 22);
          this.internationalLicenseToolStripMenuItem.Text = "International License";
+         this.internationalLicenseToolStripMenuItem.Click += new System.EventHandler(this.internationalLicenseToolStripMenuItem_Click);
          // 
          // renewDrivingLicenseToolStripMenuItem
          // 
@@ -458,6 +426,39 @@
          this.detainedLicenseListToolStripMenuItem.Text = "Detained License List";
          this.detainedLicenseListToolStripMenuItem.Click += new System.EventHandler(this.detainedLicenseListToolStripMenuItem_Click);
          // 
+         // pictureBox3
+         // 
+         this.pictureBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(33)))), ((int)(((byte)(67)))));
+         this.pictureBox3.Image = global::DVLD.Properties.Resources.sp2;
+         this.pictureBox3.Location = new System.Drawing.Point(925, 335);
+         this.pictureBox3.Name = "pictureBox3";
+         this.pictureBox3.Size = new System.Drawing.Size(330, 181);
+         this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+         this.pictureBox3.TabIndex = 15;
+         this.pictureBox3.TabStop = false;
+         // 
+         // pictureBox2
+         // 
+         this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Left;
+         this.pictureBox2.Image = global::DVLD.Properties.Resources.WallPaper2;
+         this.pictureBox2.Location = new System.Drawing.Point(161, 0);
+         this.pictureBox2.Name = "pictureBox2";
+         this.pictureBox2.Size = new System.Drawing.Size(762, 516);
+         this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+         this.pictureBox2.TabIndex = 14;
+         this.pictureBox2.TabStop = false;
+         // 
+         // pictureBox1
+         // 
+         this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(14)))), ((int)(((byte)(36)))));
+         this.pictureBox1.Image = global::DVLD.Properties.Resources.gzexperts_logo;
+         this.pictureBox1.Location = new System.Drawing.Point(12, 12);
+         this.pictureBox1.Name = "pictureBox1";
+         this.pictureBox1.Size = new System.Drawing.Size(125, 97);
+         this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+         this.pictureBox1.TabIndex = 13;
+         this.pictureBox1.TabStop = false;
+         // 
          // frmMain
          // 
          this.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
@@ -471,11 +472,11 @@
          this.Text = "Dashboard";
          this.panel1.ResumeLayout(false);
          this.panel1.PerformLayout();
+         this.menuStrip1.ResumeLayout(false);
+         this.menuStrip1.PerformLayout();
          ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
          ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
          ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-         this.menuStrip1.ResumeLayout(false);
-         this.menuStrip1.PerformLayout();
          this.ResumeLayout(false);
 
       }
